@@ -1,1 +1,200 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Inventory Progress Log</title><style>:root{--bg:#0b0d10;--panel:#12161b;--panel2:#181d24;--line:#2b323c;--text:#f3f6f9;--muted:#9aa6b2;--accent:#d8ff63;--shadow:0 14px 40px rgba(0,0,0,.22)}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif}.container{width:min(1180px,calc(100% - 28px));margin:0 auto}.hero{padding:46px 0 26px;border-bottom:1px solid var(--line);background:linear-gradient(180deg,#11161c 0%,#0b0d10 100%)}.kicker{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);font-weight:800}h1{margin:8px 0 6px;font-size:clamp(30px,5vw,52px);letter-spacing:-.04em}.sub{margin:0;color:var(--muted);max-width:760px;line-height:1.6}.stats{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}.stat{background:var(--panel);border:1px solid var(--line);border-radius:999px;padding:8px 13px;color:var(--muted);font-size:13px}.stat strong{color:var(--text)}.toolbar{position:sticky;top:0;z-index:10;background:rgba(11,13,16,.92);backdrop-filter:blur(16px);border-bottom:1px solid var(--line);padding:12px 0}.toolbar-inner{display:flex;gap:10px;align-items:center}.search{flex:1;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px 14px;color:var(--text);outline:none}.action{border:1px solid var(--line);background:var(--panel);color:var(--text);border-radius:12px;padding:11px 13px;cursor:pointer}main{padding:22px 0 70px}.category{margin:0 0 14px;background:var(--panel);border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:var(--shadow)}.section-toggle{width:100%;display:flex;align-items:center;gap:12px;border:0;background:var(--panel2);color:var(--text);padding:16px 18px;cursor:pointer;text-align:left}.section-title{font-size:18px;font-weight:800;letter-spacing:-.01em}.count{margin-left:auto;color:var(--muted);font-size:13px}.chevron{width:22px;font-size:19px;line-height:1;color:var(--accent);font-weight:900}.table-wrap{overflow-x:auto}table{width:100%;border-collapse:collapse;min-width:720px}th,td{padding:12px 16px;border-top:1px solid var(--line);text-align:left;vertical-align:top}th{font-size:11px;text-transform:uppercase;letter-spacing:.11em;color:var(--muted);background:#10141a}td{font-size:14px}td:nth-child(1){font-family:ui-monospace,SFMono-Regular,Menlo,monospace;color:#c7d0d9}td:nth-child(3),td:nth-child(4){white-space:nowrap}.category.collapsed .table-wrap{display:none}.empty{display:none;color:var(--muted);padding:42px 0;text-align:center}.note{margin-top:22px;padding:14px 16px;border:1px dashed var(--line);border-radius:14px;color:var(--muted);font-size:13px;line-height:1.55}@media (max-width:640px){.hero{padding-top:30px}.action{font-size:12px}}</style></head><body><header class="hero"><div class="container"><div class="kicker">Inventory Digitization · Progress View</div><h1>Current Stock Log</h1><p class="sub">A clean, category-wise view of the handwritten inventory captured so far. Blank fields indicate details that were not available or were too unclear to enter confidently.</p><div class="stats"><span class="stat"><strong>12</strong> categories</span><span class="stat"><strong>87</strong> product lines logged</span><span class="stat">Work in progress</span></div></div></header><div class="toolbar"><div class="container toolbar-inner"><input id="search" class="search" placeholder="Search item, code, brand or category…"><button class="action" id="expandAll">Expand all</button><button class="action" id="collapseAll">Collapse all</button></div></div><main class="container"><section class="category"><button class="section-toggle" aria-expanded="true"><span class="chevron">⌄</span><span class="section-title">Inventory captured so far</span><span class="count">progress view</span></button><div class="table-wrap"><table><thead><tr><th>Item Code</th><th>Item Name</th><th>Qty</th><th>MRP</th><th>Brand</th></tr></thead><tbody><tr><td></td><td>Inventory dataset is being expanded daily.</td><td></td><td></td><td></td></tr></tbody></table></div></section><div id="empty" class="empty">No matching inventory found.</div><div class="note">This page is a progress record, not a finalized stock valuation. Entries can be corrected as handwritten notes are reviewed and clarified.</div></main><script>const sections=[...document.querySelectorAll('.category')];sections.forEach(section=>{const btn=section.querySelector('.section-toggle');btn.addEventListener('click',()=>{const collapsed=section.classList.toggle('collapsed');btn.setAttribute('aria-expanded',String(!collapsed));section.querySelector('.chevron').textContent=collapsed?'›':'⌄'});});document.getElementById('expandAll').onclick=()=>sections.forEach(s=>{s.classList.remove('collapsed');s.querySelector('.chevron').textContent='⌄';s.querySelector('.section-toggle').setAttribute('aria-expanded','true')});document.getElementById('collapseAll').onclick=()=>sections.forEach(s=>{s.classList.add('collapsed');s.querySelector('.chevron').textContent='›';s.querySelector('.section-toggle').setAttribute('aria-expanded','false')});document.getElementById('search').addEventListener('input',e=>{const q=e.target.value.trim().toLowerCase();let shown=0;sections.forEach(section=>{const rows=[...section.querySelectorAll('tbody tr')];let visibleRows=0;rows.forEach(row=>{const match=!q||row.innerText.toLowerCase().includes(q)||section.innerText.toLowerCase().includes(q);row.style.display=match?'':'none';if(match)visibleRows++});section.style.display=visibleRows?'':'none';if(visibleRows)shown++});document.getElementById('empty').style.display=shown?'none':'block'});</script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>City Super Shoppee | Inventory Progress</title>
+<style>
+:root{--bg:#0b0d10;--panel:#12161b;--panel2:#181d24;--line:#2b323c;--text:#f3f6f9;--muted:#9aa6b2;--accent:#d8ff63;--shadow:0 14px 40px rgba(0,0,0,.22)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}.container{width:min(1200px,calc(100% - 28px));margin:auto}
+.hero{padding:48px 0 30px;border-bottom:1px solid var(--line);background:linear-gradient(180deg,#11161c,#0b0d10)}.kicker{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);font-weight:800}.hero h1{margin:9px 0 8px;font-size:clamp(32px,5vw,56px);letter-spacing:-.045em}.hero p{margin:0;max-width:780px;color:var(--muted);line-height:1.65}.stats{display:flex;gap:9px;flex-wrap:wrap;margin-top:22px}.stat{padding:8px 13px;border:1px solid var(--line);border-radius:999px;background:var(--panel);font-size:12px;color:var(--muted)}.stat strong{color:var(--text)}
+.toolbar{position:sticky;top:0;z-index:20;padding:12px 0;border-bottom:1px solid var(--line);background:rgba(11,13,16,.92);backdrop-filter:blur(16px)}.toolbar-inner{display:flex;gap:9px}.search{flex:1;min-width:0;padding:12px 14px;border:1px solid var(--line);border-radius:12px;background:var(--panel);color:var(--text);outline:none}.search:focus{border-color:#5b6875}.action{padding:11px 13px;border:1px solid var(--line);border-radius:12px;background:var(--panel);color:var(--text);cursor:pointer}.action:hover{border-color:#5b6875}
+main{padding:24px 0 70px}.category{margin-bottom:14px;border:1px solid var(--line);border-radius:16px;overflow:hidden;background:var(--panel);box-shadow:var(--shadow)}.section-toggle{width:100%;display:flex;align-items:center;gap:11px;padding:16px 18px;border:0;background:var(--panel2);color:var(--text);cursor:pointer;text-align:left}.section-toggle:hover{background:#1c222a}.chevron{width:20px;color:var(--accent);font-size:22px;font-weight:900;line-height:1}.section-title{font-size:17px;font-weight:800}.count{margin-left:auto;color:var(--muted);font-size:12px}.table-wrap{overflow-x:auto}.category.collapsed .table-wrap{display:none}table{width:100%;min-width:700px;border-collapse:collapse}th,td{padding:11px 15px;border-top:1px solid var(--line);text-align:left;vertical-align:top}th{font-size:10px;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);background:#10141a}td{font-size:13px;line-height:1.45}td.code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;color:#cbd4dc;white-space:nowrap}td.qty,td.mrp{white-space:nowrap}.uncertain{color:#c9b985}.empty{display:none;padding:40px;text-align:center;color:var(--muted)}.note{margin-top:22px;padding:15px 17px;border:1px dashed var(--line);border-radius:14px;color:var(--muted);font-size:12px;line-height:1.6}.note strong{color:var(--text)}
+@media(max-width:650px){.hero{padding-top:32px}.toolbar-inner{flex-wrap:wrap}.search{flex-basis:100%}.action{flex:1}}
+</style>
+</head>
+<body>
+<header class="hero"><div class="container">
+<div class="kicker">City Super Shoppee · Inventory Digitization</div>
+<h1>Stock Progress Log</h1>
+<p>A clean, category-wise presentation of the handwritten stock records captured so far. This is intentionally a working dataset, so unclear details are left blank rather than guessed.</p>
+<div class="stats"><span class="stat"><strong id="categoryCount">0</strong> categories</span><span class="stat"><strong id="itemCount">0</strong> product lines</span><span class="stat">Work in progress</span></div>
+</div></header>
+<div class="toolbar"><div class="container toolbar-inner"><input id="search" class="search" type="search" placeholder="Search item, code, brand or category…" aria-label="Search inventory"><button class="action" id="expandAll">Expand all</button><button class="action" id="collapseAll">Collapse all</button></div></div>
+<main class="container" id="inventory">
+
+<section class="category" data-category="Juice Jars">
+<button class="section-toggle" aria-expanded="true"><span class="chevron">⌄</span><span class="section-title">Juice Jars</span><span class="count">3 lines</span></button><div class="table-wrap"><table><thead><tr><th>Item Code</th><th>Item Name</th><th>Qty</th><th>MRP</th><th>Brand</th></tr></thead><tbody>
+<tr><td class="code">C0207</td><td>Lancer Chutney, Airtight Juice Jar</td><td class="qty">2 pcs</td><td class="mrp">₹275</td><td>Lancer</td></tr>
+<tr><td></td><td>Mixie Jar &amp; Beg.</td><td>1 pc</td><td>₹459</td><td></td></tr>
+<tr><td></td><td>Juice Jar</td><td>2 pcs</td><td>₹350</td><td></td></tr>
+</tbody></table></div></section>
+
+<section class="category" data-category="Jar Sets">
+<button class="section-toggle" aria-expanded="true"><span class="chevron">⌄</span><span class="section-title">Jar Sets</span><span class="count">1 line</span></button><div class="table-wrap"><table><thead><tr><th>Item Code</th><th>Item Name</th><th>Qty</th><th>MRP</th><th>Brand</th></tr></thead><tbody>
+<tr><td></td><td>8/N Jar Set, Dry/Wet</td><td>2 pcs</td><td>₹485 (Dry)<br>₹585 (Wet)</td><td></td></tr>
+</tbody></table></div></section>
+
+<section class="category" data-category="Insulated Tiffin">
+<button class="section-toggle" aria-expanded="true"><span class="chevron">⌄</span><span class="section-title">Insulated Tiffin</span><span class="count">2 lines</span></button><div class="table-wrap"><table><thead><tr><th>Item Code</th><th>Item Name</th><th>Qty</th><th>MRP</th><th>Brand</th></tr></thead><tbody>
+<tr><td class="code">040457</td><td>Insulated Tiffin (S)</td><td>1 pc</td><td>₹495</td><td>Milton</td></tr>
+<tr><td class="code">040432</td><td>Insulated Tiffin (B)</td><td>1 pc</td><td>₹1740</td><td>Milton</td></tr>
+</tbody></table></div></section>
+
+<section class="category" data-category="Milk Boilers">
+<button class="section-toggle" aria-expanded="true"><span class="chevron">⌄</span><span class="section-title">Milk Boilers</span><span class="count">1 line</span></button><div class="table-wrap"><table><thead><tr><th>Item Code</th><th>Item Name</th><th>Qty</th><th>MRP</th><th>Brand</th></tr></thead><tbody>
+<tr><td class="code">030204</td><td>Murugan Milk Boiler</td><td>3 pcs</td><td>₹450</td><td>Murugan</td></tr>
+</tbody></table></div></section>
+
+<section class="category" data-category="Casseroles">
+<button class="section-toggle" aria-expanded="true"><span class="chevron">⌄</span><span class="section-title">Casseroles</span><span class="count">7 lines</span></button><div class="table-wrap"><table><thead><tr><th>Item Code</th><th>Item Name</th><th>Qty</th><th>MRP</th><th>Brand</th></tr></thead><tbody>
+<tr><td class="code">019323</td><td>Casserole Royal 1000</td><td>2 pcs</td><td>₹415</td><td>Milton</td></tr>
+<tr><td class="code">019644</td><td>Casserole Curve 1000</td><td>2 pcs</td><td>₹445</td><td>Milton</td></tr>
+<tr><td class="code">017831</td><td>Casserole Zest 1000</td><td>1 pc</td><td>₹580</td><td>Milton</td></tr>
+<tr><td class="code">016889</td><td>Casserole Crisp-Del 1200</td><td>2 pcs</td><td>₹580</td><td>Milton</td></tr>
+<tr><td class="code">019859</td><td>Casserole Pearl 1000</td><td>1 pc</td><td>₹550</td><td>Milton</td></tr>
+<tr><td class="code">361879</td><td>Casserole</td><td>3 pcs</td><td>₹845</td><td>Royal</td></tr>
+<tr><td></td><td>Casserole / additional entry</td><td></td><td></td><td></td></tr>
+</tbody></table></div></section>
+
+<section class="category" data-category="Paniyara Kal">
+<button class="section-toggle" aria-expanded="true"><span class="chevron">⌄</span><span class="section-title">Paniyara Kal / Paniyaram Pan</span><span class="count">1 line</span></button><div class="table-wrap"><table><thead><tr><th>Item Code</th><th>Item Name</th><th>Qty</th><th>MRP</th><th>Brand</th></tr></thead><tbody>
+<tr><td class="code">307266</td><td>Paniyara Kal</td><td>3 pcs</td><td>₹970</td><td></td></tr>
+</tbody></table></div></section>
+
+<section class="category" data-category="Deep Kadai">
+<button class="section-toggle" aria-expanded="true"><span class="chevron">⌄</span><span class="section-title">Deep Kadai</span><span class="count">3 lines</span></button><div class="table-wrap"><table><thead><tr><th>Item Code</th><th>Item Name</th><th>Qty</th><th>MRP</th><th>Brand</th></tr></thead><tbody>
+<tr><td></td><td>Deep Kadai Medium, w/o Lid</td><td>1 pc</td><td>₹840</td><td>Walter</td></tr>
+<tr><td></td><td>Deep Kadai Medium, w/o Lid</td><td>1 pc</td><td>₹865</td><td>Walter</td></tr>
+<tr><td></td><td>Deep Kadai, w/o Lid</td><td>3 pcs</td><td>₹665</td><td></td></tr>
+</tbody></table></div></section>
+
+<section class="category" data-category="Non Stick Pans">
+<button class="section-toggle" aria-expanded="true"><span class="chevron">⌄</span><span class="section-title">Non-Stick Pans</span><span class="count">7 lines</span></button><div class="table-wrap"><table><thead><tr><th>Item Code</th><th>Item Name</th><th>Qty</th><th>MRP</th><th>Brand</th></tr></thead><tbody>
+<tr><td class="code">MHA-87337</td><td>New S/S Side Jar</td><td>1 pc</td><td>₹459</td><td>Sunset</td></tr>
+<tr><td class="code">066717</td><td>Non-Stick Frying Pan</td><td>1 pc</td><td>₹1090</td><td>Futura</td></tr>
+<tr><td class="code">47142</td><td>Non-Stick, w/o S.S. Lid</td><td></td><td></td><td>Patel</td></tr>
+<tr><td class="code">2874576</td><td>Non-Stick with Lid</td><td></td><td>₹720</td><td>Patel</td></tr>
+<tr><td class="code">59059</td><td>Non-Stick, w/o Handle</td><td></td><td>₹620</td><td>Patel</td></tr>
+<tr><td class="code">35379</td><td>Multi-Pot, w/o Lid</td><td>1 pc</td><td>₹855</td><td>Metallino</td></tr>
+<tr><td></td><td>Plastic Tawa, Regular</td><td></td><td>₹70</td><td>Milton</td></tr>
+</tbody></table></div></section>
+
+<section class="category" data-category="Bowls and Serving Sets">
+<button class="section-toggle" aria-expanded="true"><span class="chevron">⌄</span><span class="section-title">Bowls &amp; Serving Sets</span><span class="count">9 lines</span></button><div class="table-wrap"><table><thead><tr><th>Item Code</th><th>Item Name</th><th>Qty</th><th>MRP</th><th>Brand</th></tr></thead><tbody>
+<tr><td></td><td>Metalino Kadai / Anodized?</td><td>2 pcs</td><td>₹750</td><td>Metalino</td></tr>
+<tr><td></td><td>Bowl Set</td><td>1 pc</td><td>₹1250</td><td>Lamerma</td></tr>
+<tr><td></td><td>Serving Bowl Set, w/Lid &amp; Spoon</td><td>2 pcs</td><td>₹385</td><td>Lamerma</td></tr>
+<tr><td></td><td>Serving Bowl Set, w/Lid &amp; Spoon</td><td>2 pcs</td><td>₹385</td><td></td></tr>
+<tr><td></td><td>PY Jar</td><td>1 pc</td><td>₹950</td><td></td></tr>
+<tr><td></td><td>Tadka Pan</td><td>2 pcs</td><td>₹500</td><td></td></tr>
+<tr><td></td><td>Treaty Bowl &amp; Cup Set</td><td>2 boxes</td><td>₹350</td><td></td></tr>
+<tr><td class="code">83657</td><td>Ogil 6/ware Set</td><td>3 pcs</td><td>₹530</td><td></td></tr>
+<tr><td class="code">4365</td><td>Yera Ice Cream Bowl Set</td><td>3 pcs</td><td>₹530</td><td></td></tr>
+</tbody></table></div></section>
+
+<section class="category" data-category="Glass Sets">
+<button class="section-toggle" aria-expanded="true"><span class="chevron">⌄</span><span class="section-title">Glass Sets</span><span class="count">2 lines</span></button><div class="table-wrap"><table><thead><tr><th>Item Code</th><th>Item Name</th><th>Qty</th><th>MRP</th><th>Brand</th></tr></thead><tbody>
+<tr><td class="code">8578</td><td>Oil Bowl Set, 6 pcs (3 boxes)</td><td>6 pcs</td><td>₹455</td><td></td></tr>
+<tr><td></td><td>Hapion Glass Set, 6 pcs (1 box)</td><td>6 pcs</td><td>₹225</td><td></td></tr>
+</tbody></table></div></section>
+
+<section class="category" data-category="Pudding Sets">
+<button class="section-toggle" aria-expanded="true"><span class="chevron">⌄</span><span class="section-title">Pudding Sets</span><span class="count">2 lines</span></button><div class="table-wrap"><table><thead><tr><th>Item Code</th><th>Item Name</th><th>Qty</th><th>MRP</th><th>Brand</th></tr></thead><tbody>
+<tr><td class="code">4715</td><td>Lazer Pudding Set, 6 pcs (3 boxes)</td><td>6 pcs</td><td>₹425</td><td></td></tr>
+<tr><td class="code">C0133</td><td>Daisy Bowl / Spoon Set, 6 pcs (4 boxes)</td><td>6 pcs</td><td>₹350</td><td></td></tr>
+</tbody></table></div></section>
+
+<section class="category" data-category="Metalino Cookware">
+<button class="section-toggle" aria-expanded="true"><span class="chevron">⌄</span><span class="section-title">Metalino Cookware</span><span class="count">7 lines</span></button><div class="table-wrap"><table><thead><tr><th>Item Code</th><th>Item Name</th><th>Qty</th><th>MRP</th><th>Brand</th></tr></thead><tbody>
+<tr><td></td><td>Metalino Deep Kadai, w/o Lid</td><td></td><td>₹850</td><td>Metalino</td></tr>
+<tr><td class="code">31028</td><td>Metalino Cook n' Serve</td><td>2 boxes</td><td>₹735</td><td>Metalino</td></tr>
+<tr><td class="code">50962</td><td>Metalino Deep Kadai 1.7 L, w/o Lid</td><td>4 boxes</td><td>₹720</td><td>Metalino</td></tr>
+<tr><td class="code">50961</td><td>Metalino Deep Kadai 1.2 L</td><td>2 pcs</td><td>₹605</td><td>Metalino</td></tr>
+<tr><td class="code">50964</td><td>Metalino 2 L Kadai</td><td></td><td>₹800</td><td>Metalino</td></tr>
+<tr><td></td><td>Metalino 1 L Handi</td><td></td><td>₹445</td><td>Metalino</td></tr>
+<tr><td class="code">49510</td><td>Metalino Kadai 2.5 L, w/o Lid</td><td></td><td>₹750</td><td>Metalino</td></tr>
+</tbody></table></div></section>
+
+<section class="category" data-category="Additional Metalino">
+<button class="section-toggle" aria-expanded="true"><span class="chevron">⌄</span><span class="section-title">Metalino &amp; Cookware, Continued</span><span class="count">3 lines</span></button><div class="table-wrap"><table><thead><tr><th>Item Code</th><th>Item Name</th><th>Qty</th><th>MRP</th><th>Brand</th></tr></thead><tbody>
+<tr><td class="code">50983</td><td>Metalino Deep Kadai 3 L, w/o Lid</td><td></td><td>₹945</td><td>Metalino</td></tr>
+<tr><td class="code">32895</td><td>Metalino Deep Kadai 2.5 L, w/o Lid</td><td></td><td>₹710</td><td>Metalino</td></tr>
+<tr><td></td><td>Metalino Kadai Anodized</td><td>2 pcs</td><td>₹1200</td><td>Metalino</td></tr>
+</tbody></table></div></section>
+
+<section class="category" data-category="Combs">
+<button class="section-toggle" aria-expanded="true"><span class="chevron">⌄</span><span class="section-title">Combs</span><span class="count">6 lines</span></button><div class="table-wrap"><table><thead><tr><th>Item Code</th><th>Item Name</th><th>Qty</th><th>MRP</th><th>Brand</th></tr></thead><tbody>
+<tr><td></td><td>F.C. Dressing Comb (10x)</td><td>20 pcs</td><td>₹26</td><td></td></tr>
+<tr><td></td><td>P.C. Barber Comb (2 pcs)</td><td>20 pcs</td><td>₹38</td><td></td></tr>
+<tr><td></td><td>Lady Handle Comb</td><td>10 pcs</td><td>₹84</td><td></td></tr>
+<tr><td></td><td>Railer? Gold Seal Comb</td><td>10 pcs</td><td>₹66</td><td></td></tr>
+<tr><td></td><td>Tail Comb</td><td>20 pcs</td><td>₹27</td><td></td></tr>
+<tr><td></td><td>Styler Comb</td><td>20 pcs</td><td>₹40</td><td></td></tr>
+</tbody></table></div></section>
+
+<section class="category" data-category="Tea Coasters">
+<button class="section-toggle" aria-expanded="true"><span class="chevron">⌄</span><span class="section-title">Tea Coasters</span><span class="count">3 lines</span></button><div class="table-wrap"><table><thead><tr><th>Item Code</th><th>Item Name</th><th>Qty</th><th>MRP</th><th>Brand</th></tr></thead><tbody>
+<tr><td class="code">0228</td><td>Nature Tea Coaster</td><td>11 boxes</td><td>₹144 / 6 pcs</td><td>Nature</td></tr>
+<tr><td class="code">0229</td><td>Rolex Tea Coasters</td><td>16 boxes</td><td>₹319</td><td>Rolex</td></tr>
+<tr><td class="code">0227</td><td>Rolex Tea Coasters</td><td>4 pcs</td><td>₹150</td><td>Rolex</td></tr>
+</tbody></table></div></section>
+
+<section class="category" data-category="Gaskets">
+<button class="section-toggle" aria-expanded="true"><span class="chevron">⌄</span><span class="section-title">Pressure Cooker Gaskets</span><span class="count">7 lines</span></button><div class="table-wrap"><table><thead><tr><th>Item Code</th><th>Item Name</th><th>Qty</th><th>MRP</th><th>Brand</th></tr></thead><tbody>
+<tr><td class="code">49269</td><td>Prestige Nakshatra Senior Gasket</td><td>2 pcs</td><td>₹65</td><td>Prestige</td></tr>
+<tr><td class="code">C0214</td><td>Star Plus Rubber Gasket, Junior Size</td><td>10 pcs</td><td>₹95</td><td>Star Plus</td></tr>
+<tr><td class="code">C0213</td><td>Star Plus Rubber Gasket, 80? Junior Size</td><td></td><td>₹85</td><td>Star Plus</td></tr>
+<tr><td class="code">C0211</td><td>Raj Amalgam Cooker Gasket (2–3 LTR)</td><td></td><td></td><td>Raj</td></tr>
+<tr><td class="code">C0212</td><td>4–8 LTR Gasket</td><td>16 pcs</td><td></td><td></td></tr>
+<tr><td class="code">C0210</td><td>1.5 LTR Gasket</td><td>23 pcs</td><td></td><td></td></tr>
+<tr><td class="code">305583</td><td>Prestige Cast Iron</td><td>20 boxes</td><td>₹180</td><td>Prestige</td></tr>
+</tbody></table></div></section>
+
+<section class="category" data-category="Cooker Accessories">
+<button class="section-toggle" aria-expanded="true"><span class="chevron">⌄</span><span class="section-title">Cooker Accessories &amp; Miscellaneous</span><span class="count">6 lines</span></button><div class="table-wrap"><table><thead><tr><th>Item Code</th><th>Item Name</th><th>Qty</th><th>MRP</th><th>Brand</th></tr></thead><tbody>
+<tr><td class="code">018220</td><td>Aero Cool</td><td>2 pcs</td><td>₹599</td><td></td></tr>
+<tr><td class="code">018244</td><td>Aero Violet</td><td>3 pcs</td><td>₹598</td><td></td></tr>
+<tr><td class="code">019371</td><td>Hit Rat Glue Pad, Big</td><td>6 pcs</td><td>₹120</td><td>Hit</td></tr>
+<tr><td class="code">019388</td><td>Hit Rat Glue Pad, Small</td><td>10 pcs</td><td></td><td>Hit</td></tr>
+<tr><td></td><td>Doom Rat Glue Pad, Big</td><td>5 pcs</td><td>₹100</td><td></td></tr>
+<tr><td></td><td>Arbuda Rat Glue Board, Small</td><td>3 pcs</td><td></td><td></td></tr>
+</tbody></table></div></section>
+
+<section class="category" data-category="Torches and Batteries">
+<button class="section-toggle" aria-expanded="true"><span class="chevron">⌄</span><span class="section-title">Torches &amp; Batteries</span><span class="count">2 lines</span></button><div class="table-wrap"><table><thead><tr><th>Item Code</th><th>Item Name</th><th>Qty</th><th>MRP</th><th>Brand</th></tr></thead><tbody>
+<tr><td></td><td>Vanishmart Torchlight</td><td>2 in 1</td><td>₹77.36</td><td>Vanishmart</td></tr>
+<tr><td></td><td>Eveready Digiled DL64</td><td>3 pcs</td><td>₹315</td><td>Eveready</td></tr>
+</tbody></table></div></section>
+
+<section class="category" data-category="Eveready Lighting">
+<button class="section-toggle" aria-expanded="true"><span class="chevron">⌄</span><span class="section-title">Eveready Lighting</span><span class="count">6 lines</span></button><div class="table-wrap"><table><thead><tr><th>Item Code</th><th>Item Name</th><th>Qty</th><th>MRP</th><th>Brand</th></tr></thead><tbody>
+<tr><td class="code">DL06</td><td>Eveready Shine</td><td>1 pc</td><td>₹165</td><td>Eveready</td></tr>
+<tr><td class="code">DL2407</td><td>Eveready</td><td>3 pcs</td><td>₹445</td><td>Eveready</td></tr>
+<tr><td class="code">DL68</td><td>Eveready</td><td>1 pc</td><td>₹430</td><td>Eveready</td></tr>
+<tr><td class="code">DL100C</td><td>Eveready</td><td>2 pcs</td><td>₹180</td><td>Eveready</td></tr>
+<tr><td class="code">DL90</td><td>Eveready</td><td>3 pcs</td><td>₹220</td><td>Eveready</td></tr>
+<tr><td class="code">DL65</td><td>Eveready</td><td>1 pc</td><td>₹550</td><td>Eveready</td></tr>
+</tbody></table></div></section>
+
+<section class="category" data-category="Vanishmart">
+<button class="section-toggle" aria-expanded="true"><span class="chevron">⌄</span><span class="section-title">Vanishmart</span><span class="count">2 lines</span></button><div class="table-wrap"><table><thead><tr><th>Item Code</th><th>Item Name</th><th>Qty</th><th>MRP</th><th>Brand</th></tr></thead><tbody>
+<tr><td></td><td>Vanishmart TL-03 (C203)</td><td>1 pc</td><td>₹299</td><td>Vanishmart</td></tr>
+<tr><td></td><td>Vanishmart TL-03 (New)</td><td>2 pcs</td><td>₹495</td><td>Vanishmart</td></tr>
+</tbody></table></div></section>
+
+<div id="empty" class="empty">No matching inventory found.</div>
+<div class="note"><strong>Data status:</strong> This page is a working transcription of the handwritten log. Item codes are used where visible, while missing codes remain blank. Details that were too unclear to enter confidently have also been left blank. Entries can be corrected later without changing the page structure.</div>
+</main>
+<script>
+const sections=[...document.querySelectorAll('.category')];
+const countLines=()=>sections.reduce((n,s)=>n+s.querySelectorAll('tbody tr').length,0);
+document.getElementById('categoryCount').textContent=sections.length;
+document.getElementById('itemCount').textContent=countLines();
+function setSection(section,collapsed){const btn=section.querySelector('.section-toggle');section.classList.toggle('collapsed',collapsed);btn.setAttribute('aria-expanded',String(!collapsed));section.querySelector('.chevron').textContent=collapsed?'›':'⌄'}
+sections.forEach(section=>section.querySelector('.section-toggle').addEventListener('click',()=>setSection(section,!section.classList.contains('collapsed'))));
+document.getElementById('expandAll').onclick=()=>sections.forEach(s=>setSection(s,false));
+document.getElementById('collapseAll').onclick=()=>sections.forEach(s=>setSection(s,true));
+document.getElementById('search').addEventListener('input',e=>{const q=e.target.value.trim().toLowerCase();let visible=0;sections.forEach(section=>{let rows=0;section.querySelectorAll('tbody tr').forEach(row=>{const match=!q||row.innerText.toLowerCase().includes(q)||section.dataset.category.toLowerCase().includes(q);row.hidden=!match;if(match)rows++});section.hidden=rows===0;if(rows)visible++});document.getElementById('empty').style.display=visible?'none':'block'});
+</script>
+</body></html>

@@ -767,6 +767,13 @@
           "qty": "1 Unit",
           "mrp": "₹449",
           "brand": "STAG Plus"
+        },
+        {
+          "code": "5353",
+          "name": "Regular Juicer Jar",
+          "qty": "3 Units",
+          "mrp": "₹350/unit",
+          "brand": ""
         }
       ]
     },

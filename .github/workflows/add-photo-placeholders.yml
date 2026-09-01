@@ -1,7 +1,9 @@
 name: Add photo inventory placeholders
 
 on:
-  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/add-photo-placeholders.yml'
 
 permissions:
   contents: write
@@ -57,17 +59,13 @@ jobs:
           path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
           PY
 
-      - name: Commit inventory update
+      - name: Commit inventory update and remove temporary workflow
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add inventory.json
           git commit -m "Add placeholder products from shelf photo"
           git push
-
-      - name: Remove temporary workflow
-        if: always()
-        run: |
-          git rm .github/workflows/add-photo-placeholders.yml || true
-          git commit -m "Remove temporary photo inventory workflow" || true
-          git push || true
+          git rm .github/workflows/add-photo-placeholders.yml
+          git commit -m "Remove temporary photo inventory workflow"
+          git push

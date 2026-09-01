@@ -9,8 +9,8 @@
       {"code":"","name":"8/N Jar Set, Dry/Wet","qty":"2 pcs","mrp":"₹485 (Dry) / ₹585 (Wet)","brand":""}
     ]},
     {"name":"Insulated Tiffin","items":[
-      {"code":"040457","name":"Insulated Tiffin (S)","qty":"1 pc","mrp":"₹495","brand":"Milton"},
-      {"code":"040432","name":"Insulated Tiffin (B)","qty":"1 pc","mrp":"₹1740","brand":"Milton"}
+      {"code":"040457","name":"Insulated Tiffin (S)","qty":"1 pc","mrp":"₹1195","brand":"Milton"},
+      {"code":"040433","name":"Insulated Tiffin (B)","qty":"1 pc","mrp":"₹1740","brand":"Milton"}
     ]},
     {"name":"Milk Boilers","items":[
       {"code":"030204","name":"Murugan Milk Boiler","qty":"3 pcs","mrp":"₹450","brand":"Murugan"}
@@ -19,27 +19,25 @@
       {"code":"019323","name":"Casserole Royal 1000","qty":"2 pcs","mrp":"₹415","brand":"Milton"},
       {"code":"019644","name":"Casserole Curve 1000","qty":"2 pcs","mrp":"₹445","brand":"Milton"},
       {"code":"017831","name":"Casserole Zest 1000","qty":"1 pc","mrp":"₹580","brand":"Milton"},
-      {"code":"016889","name":"Casserole Crisp-Del 1200","qty":"2 pcs","mrp":"₹580","brand":"Milton"},
+      {"code":"016889","name":"Casserole Crisp Deluxe 1200","qty":"2 Boxes","mrp":"₹580","brand":"Milton"},
       {"code":"019859","name":"Casserole Pearl 1000","qty":"1 pc","mrp":"₹550","brand":"Milton"},
-      {"code":"361879","name":"Casserole","qty":"3 pcs","mrp":"₹845","brand":"Royal"},
-      {"code":"","name":"Casserole / additional entry","qty":"","mrp":"","brand":""}
+      {"code":"361879","name":"Casserole","qty":"3 pcs","mrp":"₹845","brand":"ROYALE"}
     ]},
     {"name":"Paniyara Kal","items":[
       {"code":"307266","name":"Paniyara Kal / Paniyaram Pan","qty":"3 pcs","mrp":"₹970","brand":""}
     ]},
     {"name":"Deep Kadai","items":[
-      {"code":"","name":"Deep Kadai Medium, w/o Lid","qty":"1 pc","mrp":"₹840","brand":"Walter"},
-      {"code":"","name":"Deep Kadai Medium, w/o Lid","qty":"1 pc","mrp":"₹865","brand":"Walter"},
+      {"code":"","name":"Deep Kadai Medium, With Lid","qty":"1 pc","mrp":"₹840","brand":"Walter"},
+      {"code":"","name":"Deep Kadai Medium, Without Lid","qty":"1 pc","mrp":"₹665","brand":"Walter"},
       {"code":"","name":"Deep Kadai, w/o Lid","qty":"3 pcs","mrp":"₹665","brand":""}
     ]},
     {"name":"Non-Stick Pans","items":[
-      {"code":"MHA-87337","name":"New S/S Side Jar","qty":"1 pc","mrp":"₹459","brand":"Sunset"},
+      {"code":"MHA-37C37","name":"New S/S Side Jar","qty":"1 Box","mrp":"₹459","brand":"Sunset"},
       {"code":"066717","name":"Non-Stick Frying Pan","qty":"1 pc","mrp":"₹1090","brand":"Futura"},
-      {"code":"47142","name":"Non-Stick, w/o S.S. Lid","qty":"","mrp":"","brand":"Patel"},
-      {"code":"2874576","name":"Non-Stick with Lid","qty":"","mrp":"₹720","brand":"Patel"},
+      {"code":"47142","name":"Non-Stick, w/o S.S. Lid","qty":"","mrp":"₹0","brand":"Patel"},
+      {"code":"2874576","name":"Non-Stick with Lid","qty":"","mrp":"₹790","brand":"Patel"},
       {"code":"59059","name":"Non-Stick, w/o Handle","qty":"","mrp":"₹620","brand":"Patel"},
-      {"code":"35379","name":"Multi-Pot, w/o Lid","qty":"1 pc","mrp":"₹855","brand":"Metallino"},
-      {"code":"","name":"Plastic Tawa, Regular","qty":"","mrp":"₹70","brand":"Milton"}
+      {"code":"35379","name":"Multi-Pot, w/o Lid","qty":"1 pc","mrp":"₹835","brand":"Metallino"}
     ]},
     {"name":"Bowls & Serving Sets","items":[
       {"code":"","name":"Metalino Kadai / Anodized?","qty":"2 pcs","mrp":"₹750","brand":"Metalino"},

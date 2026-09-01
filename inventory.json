@@ -1,8 +1,7 @@
 {
   "categories": [
-    {"name":"Chutney Attachments","items":[{"code":"C0207","name":"STAG PLUS Platinum Chutney Attachment - Silver","qty":"2 Boxes","mrp":"₹275","brand":"STAG PLUS"}]},
     {"name":"Juice Jars","items":[{"code":"","name":"Juice Jar","qty":"2 pcs","mrp":"₹350","brand":""}]},
-    {"name":"Jar Sets","items":[{"code":"","name":"8/N Jar Set, Dry/Wet","qty":"2 pcs","mrp":"₹485 (Dry) / ₹585 (Wet)","brand":""}]},
+    {"name":"Jar Sets","items":[{"code":"","name":"S/N Jar Set Dry","qty":"1 Box","mrp":"₹485","brand":""},{"code":"","name":"S/N Jar Set Wet","qty":"1 Box","mrp":"₹585","brand":""},{"code":"C0207","name":"STAG PLUS Platinum Chutney Attachment - Silver","qty":"2 Boxes","mrp":"₹275","brand":"STAG PLUS"}]},
     {"name":"Insulated Tiffin","items":[{"code":"040457","name":"Insulated Tiffin (S)","qty":"1 pc","mrp":"₹1195","brand":"Milton"},{"code":"040433","name":"Insulated Tiffin (B)","qty":"1 pc","mrp":"₹1740","brand":"Milton"}]},
     {"name":"Milk Boilers","items":[{"code":"030204","name":"Murugan Milk Boiler","qty":"3 pcs","mrp":"₹450","brand":"Murugan"}]},
     {"name":"Casseroles","items":[{"code":"019323","name":"Casserole Royal 1000","qty":"2 pcs","mrp":"₹415","brand":"Milton"},{"code":"019644","name":"Casserole Curve 1000","qty":"2 pcs","mrp":"₹445","brand":"Milton"},{"code":"017831","name":"Casserole Zest 1000","qty":"1 pc","mrp":"₹580","brand":"Milton"},{"code":"016889","name":"Casserole Crisp Deluxe 1200","qty":"2 Boxes","mrp":"₹580","brand":"Milton"},{"code":"019859","name":"Casserole Pearl 1000","qty":"1 pc","mrp":"₹550","brand":"Milton"},{"code":"361879","name":"Casserole","qty":"3 pcs","mrp":"₹845","brand":"ROYALE"}]},

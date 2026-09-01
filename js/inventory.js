@@ -21,7 +21,13 @@ function render() {
 
   inventoryEl.querySelectorAll('.category').forEach(section => section.remove());
 
-  categories.forEach(category => {
+  // Keep the master JSON in any convenient order, but always present
+  // categories alphabetically on the webpage.
+  const sortedCategories = [...categories].sort((a, b) =>
+    a.name.localeCompare(b.name, undefined, { sensitivity: 'base' })
+  );
+
+  sortedCategories.forEach(category => {
     const categoryMatch = category.name.toLowerCase().includes(query);
     const items = category.items.filter(item => {
       const text = [item.code, item.name, item.qty, item.mrp, item.brand].join(' ').toLowerCase();

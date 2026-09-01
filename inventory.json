@@ -1,9 +1,7 @@
 {
   "categories": [
-    {"name":"Juice Jars","items":[
-      {"code":"C0207","name":"STAG PLUS Platinum Chutney Attachment - Silver","qty":"2 Boxes","mrp":"₹275","brand":"STAG PLUS"},
-      {"code":"","name":"Juice Jar","qty":"2 pcs","mrp":"₹350","brand":""}
-    ]},
+    {"name":"Chutney Attachments","items":[{"code":"C0207","name":"STAG PLUS Platinum Chutney Attachment - Silver","qty":"2 Boxes","mrp":"₹275","brand":"STAG PLUS"}]},
+    {"name":"Juice Jars","items":[{"code":"","name":"Juice Jar","qty":"2 pcs","mrp":"₹350","brand":""}]},
     {"name":"Jar Sets","items":[{"code":"","name":"8/N Jar Set, Dry/Wet","qty":"2 pcs","mrp":"₹485 (Dry) / ₹585 (Wet)","brand":""}]},
     {"name":"Insulated Tiffin","items":[{"code":"040457","name":"Insulated Tiffin (S)","qty":"1 pc","mrp":"₹1195","brand":"Milton"},{"code":"040433","name":"Insulated Tiffin (B)","qty":"1 pc","mrp":"₹1740","brand":"Milton"}]},
     {"name":"Milk Boilers","items":[{"code":"030204","name":"Murugan Milk Boiler","qty":"3 pcs","mrp":"₹450","brand":"Murugan"}]},

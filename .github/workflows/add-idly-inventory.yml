@@ -1,0 +1,42 @@
+name: Add Idly Inventory
+on:
+  push:
+    paths:
+      - '.github/workflows/add-idly-inventory.yml'
+permissions:
+  contents: write
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Update inventory
+        run: |
+          node <<'NODE'
+          const fs=require('fs');
+          const p='inventory.json';
+          const d=JSON.parse(fs.readFileSync(p,'utf8'));
+          const n='Idly Cookers & Accessories';
+          const items=[
+          {code:'',name:'Smart Kitchen Idly Vessel - 6 plates',qty:'1 Box',mrp:'₹850',brand:'Smart Kitchen'},
+          {code:'740037',name:'Murugan Idly Cooker - 4 Plates',qty:'1 Box',mrp:'₹1100',brand:'Murugan'},
+          {code:'A362',name:'Candy Tree Cup Holder 6 Position',qty:'1 Box',mrp:'₹575',brand:'Candy Tree'},
+          {code:'740037',name:'Murugan Idly Cooker - 6 Plates',qty:'1 Box',mrp:'₹1300',brand:'Murugan'},
+          {code:'A364',name:'Candy Tree Cup Holder 8 Position',qty:'1 Box',mrp:'₹575',brand:'Candy Tree'},
+          {code:'692556',name:'Cup Holder Pleasure',qty:'2 Boxes',mrp:'₹575',brand:''},
+          {code:'1419',name:'Steam Lite Food Grade Aluminum Idli Stand',qty:'3 Boxes',mrp:'₹340',brand:'Steam Lite'}
+          ];
+          let c=d.categories.find(x=>x.name===n);
+          if(!c){c={name:n,items:[]};d.categories.push(c);}
+          const key=x=>JSON.stringify(x);
+          const have=new Set(c.items.map(key));
+          for(const x of items)if(!have.has(key(x))){c.items.push(x);have.add(key(x));}
+          d.categories.sort((a,b)=>a.name.localeCompare(b.name,undefined,{sensitivity:'base'}));
+          fs.writeFileSync(p,JSON.stringify(d,null,2)+'\n');
+          NODE
+          rm -f .github/workflows/add-idly-inventory.yml
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add inventory.json .github/workflows/add-idly-inventory.yml
+          git commit -m 'Add Idly Cookers and Accessories inventory'
+          git push

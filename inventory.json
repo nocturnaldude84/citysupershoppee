@@ -485,6 +485,20 @@
           "qty": "Boxes",
           "mrp": "₹595",
           "brand": "Cello"
+        },
+        {
+          "code": "131155",
+          "name": "Treo Ceramicware Kidz - O - Pia 3pcs Breakfast Set",
+          "qty": "1 Box",
+          "mrp": "₹575",
+          "brand": "Treo"
+        },
+        {
+          "code": "38164",
+          "name": "Barista Stainless Steel Double Wall Cup Set - 6 pcs",
+          "qty": "4 Boxes",
+          "mrp": "₹450",
+          "brand": "Barista"
         }
       ]
     },

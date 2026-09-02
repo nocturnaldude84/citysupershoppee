@@ -355,6 +355,32 @@
       ]
     },
     {
+      "name": "Coffee & Tea Makers",
+      "items": [
+        {
+          "code": "19927",
+          "name": "Coffee Cup Stainless Steel 3 pcs Set",
+          "qty": "4 Boxes",
+          "mrp": "₹295",
+          "brand": ""
+        },
+        {
+          "code": "24116",
+          "name": "Coffee Cup Stainless Steel 4 pcs Set",
+          "qty": "2 Boxes",
+          "mrp": "₹330",
+          "brand": ""
+        },
+        {
+          "code": "53329",
+          "name": "Italexpress Coffee Maker 12 cups",
+          "qty": "1 Box",
+          "mrp": "₹990",
+          "brand": "Italexpress"
+        }
+      ]
+    },
+    {
       "name": "Combs",
       "items": [
         {
@@ -917,6 +943,13 @@
           "qty": "3 Units",
           "mrp": "₹350/unit",
           "brand": ""
+        },
+        {
+          "code": "19676",
+          "name": "Shreepal Lemon Juicer Stainless Steel",
+          "qty": "6 Boxes",
+          "mrp": "₹342",
+          "brand": "Shreepal"
         }
       ]
     },
@@ -1175,6 +1208,62 @@
           "qty": "3 pcs",
           "mrp": "₹450",
           "brand": "Murugan"
+        },
+        {
+          "code": "",
+          "name": "Bhumi Stainless Steel Oil Pourer 1 Ltr",
+          "qty": "1 Box",
+          "mrp": "₹445",
+          "brand": "Bhumi"
+        },
+        {
+          "code": "",
+          "name": "Bhumi Stainless Steel Oil Pourer 750 ml",
+          "qty": "1 Box",
+          "mrp": "₹415",
+          "brand": "Bhumi"
+        },
+        {
+          "code": "35126",
+          "name": "Moksha Glass Oil Dispenser 750 ml",
+          "qty": "2 Boxes",
+          "mrp": "₹320",
+          "brand": "Moksha"
+        },
+        {
+          "code": "12066",
+          "name": "Moksha Glass Oil Dispenser 250 ml",
+          "qty": "6 Boxes",
+          "mrp": "₹250",
+          "brand": "Moksha"
+        },
+        {
+          "code": "35126",
+          "name": "Moksha Glass Oil Dispenser 500 ml",
+          "qty": "2 Boxes",
+          "mrp": "₹280",
+          "brand": "Moksha"
+        },
+        {
+          "code": "35126",
+          "name": "Moksha Glass Oil Dispenser 1 Ltr",
+          "qty": "2 Boxes",
+          "mrp": "₹350",
+          "brand": "Moksha"
+        },
+        {
+          "code": "",
+          "name": "Origin Oil Dispenser 1 Ltr",
+          "qty": "2 Boxes",
+          "mrp": "₹190",
+          "brand": "Origin"
+        },
+        {
+          "code": "",
+          "name": "Mazda Dream Oil Pourer 500 ml",
+          "qty": "1 Box",
+          "mrp": "₹605",
+          "brand": "Mazda"
         }
       ]
     },
@@ -1368,6 +1457,46 @@
           "qty": "1 Box",
           "mrp": "₹600",
           "brand": "Mithra"
+        },
+        {
+          "code": "",
+          "name": "Four Brothers Puttu Maker Stainless Steel",
+          "qty": "5 Boxes",
+          "mrp": "₹330",
+          "brand": "Four Brothers"
+        }
+      ]
+    },
+    {
+      "name": "Salt & Pepper Shakers",
+      "items": [
+        {
+          "code": "",
+          "name": "Shubham Plast Salt & Pepper Dispenser",
+          "qty": "1 Box",
+          "mrp": "₹360",
+          "brand": "Shubham Plast"
+        },
+        {
+          "code": "",
+          "name": "Plasto World Slide Salt & Pepper Dispenser 12 pcs",
+          "qty": "1 Box",
+          "mrp": "₹408",
+          "brand": "Plasto World"
+        },
+        {
+          "code": "",
+          "name": "Sunlife Industries Tadka Salt & Pepper Shaker 12pcs",
+          "qty": "1 Box",
+          "mrp": "₹360",
+          "brand": "Sunlife Industries"
+        },
+        {
+          "code": "",
+          "name": "Sunlife Industries Chatka Salt & Pepper Shaker 12pcs",
+          "qty": "1 Box",
+          "mrp": "₹360",
+          "brand": "Sunlife Industries"
         }
       ]
     },

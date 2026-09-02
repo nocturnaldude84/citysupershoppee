@@ -499,6 +499,20 @@
           "qty": "4 Boxes",
           "mrp": "₹450",
           "brand": "Barista"
+        },
+        {
+          "code": "234528",
+          "name": "Treo by Milton Munich Cool 359 Beer Mug Set 2 pcs",
+          "qty": "1 Box",
+          "mrp": "₹410",
+          "brand": "Treo by Milton"
+        },
+        {
+          "code": "237710",
+          "name": "Treo by Milton Marble 240 Ceramic Mug Set 6pcs",
+          "qty": "3 Boxes",
+          "mrp": "₹1095",
+          "brand": "Treo by Milton"
         }
       ]
     },

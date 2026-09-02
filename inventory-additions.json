@@ -30,6 +30,53 @@
           "brand": "Jatin"
         }
       ]
+    },
+    {
+      "name": "Lighting & Torches",
+      "items": [
+        {
+          "code": "011318",
+          "name": "Eveready Digi LED - DL64 Brass Torch",
+          "qty": "3 Boxes",
+          "mrp": "₹315",
+          "brand": "Eveready"
+        },
+        {
+          "code": "011318",
+          "name": "Eveready Digi LED - DL63 Brass Torch",
+          "qty": "1 Box",
+          "mrp": "₹430",
+          "brand": "Eveready"
+        },
+        {
+          "code": "011615",
+          "name": "Eveready Digi LED - DL65 Brass Torch",
+          "qty": "1 Box",
+          "mrp": "₹550",
+          "brand": "Eveready"
+        },
+        {
+          "code": "013398",
+          "name": "Eveready Shine 0.75W Torch - DL06",
+          "qty": "1 Box",
+          "mrp": "₹165",
+          "brand": "Eveready"
+        },
+        {
+          "code": "017303",
+          "name": "Eveready DL47 0.75W Torch",
+          "qty": "3 Boxes",
+          "mrp": "₹145",
+          "brand": "Eveready"
+        },
+        {
+          "code": "021355",
+          "name": "Eveready DL90 1W Rechargeable Torch",
+          "qty": "3 Boxes",
+          "mrp": "₹220",
+          "brand": "Eveready"
+        }
+      ]
     }
   ]
 }

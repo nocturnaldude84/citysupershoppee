@@ -848,25 +848,6 @@
       ]
     },
     {
-      "name": "Insulated Tiffin",
-      "items": [
-        {
-          "code": "040457",
-          "name": "Insulated Tiffin (S)",
-          "qty": "1 pc",
-          "mrp": "₹1195",
-          "brand": "Milton"
-        },
-        {
-          "code": "040433",
-          "name": "Insulated Tiffin (B)",
-          "qty": "1 pc",
-          "mrp": "₹1740",
-          "brand": "Milton"
-        }
-      ]
-    },
-    {
       "name": "Jar Sets",
       "items": [
         {
@@ -1184,6 +1165,20 @@
           "qty": "13 Boxes",
           "mrp": "₹224",
           "brand": "Patel Plastoware"
+        },
+        {
+          "code": "040457",
+          "name": "Insulated Tiffin (S)",
+          "qty": "1 pc",
+          "mrp": "₹1195",
+          "brand": "Milton"
+        },
+        {
+          "code": "040433",
+          "name": "Insulated Tiffin (B)",
+          "qty": "1 pc",
+          "mrp": "₹1740",
+          "brand": "Milton"
         }
       ]
     },

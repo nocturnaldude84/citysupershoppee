@@ -14,6 +14,24 @@ function escapeHtml(value = '') {
   }[char]));
 }
 
+function mergeCategories(base = [], additions = []) {
+  const merged = base.map(category => ({ ...category, items: [...(category.items || [])] }));
+
+  additions.forEach(category => {
+    const existing = merged.find(item =>
+      item.name.toLowerCase() === category.name.toLowerCase()
+    );
+
+    if (existing) {
+      existing.items.push(...(category.items || []));
+    } else {
+      merged.push({ ...category, items: [...(category.items || [])] });
+    }
+  });
+
+  return merged;
+}
+
 function render() {
   const query = searchEl.value.trim().toLowerCase();
   let visibleCategories = 0;
@@ -86,14 +104,20 @@ function setAll(expanded) {
 
 async function loadInventory() {
   try {
-    // inventory.json is the single source of truth. The page must not depend
-    // on a separate additions file that may not exist in the repository.
-    const response = await fetch('inventory.json', { cache: 'no-store' });
+    const [inventoryResponse, additionsResponse] = await Promise.all([
+      fetch('inventory.json', { cache: 'no-store' }),
+      fetch('inventory-additions.json', { cache: 'no-store' })
+    ]);
 
-    if (!response.ok) throw new Error(`inventory.json HTTP ${response.status}`);
+    if (!inventoryResponse.ok) throw new Error(`inventory.json HTTP ${inventoryResponse.status}`);
+    if (!additionsResponse.ok) throw new Error(`inventory-additions.json HTTP ${additionsResponse.status}`);
 
-    const data = await response.json();
-    categories = data.categories || [];
+    const [inventoryData, additionsData] = await Promise.all([
+      inventoryResponse.json(),
+      additionsResponse.json()
+    ]);
+
+    categories = mergeCategories(inventoryData.categories || [], additionsData.categories || []);
     render();
   } catch (error) {
     console.error('Unable to load inventory:', error);

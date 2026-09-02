@@ -29,7 +29,24 @@ function mergeCategories(base = [], additions = []) {
     }
   });
 
-  return merged;
+  // These Eveready torch entries were previously sitting in unrelated categories.
+  // Keep the source JSON untouched for now, but render the corrected inventory only
+  // under Lighting & Torches.
+  const oldEvereadyEntries = new Set([
+    'Eveready DL65',
+    'Eveready Digit LED',
+    'Eveready Shine',
+    'Eveready DL90'
+  ]);
+
+  return merged.map(category => {
+    if (category.name.toLowerCase() === 'lighting & torches') return category;
+
+    return {
+      ...category,
+      items: (category.items || []).filter(item => !oldEvereadyEntries.has(item.name))
+    };
+  });
 }
 
 function render() {

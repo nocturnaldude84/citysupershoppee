@@ -83,14 +83,14 @@
           "name": "Bowl Set",
           "qty": "1 pc",
           "mrp": "₹1250",
-          "brand": "Lamerma"
+          "brand": "La Melma"
         },
         {
           "code": "",
           "name": "Serving Bowl Set, w/Lid & Spoon",
           "qty": "2 pcs",
           "mrp": "₹385",
-          "brand": "Lamerma"
+          "brand": "La Melma"
         },
         {
           "code": "",
@@ -121,9 +121,9 @@
           "brand": ""
         },
         {
-          "code": "83657",
-          "name": "Ogil 6/ware Set",
-          "qty": "3 pcs",
+          "code": "33657",
+          "name": "Deli Glassware Set",
+          "qty": "3 Boxes",
           "mrp": "₹530",
           "brand": ""
         },
@@ -807,7 +807,7 @@
         },
         {
           "code": "515086",
-          "name": "La Opalia Borosilicate Preserve N Store with Vaccum Lid 150 ml",
+          "name": "La Opalia Borosilicate Preserve N Store with Vacuum Lid 150 ml",
           "qty": "1 Box",
           "mrp": "₹575",
           "brand": "La Opala"
@@ -860,7 +860,7 @@
           "brand": "Candy Tree"
         },
         {
-          "code": "692556",
+          "code": "A382",
           "name": "Cup Holder Pleasure",
           "qty": "2 Boxes",
           "mrp": "₹575",
@@ -1113,7 +1113,7 @@
         {
           "code": "17845",
           "name": "Heat Preservation Lunch Box",
-          "qty": "Boxes",
+          "qty": "1 Box",
           "mrp": "₹550",
           "brand": ""
         },
@@ -1134,14 +1134,14 @@
         {
           "code": "",
           "name": "Patel Plastoware Zig Zag Insulated Lunch Carrier",
-          "qty": "Boxes",
+          "qty": "1 Box",
           "mrp": "₹360",
           "brand": "Patel Plastoware"
         },
         {
           "code": "42806",
           "name": "Patel Plastoware Apple Big Insulated Lunch Pack",
-          "qty": "Boxes",
+          "qty": "1 Box",
           "mrp": "₹303",
           "brand": "Patel Plastoware"
         },
@@ -1155,9 +1155,9 @@
         {
           "code": "",
           "name": "Sci Borneo Japan",
-          "qty": "Boxes",
+          "qty": "1 Box",
           "mrp": "₹550",
-          "brand": "Borneo Japan"
+          "brand": "Sci"
         },
         {
           "code": "",
@@ -1261,14 +1261,14 @@
           "brand": "Moksha"
         },
         {
-          "code": "35126",
+          "code": "35225",
           "name": "Moksha Glass Oil Dispenser 500 ml",
           "qty": "2 Boxes",
           "mrp": "₹280",
           "brand": "Moksha"
         },
         {
-          "code": "35126",
+          "code": "4984",
           "name": "Moksha Glass Oil Dispenser 1 Ltr",
           "qty": "2 Boxes",
           "mrp": "₹350",

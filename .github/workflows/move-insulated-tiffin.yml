@@ -1,0 +1,49 @@
+name: Move Insulated Tiffin
+
+on:
+  push:
+    paths:
+      - '.github/workflows/move-insulated-tiffin.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  move:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Move Insulated Tiffin items
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+
+          path = Path('inventory.json')
+          data = json.loads(path.read_text(encoding='utf-8'))
+          categories = data.get('categories', [])
+
+          source = next((c for c in categories if c.get('name', '').strip().lower() == 'insulated tiffin'), None)
+          target = next((c for c in categories if c.get('name', '').strip().lower() == 'lunch boxes & carriers'), None)
+
+          if source is None:
+              raise SystemExit('Insulated Tiffin category not found')
+          if target is None:
+              raise SystemExit('Lunch Boxes & Carriers category not found')
+
+          target.setdefault('items', []).extend(source.get('items', []))
+          categories.remove(source)
+          categories.sort(key=lambda c: c.get('name', '').lower())
+
+          path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+          PY
+
+      - name: Commit inventory and remove temporary workflow
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          rm -f .github/workflows/move-insulated-tiffin.yml
+          git add inventory.json .github/workflows/move-insulated-tiffin.yml
+          git commit -m "Move insulated tiffin items to lunch boxes" || exit 0
+          git push

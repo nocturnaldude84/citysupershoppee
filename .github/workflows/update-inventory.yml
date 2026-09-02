@@ -25,21 +25,23 @@ jobs:
           additions = json.loads(additions_path.read_text(encoding="utf-8"))
 
           categories = data.setdefault("categories", [])
-          for addition in additions:
-              category_name = addition["category"]
+          addition_categories = additions.get("categories", [])
+
+          for addition_category in addition_categories:
+              category_name = addition_category["name"]
               category = next((c for c in categories if c.get("name", "").casefold() == category_name.casefold()), None)
               if category is None:
                   category = {"name": category_name, "items": []}
                   categories.append(category)
 
-              item = addition["item"]
-              exists = any(
-                  (item.get("code") and x.get("code") == item.get("code")) or
-                  (x.get("name", "").casefold() == item.get("name", "").casefold())
-                  for x in category.get("items", [])
-              )
-              if not exists:
-                  category.setdefault("items", []).append(item)
+              for item in addition_category.get("items", []):
+                  exists = any(
+                      (item.get("code") and x.get("code") == item.get("code") and x.get("name", "").casefold() == item.get("name", "").casefold()) or
+                      (x.get("name", "").casefold() == item.get("name", "").casefold())
+                      for x in category.get("items", [])
+                  )
+                  if not exists:
+                      category.setdefault("items", []).append(item)
 
           categories.sort(key=lambda c: c.get("name", "").casefold())
           for category in categories:

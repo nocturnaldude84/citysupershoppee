@@ -14,27 +14,6 @@ function escapeHtml(value = '') {
   }[char]));
 }
 
-function mergeCategories(baseCategories, additionCategories) {
-  const merged = baseCategories.map(category => ({
-    ...category,
-    items: [...(category.items || [])]
-  }));
-
-  for (const category of additionCategories || []) {
-    const existing = merged.find(item => item.name.toLowerCase() === category.name.toLowerCase());
-    if (existing) {
-      existing.items.push(...(category.items || []));
-    } else {
-      merged.push({
-        ...category,
-        items: [...(category.items || [])]
-      });
-    }
-  }
-
-  return merged;
-}
-
 function render() {
   const query = searchEl.value.trim().toLowerCase();
   let visibleCategories = 0;
@@ -42,15 +21,13 @@ function render() {
 
   inventoryEl.querySelectorAll('.category').forEach(section => section.remove());
 
-  // Keep the master JSON in any convenient order, but always present
-  // categories alphabetically on the webpage.
   const sortedCategories = [...categories].sort((a, b) =>
     a.name.localeCompare(b.name, undefined, { sensitivity: 'base' })
   );
 
   sortedCategories.forEach(category => {
     const categoryMatch = category.name.toLowerCase().includes(query);
-    const items = category.items.filter(item => {
+    const items = (category.items || []).filter(item => {
       const text = [item.code, item.name, item.qty, item.mrp, item.brand].join(' ').toLowerCase();
       return !query || categoryMatch || text.includes(query);
     });
@@ -92,6 +69,7 @@ function render() {
 
   categoryCountEl.textContent = visibleCategories;
   itemCountEl.textContent = visibleItems;
+  emptyEl.textContent = visibleCategories ? '' : 'No inventory items found.';
   emptyEl.style.display = visibleCategories ? 'none' : 'block';
 }
 
@@ -108,17 +86,14 @@ function setAll(expanded) {
 
 async function loadInventory() {
   try {
-    const [inventoryResponse, additionsResponse] = await Promise.all([
-      fetch('inventory.json', { cache: 'no-store' }),
-      fetch('inventory-additions.json', { cache: 'no-store' })
-    ]);
+    // inventory.json is the single source of truth. The page must not depend
+    // on a separate additions file that may not exist in the repository.
+    const response = await fetch('inventory.json', { cache: 'no-store' });
 
-    if (!inventoryResponse.ok) throw new Error(`inventory.json HTTP ${inventoryResponse.status}`);
-    if (!additionsResponse.ok) throw new Error(`inventory-additions.json HTTP ${additionsResponse.status}`);
+    if (!response.ok) throw new Error(`inventory.json HTTP ${response.status}`);
 
-    const data = await inventoryResponse.json();
-    const additions = await additionsResponse.json();
-    categories = mergeCategories(data.categories || [], additions.categories || []);
+    const data = await response.json();
+    categories = data.categories || [];
     render();
   } catch (error) {
     console.error('Unable to load inventory:', error);

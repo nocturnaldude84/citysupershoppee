@@ -1,0 +1,42 @@
+name: Normalize Mazda inventory quantity fields
+
+on:
+  push:
+    paths:
+      - '.github/workflows/normalize-mazda-qty.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Normalize Mazda entries
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          path = Path('inventory.json')
+          data = json.loads(path.read_text(encoding='utf-8'))
+          for category in data['categories']:
+              for item in category.get('items', []):
+                  if item.get('name') in {
+                      'Mazda Classic Jumbo 6pcs',
+                      'Mazda Classic Large 6pcs',
+                      'Mazda Cuttee Jumbo 6pcs',
+                      'Mazda Cuttee Large 6pcs',
+                      'Mazda Opium Medium 6pcs'
+                  }:
+                      item['qty'] = ''
+          path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+          PY
+      - name: Commit inventory and remove temporary workflow
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          rm -f .github/workflows/normalize-mazda-qty.yml
+          git add inventory.json .github/workflows/normalize-mazda-qty.yml
+          git commit -m 'Normalize Mazda inventory quantity fields'
+          git push

@@ -1,0 +1,68 @@
+name: Add latest inventory
+on:
+  push:
+    paths:
+      - .github/workflows/add-latest-inventory.yml
+permissions:
+  contents: write
+jobs:
+  add:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Update inventory
+        run: |
+          python3 - <<'PY'
+          import json
+          p='inventory.json'
+          with open(p,encoding='utf-8') as f: data=json.load(f)
+          cats=data['categories']
+          def getcat(keywords, fallback):
+              for c in cats:
+                  n=c['name'].lower()
+                  if any(k in n for k in keywords): return c
+              c={'name':fallback,'items':[]}; cats.append(c); return c
+          groups={
+            'coffee': getcat(['coffee'], 'Coffee & Tea Makers'),
+            'puttu': getcat(['puttu'], 'Puttu Maker'),
+            'oil': getcat(['oil'], 'Oil Pourers & Dispensers'),
+            'juicer': getcat(['juicer','juice'], 'Juicers'),
+            'salt': getcat(['salt & pepper','salt and pepper','salt'], 'Salt & Pepper Shakers'),
+          }
+          entries=[
+            ('coffee','19927','Coffee Cup Stainless Steel 3 pcs Set','4 Boxes','₹295',''),
+            ('coffee','24116','Coffee Cup Stainless Steel 4 pcs Set','2 Boxes','₹330',''),
+            ('coffee','53329','Italexpress Coffee Maker 12 cups','1 Box','₹990','Italexpress'),
+            ('puttu','','Four Brothers Puttu Maker Stainless Steel','5 Boxes','₹330','Four Brothers'),
+            ('oil','','Bhumi Stainless Steel Oil Pourer 1 Ltr','1 Box','₹445','Bhumi'),
+            ('oil','','Bhumi Stainless Steel Oil Pourer 750 ml','1 Box','₹415','Bhumi'),
+            ('oil','35126','Moksha Glass Oil Dispenser 750 ml','2 Boxes','₹320','Moksha'),
+            ('oil','12066','Moksha Glass Oil Dispenser 250 ml','6 Boxes','₹250','Moksha'),
+            ('oil','35126','Moksha Glass Oil Dispenser 500 ml','2 Boxes','₹280','Moksha'),
+            ('oil','35126','Moksha Glass Oil Dispenser 1 Ltr','2 Boxes','₹350','Moksha'),
+            ('oil','','Origin Oil Dispenser 1 Ltr','2 Boxes','₹190','Origin'),
+            ('juicer','19676','Shreepal Lemon Juicer Stainless Steel','6 Boxes','₹342','Shreepal'),
+            ('oil','','Mazda Dream Oil Pourer 500 ml','1 Box','₹605','Mazda'),
+            ('salt','','Shubham Plast Salt & Pepper Dispenser','1 Box','₹360','Shubham Plast'),
+            ('salt','','Plasto World Slide Salt & Pepper Dispenser 12 pcs','1 Box','₹408','Plasto World'),
+            ('salt','','Sunlife Industries Tadka Salt & Pepper Shaker 12pcs','1 Box','₹360','Sunlife Industries'),
+            ('salt','','Sunlife Industries Chatka Salt & Pepper Shaker 12pcs','1 Box','₹360','Sunlife Industries'),
+          ]
+          def exists(item):
+              return any((x.get('name','').strip().lower()==item['name'].strip().lower()) and (not item['code'] or x.get('code','')==item['code']) for c in cats for x in c.get('items',[]))
+          for key,code,name,qty,mrp,brand in entries:
+              item={'code':code,'name':name,'qty':qty,'mrp':mrp,'brand':brand}
+              if not exists(item): groups[key]['items'].append(item)
+          cats.sort(key=lambda c:c['name'].lower())
+          with open(p,'w',encoding='utf-8') as f: json.dump(data,f,ensure_ascii=False,indent=2); f.write('\n')
+          PY
+      - name: Commit changes and remove temporary workflow
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add inventory.json
+          git commit -m 'Add coffee, puttu, oil, juicer and seasoning inventory' || true
+          git push
+          git rm .github/workflows/add-latest-inventory.yml
+          git commit -m 'Remove temporary inventory update workflow'
+          git push

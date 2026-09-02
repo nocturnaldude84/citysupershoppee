@@ -1,0 +1,35 @@
+{
+  "categories": [
+    {
+      "name": "Vegetable Cutters",
+      "items": [
+        {
+          "code": "",
+          "name": "Head kvarters Vegetable with French Fry Cutting",
+          "qty": "1 Box",
+          "mrp": "₹945",
+          "brand": ""
+        },
+        {
+          "code": "39526",
+          "name": "Miracle Potato and Vegetable Chipser with Container",
+          "qty": "1 Box",
+          "mrp": "₹799",
+          "brand": "Miracle"
+        }
+      ]
+    },
+    {
+      "name": "Cloth Clips",
+      "items": [
+        {
+          "code": "10854",
+          "name": "Jatin Stainless Steel Cloth Clip 6 Dozen",
+          "qty": "1 Box",
+          "mrp": "₹900 · ₹150/6 pcs",
+          "brand": "Jatin"
+        }
+      ]
+    }
+  ]
+}

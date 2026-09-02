@@ -1,0 +1,57 @@
+name: Update Inventory
+
+on:
+  push:
+    paths:
+      - "inventory-additions.json"
+
+permissions:
+  contents: write
+
+jobs:
+  update-inventory:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Apply inventory additions
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+
+          inv_path = Path("inventory.json")
+          additions_path = Path("inventory-additions.json")
+          data = json.loads(inv_path.read_text(encoding="utf-8"))
+          additions = json.loads(additions_path.read_text(encoding="utf-8"))
+
+          categories = data.setdefault("categories", [])
+          for addition in additions:
+              category_name = addition["category"]
+              category = next((c for c in categories if c.get("name", "").casefold() == category_name.casefold()), None)
+              if category is None:
+                  category = {"name": category_name, "items": []}
+                  categories.append(category)
+
+              item = addition["item"]
+              exists = any(
+                  (item.get("code") and x.get("code") == item.get("code")) or
+                  (x.get("name", "").casefold() == item.get("name", "").casefold())
+                  for x in category.get("items", [])
+              )
+              if not exists:
+                  category.setdefault("items", []).append(item)
+
+          categories.sort(key=lambda c: c.get("name", "").casefold())
+          for category in categories:
+              category["items"].sort(key=lambda x: x.get("name", "").casefold())
+
+          inv_path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+          additions_path.unlink()
+          PY
+      - name: Commit inventory update
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add inventory.json inventory-additions.json
+          git diff --cached --quiet || git commit -m "Add new inventory items"
+          git push

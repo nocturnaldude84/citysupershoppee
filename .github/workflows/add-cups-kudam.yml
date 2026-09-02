@@ -1,6 +1,7 @@
 name: Add Cups and Kudam Inventory
 on:
-  workflow_dispatch:
+  push:
+    branches: [main]
 permissions:
   contents: write
 jobs:
@@ -24,15 +25,18 @@ jobs:
               cats.append(c)
               return c
           cups = cat('Cups & Saucers')
-          cups['items'].extend([
+          wanted = [
               {'code':'','name':'RK Plastoware 222 Steel Cup With Lid - 6pcs/Box 350ml','qty':'2 Boxes · 6 pcs/box','mrp':'₹126/pc, ₹756/Box','brand':'RK Plastoware'},
               {'code':'','name':'Cello Designer Crockery Cup and Saucer - 12pcs (6 Cups 6 Saucers) Blossom','qty':'Boxes','mrp':'₹799','brand':'Cello'},
               {'code':'','name':'Cello Designer Crockery Cup and Saucer - 12pcs (6 Cups 6 Saucers) Livid Lilac','qty':'Boxes','mrp':'₹799','brand':'Cello'},
               {'code':'','name':'Cello Designer Crockery Cup and Saucer - 12pcs (6 Cups 6 Saucers) Magical Star','qty':'Boxes','mrp':'₹799','brand':'Cello'},
               {'code':'','name':'Cello Designer Crockery Cup and Saucer - 8pcs (4 Cups 4 Saucers) Hanging Garden','qty':'Boxes','mrp':'₹595','brand':'Cello'},
-          ])
+          ]
+          for item in wanted:
+              if not any(x.get('name') == item['name'] for x in cups['items']): cups['items'].append(item)
           storage = cat('Storage Containers')
-          storage['items'].append({'code':'SSPK','name':'Sheetal Putti Kudam','qty':'4 Boxes','mrp':'₹499','brand':'Sheetal'})
+          item = {'code':'SSPK','name':'Sheetal Putti Kudam','qty':'4 Boxes','mrp':'₹499','brand':'Sheetal'}
+          if not any(x.get('code') == 'SSPK' or x.get('name') == item['name'] for x in storage['items']): storage['items'].append(item)
           p.write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
           PY
       - name: Commit changes

@@ -1257,13 +1257,6 @@
           "brand": "Vansmart"
         },
         {
-          "code": "",
-          "name": "Mithra Puttu Maker",
-          "qty": "1 Box",
-          "mrp": "₹600",
-          "brand": "Mithra"
-        },
-        {
           "code": "695853",
           "name": "Square Glass Crisper",
           "qty": "1 Box",
@@ -1372,8 +1365,8 @@
         {
           "code": "",
           "name": "Mithra Puttu Maker",
-          "qty": "",
-          "mrp": "",
+          "qty": "1 Box",
+          "mrp": "₹600",
           "brand": "Mithra"
         }
       ]

@@ -583,6 +583,41 @@
           "qty": "1 Box",
           "mrp": "₹575",
           "brand": "Treo"
+        },
+        {
+          "code": "",
+          "name": "Mazda Classic Jumbo 6pcs",
+          "qty": "6 pcs/box",
+          "mrp": "₹1489/Box · ₹250/piece",
+          "brand": "Mazda"
+        },
+        {
+          "code": "",
+          "name": "Mazda Classic Large 6pcs",
+          "qty": "6 pcs/box",
+          "mrp": "₹1391/Box · ₹245/piece",
+          "brand": "Mazda"
+        },
+        {
+          "code": "",
+          "name": "Mazda Cuttee Jumbo 6pcs",
+          "qty": "6 pcs/box",
+          "mrp": "₹1693/Box · ₹295/piece",
+          "brand": "Mazda"
+        },
+        {
+          "code": "",
+          "name": "Mazda Cuttee Large 6pcs",
+          "qty": "6 pcs/box",
+          "mrp": "₹1391/Box · ₹245/piece",
+          "brand": "Mazda"
+        },
+        {
+          "code": "",
+          "name": "Mazda Opium Medium 6pcs",
+          "qty": "6 pcs/box",
+          "mrp": "₹1246/Box · ₹210/piece",
+          "brand": "Mazda"
         }
       ]
     },
@@ -756,6 +791,20 @@
           "name": "Stag Plus LPG PAN Support Stand",
           "qty": "2 Boxes",
           "mrp": "₹300",
+          "brand": "Stag Plus"
+        },
+        {
+          "code": "C0220",
+          "name": "Stag Plus LPG PAN Support Stand",
+          "qty": "2 Boxes",
+          "mrp": "₹220",
+          "brand": "Stag Plus"
+        },
+        {
+          "code": "C0222",
+          "name": "Stag Plus LPG PAN Support Stand",
+          "qty": "2 Boxes",
+          "mrp": "₹220",
           "brand": "Stag Plus"
         }
       ]

@@ -39,8 +39,21 @@ function mergeCategories(base = [], additions = []) {
     'Eveready DL90'
   ]);
 
+  const renamedItems = {
+    'Akari Plus AK-1660': 'Akari Plus LED Rechargeable Emergency Light AK-1660',
+    'Akari Plus AK-505S': 'Akari Plus LED Light AK-505S'
+  };
+
   return merged.map(category => {
-    if (category.name.toLowerCase() === 'lighting & torches') return category;
+    if (category.name.toLowerCase() === 'lighting & torches') {
+      return {
+        ...category,
+        items: (category.items || []).map(item => ({
+          ...item,
+          name: renamedItems[item.name] || item.name
+        }))
+      };
+    }
 
     return {
       ...category,

@@ -14,6 +14,27 @@ function escapeHtml(value = '') {
   }[char]));
 }
 
+function mergeCategories(baseCategories, additionCategories) {
+  const merged = baseCategories.map(category => ({
+    ...category,
+    items: [...(category.items || [])]
+  }));
+
+  for (const category of additionCategories || []) {
+    const existing = merged.find(item => item.name.toLowerCase() === category.name.toLowerCase());
+    if (existing) {
+      existing.items.push(...(category.items || []));
+    } else {
+      merged.push({
+        ...category,
+        items: [...(category.items || [])]
+      });
+    }
+  }
+
+  return merged;
+}
+
 function render() {
   const query = searchEl.value.trim().toLowerCase();
   let visibleCategories = 0;
@@ -87,10 +108,17 @@ function setAll(expanded) {
 
 async function loadInventory() {
   try {
-    const response = await fetch('inventory.json', { cache: 'no-store' });
-    if (!response.ok) throw new Error(`HTTP ${response.status}`);
-    const data = await response.json();
-    categories = data.categories || [];
+    const [inventoryResponse, additionsResponse] = await Promise.all([
+      fetch('inventory.json', { cache: 'no-store' }),
+      fetch('inventory-additions.json', { cache: 'no-store' })
+    ]);
+
+    if (!inventoryResponse.ok) throw new Error(`inventory.json HTTP ${inventoryResponse.status}`);
+    if (!additionsResponse.ok) throw new Error(`inventory-additions.json HTTP ${additionsResponse.status}`);
+
+    const data = await inventoryResponse.json();
+    const additions = await additionsResponse.json();
+    categories = mergeCategories(data.categories || [], additions.categories || []);
     render();
   } catch (error) {
     console.error('Unable to load inventory:', error);

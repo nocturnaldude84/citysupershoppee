@@ -1,221 +1,48 @@
 {
+  "batch": "2026-09-02-mugs-lpg",
   "categories": [
     {
       "name": "Cups & Saucers",
       "items": [
-        {
-          "code": "",
-          "name": "Hansa Fine Porcelain Saucer 14cm",
-          "qty": "2 Boxes · 6 pcs/box",
-          "mrp": "₹85/piece",
-          "brand": "Hansa"
-        },
-        {
-          "code": "572907",
-          "name": "Super Mom Milk Mug 300 ml",
-          "qty": "3 Boxes · 2 pcs/box",
-          "mrp": "₹375",
-          "brand": "Super Mom"
-        },
-        {
-          "code": "582037",
-          "name": "Super Mom Breaktime Mug 300 ml",
-          "qty": "1 Box · 1 unit/box",
-          "mrp": "₹275",
-          "brand": "Super Mom"
-        },
-        {
-          "code": "C0517",
-          "name": "Celebration Mug",
-          "qty": "10 Boxes · 1 unit/box",
-          "mrp": "₹125",
-          "brand": ""
-        },
-        {
-          "code": "",
-          "name": "Apex Shake Mug 2 pc Set",
-          "qty": "1 Box",
-          "mrp": "₹180",
-          "brand": "Apex"
-        },
-        {
-          "code": "",
-          "name": "Mazda Stainless Steel Tea & Coffee Mugs Classic Jumbo 6pcs",
-          "qty": "Boxes · 6 pcs/box",
-          "mrp": "₹1489/Box · ₹250/piece",
-          "brand": "Mazda"
-        },
-        {
-          "code": "",
-          "name": "Mazda Stainless Steel Tea & Coffee Mugs Classic Large 6pcs",
-          "qty": "Boxes · 6 pcs/box",
-          "mrp": "₹1391/Box · ₹245/piece",
-          "brand": "Mazda"
-        },
-        {
-          "code": "",
-          "name": "Mazda Stainless Steel Tea & Coffee Mugs Cuttee Jumbo 6pcs",
-          "qty": "Boxes · 6 pcs/box",
-          "mrp": "₹1693/Box · ₹295/piece",
-          "brand": "Mazda"
-        },
-        {
-          "code": "",
-          "name": "Mazda Stainless Steel Tea & Coffee Mugs Cuttee Large 6pcs",
-          "qty": "Boxes · 6 pcs/box",
-          "mrp": "₹1391/Box · ₹245/piece",
-          "brand": "Mazda"
-        },
-        {
-          "code": "",
-          "name": "Mazda Stainless Steel Tea & Coffee Mugs Opium Medium 6pcs",
-          "qty": "Boxes · 6 pcs/box",
-          "mrp": "₹1246/Box · ₹210/piece",
-          "brand": "Mazda"
-        }
+        {"code":"","name":"Hansa Fine Porcelain Saucer 14cm","qty":"2 Boxes · 6 pcs/box","mrp":"₹85/piece","brand":"Hansa"},
+        {"code":"572907","name":"Super Mom Milk Mug 300 ml","qty":"3 Boxes · 2 pcs/box","mrp":"₹375","brand":"Super Mom"},
+        {"code":"582037","name":"Super Mom Breaktime Mug 300 ml","qty":"1 Box · 1 unit/box","mrp":"₹275","brand":"Super Mom"},
+        {"code":"C0517","name":"Celebration Mug","qty":"10 Boxes · 1 unit/box","mrp":"₹125","brand":""},
+        {"code":"","name":"Apex Shake Mug 2 pc Set","qty":"1 Box","mrp":"₹180","brand":"Apex"},
+        {"code":"","name":"Mazda Stainless Steel Tea & Coffee Mugs Classic Jumbo 6pcs","qty":"Boxes · 6 pcs/box","mrp":"₹1489/Box · ₹250/piece","brand":"Mazda"},
+        {"code":"","name":"Mazda Stainless Steel Tea & Coffee Mugs Classic Large 6pcs","qty":"Boxes · 6 pcs/box","mrp":"₹1391/Box · ₹245/piece","brand":"Mazda"},
+        {"code":"","name":"Mazda Stainless Steel Tea & Coffee Mugs Cuttee Jumbo 6pcs","qty":"Boxes · 6 pcs/box","mrp":"₹1693/Box · ₹295/piece","brand":"Mazda"},
+        {"code":"","name":"Mazda Stainless Steel Tea & Coffee Mugs Cuttee Large 6pcs","qty":"Boxes · 6 pcs/box","mrp":"₹1391/Box · ₹245/piece","brand":"Mazda"},
+        {"code":"","name":"Mazda Stainless Steel Tea & Coffee Mugs Opium Medium 6pcs","qty":"Boxes · 6 pcs/box","mrp":"₹1246/Box · ₹210/piece","brand":"Mazda"}
       ]
     },
     {
       "name": "Glass Sets",
       "items": [
-        {
-          "code": "",
-          "name": "Delisoga Deli Glassware 6pcs 175 ML",
-          "qty": "3 Boxes",
-          "mrp": "₹550",
-          "brand": "Delisoga"
-        },
-        {
-          "code": "",
-          "name": "Luminarc MartiguesbHb Tumbler 1 Set 6 pcs",
-          "qty": "2 Boxes",
-          "mrp": "₹655",
-          "brand": "Luminarc"
-        },
-        {
-          "code": "C0529",
-          "name": "Qing Ping Guo Deli Glass Glass Press Tumbler 6pcs",
-          "qty": "3 Boxes",
-          "mrp": "₹650",
-          "brand": "Qing Ping Guo"
-        },
-        {
-          "code": "C0537",
-          "name": "Qing Ping Guo Deli Glass Sunrise Mug 6pcs",
-          "qty": "2 Boxes",
-          "mrp": "₹650",
-          "brand": "Qing Ping Guo"
-        },
-        {
-          "code": "C0538",
-          "name": "Delisoga Deli Glassware 6pcs 340ml",
-          "qty": "2 Boxes",
-          "mrp": "₹675",
-          "brand": "Delisoga"
-        },
-        {
-          "code": "C0526",
-          "name": "Delisoga Deli Glassware 6pcs 190ml",
-          "qty": "2 Boxes",
-          "mrp": "₹850",
-          "brand": "Delisoga"
-        },
-        {
-          "code": "33659",
-          "name": "Qing Ping Guo Deli Glassware 6pcs 130ml",
-          "qty": "1 Box",
-          "mrp": "₹485",
-          "brand": "Qing Ping Guo"
-        },
-        {
-          "code": "15210",
-          "name": "Qing Ping Guo Deli Glassware 6pcs 130ml",
-          "qty": "2 Boxes",
-          "mrp": "₹420",
-          "brand": "Qing Ping Guo"
-        },
-        {
-          "code": "4394",
-          "name": "Delisoga Deli Glassware 6pcs 180 ml",
-          "qty": "1 Box",
-          "mrp": "₹550",
-          "brand": "Delisoga"
-        },
-        {
-          "code": "4795",
-          "name": "Yera Beer Mug Set 6 pcs",
-          "qty": "1 Box",
-          "mrp": "₹450",
-          "brand": "Yera"
-        },
-        {
-          "code": "51911",
-          "name": "Yera Glass Set 6 pcs",
-          "qty": "1 Box",
-          "mrp": "₹300",
-          "brand": "Yera"
-        },
-        {
-          "code": "",
-          "name": "Roxx Pro Ring Tumbler 6pcs",
-          "qty": "1 Box",
-          "mrp": "₹300",
-          "brand": "Roxx"
-        },
-        {
-          "code": "31225",
-          "name": "Ocean Glass Hansa 300 ml 6pcs",
-          "qty": "2 Boxes",
-          "mrp": "₹425",
-          "brand": "Ocean"
-        },
-        {
-          "code": "B01210",
-          "name": "Ocean Fin Line Hi Ball 280 ml 6pcs",
-          "qty": "2 Boxes",
-          "mrp": "₹750",
-          "brand": "Ocean"
-        },
-        {
-          "code": "56814",
-          "name": "Ocean Fin Line Juice 175 ml 6pcs",
-          "qty": "5 Boxes",
-          "mrp": "₹650",
-          "brand": "Ocean"
-        },
-        {
-          "code": "396264",
-          "name": "Qing Ping Guo Deli Glass 3 pcs",
-          "qty": "1 Box",
-          "mrp": "₹895",
-          "brand": "Qing Ping Guo"
-        }
+        {"code":"","name":"Delisoga Deli Glassware 6pcs 175 ML","qty":"3 Boxes","mrp":"₹550","brand":"Delisoga"},
+        {"code":"","name":"Luminarc MartiguesbHb Tumbler 1 Set 6 pcs","qty":"2 Boxes","mrp":"₹655","brand":"Luminarc"},
+        {"code":"C0529","name":"Qing Ping Guo Deli Glass Glass Press Tumbler 6pcs","qty":"3 Boxes","mrp":"₹650","brand":"Qing Ping Guo"},
+        {"code":"C0537","name":"Qing Ping Guo Deli Glass Sunrise Mug 6pcs","qty":"2 Boxes","mrp":"₹650","brand":"Qing Ping Guo"},
+        {"code":"C0538","name":"Delisoga Deli Glassware 6pcs 340ml","qty":"2 Boxes","mrp":"₹675","brand":"Delisoga"},
+        {"code":"C0526","name":"Delisoga Deli Glassware 6pcs 190ml","qty":"2 Boxes","mrp":"₹850","brand":"Delisoga"},
+        {"code":"33659","name":"Qing Ping Guo Deli Glassware 6pcs 130ml","qty":"1 Box","mrp":"₹485","brand":"Qing Ping Guo"},
+        {"code":"15210","name":"Qing Ping Guo Deli Glassware 6pcs 130ml","qty":"2 Boxes","mrp":"₹420","brand":"Qing Ping Guo"},
+        {"code":"4394","name":"Delisoga Deli Glassware 6pcs 180 ml","qty":"1 Box","mrp":"₹550","brand":"Delisoga"},
+        {"code":"4795","name":"Yera Beer Mug Set 6 pcs","qty":"1 Box","mrp":"₹450","brand":"Yera"},
+        {"code":"51911","name":"Yera Glass Set 6 pcs","qty":"1 Box","mrp":"₹300","brand":"Yera"},
+        {"code":"","name":"Roxx Pro Ring Tumbler 6pcs","qty":"1 Box","mrp":"₹300","brand":"Roxx"},
+        {"code":"31225","name":"Ocean Glass Hansa 300 ml 6pcs","qty":"2 Boxes","mrp":"₹425","brand":"Ocean"},
+        {"code":"B01210","name":"Ocean Fin Line Hi Ball 280 ml 6pcs","qty":"2 Boxes","mrp":"₹750","brand":"Ocean"},
+        {"code":"56814","name":"Ocean Fin Line Juice 175 ml 6pcs","qty":"5 Boxes","mrp":"₹650","brand":"Ocean"},
+        {"code":"396264","name":"Qing Ping Guo Deli Glass 3 pcs","qty":"1 Box","mrp":"₹895","brand":"Qing Ping Guo"}
       ]
     },
     {
       "name": "Gas Stove Accessories",
       "items": [
-        {
-          "code": "C0219",
-          "name": "Stag Plus LPG PAN Support Stand",
-          "qty": "2 Boxes",
-          "mrp": "₹300",
-          "brand": "Stag Plus"
-        },
-        {
-          "code": "C0220",
-          "name": "Stag Plus LPG PAN Support Stand",
-          "qty": "2 Boxes",
-          "mrp": "₹220",
-          "brand": "Stag Plus"
-        },
-        {
-          "code": "C0222",
-          "name": "Stag Plus LPG PAN Support Stand",
-          "qty": "2 Boxes",
-          "mrp": "₹220",
-          "brand": "Stag Plus"
-        }
+        {"code":"C0219","name":"Stag Plus LPG PAN Support Stand","qty":"2 Boxes","mrp":"₹300","brand":"Stag Plus"},
+        {"code":"C0220","name":"Stag Plus LPG PAN Support Stand","qty":"2 Boxes","mrp":"₹220","brand":"Stag Plus"},
+        {"code":"C0222","name":"Stag Plus LPG PAN Support Stand","qty":"2 Boxes","mrp":"₹220","brand":"Stag Plus"}
       ]
     }
   ]

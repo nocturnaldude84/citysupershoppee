@@ -1,0 +1,90 @@
+name: Add inventory batch
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+
+jobs:
+  update-inventory:
+    if: github.event.head_commit.message == 'Add new inventory batch'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Add entries to inventory
+        run: |
+          node <<'NODE'
+          const fs = require('fs');
+          const path = 'inventory.json';
+          const data = JSON.parse(fs.readFileSync(path, 'utf8'));
+
+          const additions = [
+            {
+              category: 'Microwave & Food Storage',
+              items: [
+                { code: '38476', name: 'Omio Square Microwave Food Box', qty: '1 Box', mrp: '₹295', brand: 'Omio' },
+                { code: '38496', name: 'Omio Round Microwave Food Box', qty: '1 Box', mrp: '₹295', brand: 'Omio' },
+                { code: '34341', name: 'Omio Round Microwave Food Box', qty: '1 Box', mrp: '₹295', brand: 'Omio' },
+                { code: '35439', name: 'Omio Round Microwave Food Box', qty: '1 Box', mrp: '₹295', brand: 'Omio' },
+                { code: '25378', name: 'Prime Houseware Microwave Popcorn Maker', qty: '1 Box', mrp: '₹210', brand: 'Prime Houseware' },
+                { code: '29304', name: 'Trust Microwave Steam All Cookware for Microwave Oven', qty: '2 Boxes', mrp: '₹470', brand: 'Trust' },
+                { code: '29301', name: 'Trust Microwave Steam All Cookware for Microwave Oven', qty: '1 Box', mrp: '₹490', brand: 'Trust' }
+              ]
+            },
+            {
+              category: 'Idly Cookers & Accessories',
+              items: [
+                { code: '32520', name: 'Trust Heart-Shaped Idli Maker', qty: '1 Box', mrp: '₹550', brand: 'Trust' }
+              ]
+            },
+            {
+              category: 'Other Kitchenware',
+              items: [
+                { code: '19456', name: 'Class The Kitchenware Vegetable Chipper', qty: '5 Boxes', mrp: '₹299', brand: 'Class The Kitchenware' },
+                { code: 'BXCH1201IN', name: 'Black + Decker Mini Chopper with 2 Speeds', qty: '2 Boxes', mrp: '₹3245', brand: 'Black + Decker' },
+                { code: '250566', name: 'treo Microgrill Sandwicher', qty: '1 Box', mrp: '₹895', brand: 'treo' },
+                { code: '34234', name: 'Nova Multiple Juice Extractor 350ML 300W', qty: '1 Box', mrp: '₹1950', brand: 'Nova' }
+              ]
+            }
+          ];
+
+          function getCategory(name) {
+            let category = data.categories.find(c => c.name.toLowerCase() === name.toLowerCase());
+            if (!category) {
+              category = { name, items: [] };
+              data.categories.push(category);
+            }
+            return category;
+          }
+
+          let added = 0;
+          for (const group of additions) {
+            const category = getCategory(group.category);
+            for (const item of group.items) {
+              const exists = category.items.some(existing =>
+                (item.code && existing.code === item.code) ||
+                (!item.code && existing.name === item.name)
+              );
+              if (!exists) {
+                category.items.push(item);
+                added++;
+              }
+            }
+          }
+
+          fs.writeFileSync(path, JSON.stringify(data, null, 2) + '\n');
+          console.log(`Added ${added} inventory entries.`);
+          NODE
+
+      - name: Commit inventory and remove temporary workflow
+        run: |
+          rm -f .github/workflows/add-inventory-batch.yml
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add inventory.json .github/workflows/add-inventory-batch.yml
+          git diff --cached --quiet || git commit -m 'Update inventory with new batch'
+          git push

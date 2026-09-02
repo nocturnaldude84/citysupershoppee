@@ -679,6 +679,60 @@
       ]
     },
     {
+      "name": "Idly Cookers & Accessories",
+      "items": [
+        {
+          "code": "",
+          "name": "Smart Kitchen Idly Vessel - 6 plates",
+          "qty": "1 Box",
+          "mrp": "₹850",
+          "brand": "Smart Kitchen"
+        },
+        {
+          "code": "740037",
+          "name": "Murugan Idly Cooker - 4 Plates",
+          "qty": "1 Box",
+          "mrp": "₹1100",
+          "brand": "Murugan"
+        },
+        {
+          "code": "A362",
+          "name": "Candy Tree Cup Holder 6 Position",
+          "qty": "1 Box",
+          "mrp": "₹575",
+          "brand": "Candy Tree"
+        },
+        {
+          "code": "740037",
+          "name": "Murugan Idly Cooker - 6 Plates",
+          "qty": "1 Box",
+          "mrp": "₹1300",
+          "brand": "Murugan"
+        },
+        {
+          "code": "A364",
+          "name": "Candy Tree Cup Holder 8 Position",
+          "qty": "1 Box",
+          "mrp": "₹575",
+          "brand": "Candy Tree"
+        },
+        {
+          "code": "692556",
+          "name": "Cup Holder Pleasure",
+          "qty": "2 Boxes",
+          "mrp": "₹575",
+          "brand": ""
+        },
+        {
+          "code": "1419",
+          "name": "Steam Lite Food Grade Aluminum Idli Stand",
+          "qty": "3 Boxes",
+          "mrp": "₹340",
+          "brand": "Steam Lite"
+        }
+      ]
+    },
+    {
       "name": "Insulated Tiffin",
       "items": [
         {

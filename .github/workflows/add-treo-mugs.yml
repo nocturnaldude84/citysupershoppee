@@ -1,4 +1,4 @@
-name: Add Treo by Milton mug entries
+name: Add missing inventory entries
 
 on:
   push:
@@ -18,27 +18,50 @@ jobs:
           python - <<'PY'
           import json
           from pathlib import Path
+
           path = Path('inventory.json')
           data = json.loads(path.read_text(encoding='utf-8'))
           categories = data['categories']
-          target = next((c for c in categories if c['name'] == 'Cups & Saucers'), None)
-          if target is None:
-              target = {'name': 'Cups & Saucers', 'items': []}
-              categories.append(target)
+
+          def get_category(name):
+              target = next((c for c in categories if c['name'] == name), None)
+              if target is None:
+                  target = {'name': name, 'items': []}
+                  categories.append(target)
+              return target
+
+          cups = get_category('Cups & Saucers')
+          gas = get_category('Gas Stove Accessories')
+
           new_items = [
-              {'code':'234528','name':'Treo by Milton Munich Cool 359 Beer Mug Set 2 pcs','qty':'1 Box','mrp':'₹410','brand':'Treo by Milton'},
-              {'code':'237710','name':'Treo by Milton Marble 240 Ceramic Mug Set 6pcs','qty':'3 Boxes','mrp':'₹1095','brand':'Treo by Milton'}
+              (cups, {'code':'','name':'Mazda Classic Jumbo 6pcs','qty':'6 pcs/box','mrp':'₹1489/Box · ₹250/piece','brand':'Mazda'}),
+              (cups, {'code':'','name':'Mazda Classic Large 6pcs','qty':'6 pcs/box','mrp':'₹1391/Box · ₹245/piece','brand':'Mazda'}),
+              (cups, {'code':'','name':'Mazda Cuttee Jumbo 6pcs','qty':'6 pcs/box','mrp':'₹1693/Box · ₹295/piece','brand':'Mazda'}),
+              (cups, {'code':'','name':'Mazda Cuttee Large 6pcs','qty':'6 pcs/box','mrp':'₹1391/Box · ₹245/piece','brand':'Mazda'}),
+              (cups, {'code':'','name':'Mazda Opium Medium 6pcs','qty':'6 pcs/box','mrp':'₹1246/Box · ₹210/piece','brand':'Mazda'}),
+              (gas, {'code':'C0220','name':'Stag Plus LPG PAN Support Stand','qty':'2 Boxes','mrp':'₹220','brand':'Stag Plus'}),
+              (gas, {'code':'C0222','name':'Stag Plus LPG PAN Support Stand','qty':'2 Boxes','mrp':'₹220','brand':'Stag Plus'})
           ]
-          for item in new_items:
-              if not any(x.get('code') == item['code'] for c in categories for x in c.get('items', [])):
-                  target['items'].append(item)
+
+          for category, item in new_items:
+              exists = any(
+                  x.get('code') == item['code'] and x.get('name') == item['name']
+                  for c in categories for x in c.get('items', [])
+              ) if item['code'] else any(
+                  x.get('name') == item['name']
+                  for x in category.get('items', [])
+              )
+              if not exists:
+                  category['items'].append(item)
+
           categories.sort(key=lambda c: c['name'].casefold())
           path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
           PY
-      - name: Commit update and remove workflow
+      - name: Commit inventory and remove temporary workflow
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          rm -f .github/workflows/add-treo-mugs.yml
           git add inventory.json .github/workflows/add-treo-mugs.yml
-          git commit -m 'Add Treo by Milton mug entries'
+          git commit -m 'Add missing inventory entries'
           git push

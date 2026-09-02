@@ -1108,6 +1108,13 @@
           "qty": "3 Boxes",
           "mrp": "₹340",
           "brand": "Steam Lite"
+        },
+        {
+          "code": "32520",
+          "name": "Trust Heart-Shaped Idli Maker",
+          "qty": "1 Box",
+          "mrp": "₹550",
+          "brand": "Trust"
         }
       ]
     },
@@ -1610,6 +1617,34 @@
           "qty": "1 pc",
           "mrp": "₹299",
           "brand": "Vansmart"
+        },
+        {
+          "code": "19456",
+          "name": "Class The Kitchenware Vegetable Chipper",
+          "qty": "5 Boxes",
+          "mrp": "₹299",
+          "brand": "Class The Kitchenware"
+        },
+        {
+          "code": "BXCH1201IN",
+          "name": "Black + Decker Mini Chopper with 2 Speeds",
+          "qty": "2 Boxes",
+          "mrp": "₹3245",
+          "brand": "Black + Decker"
+        },
+        {
+          "code": "250566",
+          "name": "treo Microgrill Sandwicher",
+          "qty": "1 Box",
+          "mrp": "₹895",
+          "brand": "treo"
+        },
+        {
+          "code": "34234",
+          "name": "Nova Multiple Juice Extractor 350ML 300W",
+          "qty": "1 Box",
+          "mrp": "₹1950",
+          "brand": "Nova"
         }
       ]
     },
@@ -1800,6 +1835,60 @@
           "qty": "11 boxes",
           "mrp": "₹149",
           "brand": "Sunlife"
+        }
+      ]
+    },
+    {
+      "name": "Microwave & Food Storage",
+      "items": [
+        {
+          "code": "38476",
+          "name": "Omio Square Microwave Food Box",
+          "qty": "1 Box",
+          "mrp": "₹295",
+          "brand": "Omio"
+        },
+        {
+          "code": "38496",
+          "name": "Omio Round Microwave Food Box",
+          "qty": "1 Box",
+          "mrp": "₹295",
+          "brand": "Omio"
+        },
+        {
+          "code": "34341",
+          "name": "Omio Round Microwave Food Box",
+          "qty": "1 Box",
+          "mrp": "₹295",
+          "brand": "Omio"
+        },
+        {
+          "code": "35439",
+          "name": "Omio Round Microwave Food Box",
+          "qty": "1 Box",
+          "mrp": "₹295",
+          "brand": "Omio"
+        },
+        {
+          "code": "25378",
+          "name": "Prime Houseware Microwave Popcorn Maker",
+          "qty": "1 Box",
+          "mrp": "₹210",
+          "brand": "Prime Houseware"
+        },
+        {
+          "code": "29304",
+          "name": "Trust Microwave Steam All Cookware for Microwave Oven",
+          "qty": "2 Boxes",
+          "mrp": "₹470",
+          "brand": "Trust"
+        },
+        {
+          "code": "29301",
+          "name": "Trust Microwave Steam All Cookware for Microwave Oven",
+          "qty": "1 Box",
+          "mrp": "₹490",
+          "brand": "Trust"
         }
       ]
     }

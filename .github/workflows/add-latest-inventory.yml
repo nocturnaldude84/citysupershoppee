@@ -1,0 +1,83 @@
+name: Add Latest Inventory
+
+on:
+  push:
+    paths:
+      - .github/workflows/add-latest-inventory.yml
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Update inventory
+        run: |
+          node <<'NODE'
+          const fs = require('fs');
+          const path = 'inventory.json';
+          const data = JSON.parse(fs.readFileSync(path, 'utf8'));
+
+          function category(name) {
+            let c = data.categories.find(x => x.name.toLowerCase() === name.toLowerCase());
+            if (!c) {
+              c = { name, items: [] };
+              data.categories.push(c);
+            }
+            return c;
+          }
+
+          function add(catName, item) {
+            const c = category(catName);
+            const exists = c.items.some(x => x.name === item.name && x.code === item.code);
+            if (!exists) c.items.push(item);
+          }
+
+          // Update existing Luminarc entry: quantity only.
+          for (const c of data.categories) {
+            for (const item of c.items) {
+              if (item.name === 'Luminarc MartiguesbHb Tumbler 1 Set 6 pcs') {
+                item.qty = '6 Boxes';
+              }
+            }
+          }
+
+          add('Lunch Boxes & Carriers', { code:'17845', name:'Heat Preservation Lunch Box', qty:'Boxes', mrp:'₹550', brand:'' });
+          add('Lunch Boxes & Carriers', { code:'9620', name:'Patel Big Star Insulated Lunch Pack Big', qty:'2 Boxes', mrp:'₹240', brand:'Patel Plastoware' });
+          add('Lunch Boxes & Carriers', { code:'54248', name:'AE Sweet & Salty Lunch Pack Big', qty:'Boxes', mrp:'₹250', brand:'AE' });
+          add('Lunch Boxes & Carriers', { code:'', name:'Patel Plastoware Zig Zag Insulated Lunch Carrier', qty:'Boxes', mrp:'₹360', brand:'Patel Plastoware' });
+          add('Lunch Boxes & Carriers', { code:'42806', name:'Patel Plastoware Apple Big Insulated Lunch Pack', qty:'Boxes', mrp:'₹303', brand:'Patel Plastoware' });
+          add('Lunch Boxes & Carriers', { code:'', name:'Milton Intelligent homeware Insulated Tiffin', qty:'4 Boxes', mrp:'₹735', brand:'Milton' });
+          add('Lunch Boxes & Carriers', { code:'', name:'Sci Borneo Japan', qty:'Boxes', mrp:'₹550', brand:'Borneo Japan' });
+          add('Lunch Boxes & Carriers', { code:'', name:'Borneo Japan Lunch Box Boutique Products - 630 ml', qty:'1 Box', mrp:'₹585', brand:'Borneo Japan' });
+          add('Lunch Boxes & Carriers', { code:'8537', name:'Borneo Japan Lunch Box', qty:'1 Box', mrp:'₹750', brand:'Borneo Japan' });
+          add('Lunch Boxes & Carriers', { code:'', name:'Patel Big Star Insulated Lunch Pack Medium', qty:'7 Boxes', mrp:'₹200', brand:'Patel Plastoware' });
+          add('Lunch Boxes & Carriers', { code:'701398', name:'Lunchmate Insulated Tiffin Container', qty:'2 Boxes', mrp:'₹404', brand:'Lunchmate' });
+          add('Lunch Boxes & Carriers', { code:'S6520', name:'Insulated Lunch Pack', qty:'13 Boxes', mrp:'₹224', brand:'Patel Plastoware' });
+
+          add('Glass Sets', { code:'C0527', name:'Qing Ping Guo Deli Glass Ice Cream Cup 6pcs', qty:'1 Box', mrp:'₹1250', brand:'Qing Ping Guo' });
+          add('Glass Sets', { code:'', name:'Gentry Cup', qty:'2 Boxes', mrp:'₹250', brand:'' });
+          add('Glass Sets', { code:'3584', name:'Health Magnetic Stainless Steel Cup', qty:'5 Boxes', mrp:'₹250', brand:'' });
+          add('Glass Sets', { code:'512016', name:'La Opalia Borosilicate Clip N Store with Snap Lid 210 ml', qty:'2 Boxes', mrp:'₹350', brand:'La Opala' });
+          add('Glass Sets', { code:'519015', name:'La Opalia Borosilicate Casserole with Lid 500 ml', qty:'3 Boxes', mrp:'₹895', brand:'La Opala' });
+          add('Glass Sets', { code:'515086', name:'La Opalia Borosilicate Preserve N Store with Vaccum Lid 150 ml', qty:'1 Box', mrp:'₹575', brand:'La Opala' });
+          add('Glass Sets', { code:'517011', name:'La Opalia Borosilicate Mini with Snap Lid 150 ml', qty:'1 Box', mrp:'₹275', brand:'La Opala' });
+
+          data.categories.sort((a,b) => a.name.localeCompare(b.name, undefined, { sensitivity:'base' }));
+          fs.writeFileSync(path, JSON.stringify(data, null, 2) + '\n');
+          NODE
+
+      - name: Commit inventory and remove workflow
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add inventory.json
+          git commit -m "Add latest inventory entries" || true
+          git push
+          rm -f .github/workflows/add-latest-inventory.yml
+          git add .github/workflows/add-latest-inventory.yml
+          git commit -m "Remove temporary inventory workflow" || true
+          git push

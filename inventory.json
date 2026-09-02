@@ -4,6 +4,13 @@
       "name": "Air Fresheners",
       "items": [
         {
+          "code": "020583",
+          "name": "Aer Matic Alive",
+          "qty": "1 Unit",
+          "mrp": "₹249",
+          "brand": "Aer"
+        },
+        {
           "code": "031625",
           "name": "Aer Matic Royal",
           "qty": "1 Unit",
@@ -15,27 +22,6 @@
           "name": "Aer Matic Violet",
           "qty": "1 Unit",
           "mrp": "₹249",
-          "brand": "Aer"
-        },
-        {
-          "code": "020583",
-          "name": "Aer Matic Alive",
-          "qty": "1 Unit",
-          "mrp": "₹249",
-          "brand": "Aer"
-        },
-        {
-          "code": "025082",
-          "name": "Aer Power Pocket Sea Breeze",
-          "qty": "6 pcs",
-          "mrp": "₹70",
-          "brand": "Aer"
-        },
-        {
-          "code": "0258434",
-          "name": "Aer Power Pocket Lemon",
-          "qty": "20 pieces",
-          "mrp": "₹70",
           "brand": "Aer"
         },
         {
@@ -53,9 +39,23 @@
           "brand": "Aer"
         },
         {
+          "code": "0258434",
+          "name": "Aer Power Pocket Lemon",
+          "qty": "20 pieces",
+          "mrp": "₹70",
+          "brand": "Aer"
+        },
+        {
           "code": "025082",
           "name": "Aer Power Pocket Rose",
           "qty": "6 pieces",
+          "mrp": "₹70",
+          "brand": "Aer"
+        },
+        {
+          "code": "025082",
+          "name": "Aer Power Pocket Sea Breeze",
+          "qty": "6 pcs",
           "mrp": "₹70",
           "brand": "Aer"
         },
@@ -73,13 +73,6 @@
       "items": [
         {
           "code": "",
-          "name": "Metallino Kadai 2.5 Ltr Without Lid",
-          "qty": "2 pcs",
-          "mrp": "₹750",
-          "brand": "Metallino"
-        },
-        {
-          "code": "",
           "name": "Bowl Set",
           "qty": "1 pc",
           "mrp": "₹1250",
@@ -87,6 +80,97 @@
         },
         {
           "code": "",
+          "name": "CASA Designer Bowls Set of 6 pcs - Big",
+          "qty": "4 boxes",
+          "mrp": "₹441",
+          "brand": "CASA"
+        },
+        {
+          "code": "",
+          "name": "CASA Designer Bowls Set of 6 pcs - Small",
+          "qty": "3 boxes",
+          "mrp": "₹351",
+          "brand": "CASA"
+        },
+        {
+          "code": "2407",
+          "name": "Coffee Cup and Saucer 6 pcs Set",
+          "qty": "6 Boxes",
+          "mrp": "₹900",
+          "brand": ""
+        },
+        {
+          "code": "29087",
+          "name": "CSS PB Set of 6 Cups",
+          "qty": "1 Box",
+          "mrp": "₹625",
+          "brand": "CSS"
+        },
+        {
+          "code": "33657",
+          "name": "Deli Glassware Set",
+          "qty": "3 Boxes",
+          "mrp": "₹530",
+          "brand": ""
+        },
+        {
+          "code": "12130",
+          "name": "Jelly Bowl Set",
+          "qty": "3 Boxes",
+          "mrp": "₹375",
+          "brand": ""
+        },
+        {
+          "code": "16696",
+          "name": "Jingle Bell Designer Collection",
+          "qty": "8 Boxes",
+          "mrp": "₹135",
+          "brand": ""
+        },
+        {
+          "code": "854929",
+          "name": "KVG Sizzler Plate Oval",
+          "qty": "4 Boxes",
+          "mrp": "₹1149",
+          "brand": "KVG"
+        },
+        {
+          "code": "",
+          "name": "La Melma Premium Tableware Wenzer Leher - Donga with Lid",
+          "qty": "3 Boxes",
+          "mrp": "₹265",
+          "brand": "La Melma"
+        },
+        {
+          "code": "",
+          "name": "La Melma Premium Tableware Wenzer Leher - Jazzy Serving Bowl with Lid & Spoon",
+          "qty": "2 Boxes",
+          "mrp": "₹385",
+          "brand": "La Melma"
+        },
+        {
+          "code": "22745",
+          "name": "Lazer Megma 6 Coffee Cup / Plate",
+          "qty": "4 Boxes",
+          "mrp": "₹380",
+          "brand": "Lazer"
+        },
+        {
+          "code": "",
+          "name": "Metallino Kadai 2.5 Ltr Without Lid",
+          "qty": "2 pcs",
+          "mrp": "₹750",
+          "brand": "Metallino"
+        },
+        {
+          "code": "",
+          "name": "PY Jar",
+          "qty": "1 pc",
+          "mrp": "₹950",
+          "brand": ""
+        },
+        {
+          "code": "",
           "name": "Serving Bowl Set, w/Lid & Spoon",
           "qty": "2 pcs",
           "mrp": "₹385",
@@ -97,13 +181,6 @@
           "name": "Serving Bowl Set, w/Lid & Spoon",
           "qty": "2 pcs",
           "mrp": "₹385",
-          "brand": ""
-        },
-        {
-          "code": "",
-          "name": "PY Jar",
-          "qty": "1 pc",
-          "mrp": "₹950",
           "brand": ""
         },
         {
@@ -121,34 +198,6 @@
           "brand": ""
         },
         {
-          "code": "33657",
-          "name": "Deli Glassware Set",
-          "qty": "3 Boxes",
-          "mrp": "₹530",
-          "brand": ""
-        },
-        {
-          "code": "4365",
-          "name": "Yera Ice Cream Bowl Set",
-          "qty": "3 pcs",
-          "mrp": "₹530",
-          "brand": ""
-        },
-        {
-          "code": "",
-          "name": "CASA Designer Bowls Set of 6 pcs - Big",
-          "qty": "4 boxes",
-          "mrp": "₹441",
-          "brand": "CASA"
-        },
-        {
-          "code": "",
-          "name": "CASA Designer Bowls Set of 6 pcs - Small",
-          "qty": "3 boxes",
-          "mrp": "₹351",
-          "brand": "CASA"
-        },
-        {
           "code": "55593",
           "name": "Unicorn Cartoon Bowl Set",
           "qty": "2 Boxes",
@@ -156,66 +205,24 @@
           "brand": "Unicorn"
         },
         {
-          "code": "12130",
-          "name": "Jelly Bowl Set",
-          "qty": "3 Boxes",
-          "mrp": "₹375",
+          "code": "4365",
+          "name": "Yera Ice Cream Bowl Set",
+          "qty": "3 pcs",
+          "mrp": "₹530",
           "brand": ""
-        },
-        {
-          "code": "854929",
-          "name": "KVG Sizzler Plate Oval",
-          "qty": "4 Boxes",
-          "mrp": "₹1149",
-          "brand": "KVG"
-        },
-        {
-          "code": "16696",
-          "name": "Jingle Bell Designer Collection",
-          "qty": "8 Boxes",
-          "mrp": "₹135",
-          "brand": ""
-        },
-        {
-          "code": "22745",
-          "name": "Lazer Megma 6 Coffee Cup / Plate",
-          "qty": "4 Boxes",
-          "mrp": "₹380",
-          "brand": "Lazer"
-        },
-        {
-          "code": "29087",
-          "name": "CSS PB Set of 6 Cups",
-          "qty": "1 Box",
-          "mrp": "₹625",
-          "brand": "CSS"
-        },
-        {
-          "code": "2407",
-          "name": "Coffee Cup and Saucer 6 pcs Set",
-          "qty": "6 Boxes",
-          "mrp": "₹900",
-          "brand": ""
-        },
-        {
-          "code": "",
-          "name": "La Melma Premium Tableware Wenzer Leher - Jazzy Serving Bowl with Lid & Spoon",
-          "qty": "2 Boxes",
-          "mrp": "₹385",
-          "brand": "La Melma"
-        },
-        {
-          "code": "",
-          "name": "La Melma Premium Tableware Wenzer Leher - Donga with Lid",
-          "qty": "3 Boxes",
-          "mrp": "₹265",
-          "brand": "La Melma"
         }
       ]
     },
     {
       "name": "Candles",
       "items": [
+        {
+          "code": "",
+          "name": "Aryan Jumbo Floating T-Light Candles Smokeless",
+          "qty": "7 Boxes · 10 pcs/Box",
+          "mrp": "₹150",
+          "brand": ""
+        },
         {
           "code": "",
           "name": "Aryan Long Bruning T-Light Candles Smokeless",
@@ -232,16 +239,16 @@
         },
         {
           "code": "",
-          "name": "Aryan Jumbo Floating T-Light Candles Smokeless",
-          "qty": "7 Boxes · 10 pcs/Box",
-          "mrp": "₹150",
-          "brand": ""
-        },
-        {
-          "code": "",
           "name": "Perfumed Candles (Rose, Lavender, Sandal)",
           "qty": "1 Box · 6 pcs in box",
           "mrp": "₹325",
+          "brand": ""
+        },
+        {
+          "code": "C01237",
+          "name": "Tea Lights Candle Scented 6 pcs",
+          "qty": "1 Box",
+          "mrp": "₹250",
           "brand": ""
         },
         {
@@ -257,13 +264,6 @@
           "qty": "2 Boxes · 6 pcs in Box",
           "mrp": "₹250",
           "brand": "tohana"
-        },
-        {
-          "code": "C01237",
-          "name": "Tea Lights Candle Scented 6 pcs",
-          "qty": "1 Box",
-          "mrp": "₹250",
-          "brand": ""
         }
       ]
     },
@@ -297,10 +297,17 @@
       "name": "Casseroles",
       "items": [
         {
-          "code": "019323",
-          "name": "Casserole Royal 1000",
-          "qty": "2 pcs",
-          "mrp": "₹415",
+          "code": "361879",
+          "name": "Casserole",
+          "qty": "3 pcs",
+          "mrp": "₹845",
+          "brand": "ROYALE"
+        },
+        {
+          "code": "016889",
+          "name": "Casserole Crisp Deluxe 1200",
+          "qty": "2 Boxes",
+          "mrp": "₹580",
           "brand": "Milton"
         },
         {
@@ -311,20 +318,6 @@
           "brand": "Milton"
         },
         {
-          "code": "017831",
-          "name": "Casserole Zest 1000",
-          "qty": "1 pc",
-          "mrp": "₹580",
-          "brand": "Milton"
-        },
-        {
-          "code": "016889",
-          "name": "Casserole Crisp Deluxe 1200",
-          "qty": "2 Boxes",
-          "mrp": "₹580",
-          "brand": "Milton"
-        },
-        {
           "code": "019859",
           "name": "Casserole Pearl 1000",
           "qty": "1 pc",
@@ -332,24 +325,31 @@
           "brand": "Milton"
         },
         {
-          "code": "361879",
-          "name": "Casserole",
-          "qty": "3 pcs",
-          "mrp": "₹845",
-          "brand": "ROYALE"
+          "code": "019323",
+          "name": "Casserole Royal 1000",
+          "qty": "2 pcs",
+          "mrp": "₹415",
+          "brand": "Milton"
         },
         {
-          "code": "31180",
-          "name": "NAYASA Microwave Safe Set of 3 Square Casseroles",
-          "qty": "2 Boxes",
-          "mrp": "₹800",
-          "brand": "NAYASA"
+          "code": "017831",
+          "name": "Casserole Zest 1000",
+          "qty": "1 pc",
+          "mrp": "₹580",
+          "brand": "Milton"
         },
         {
           "code": "31167",
           "name": "NAYASA Microwave Safe Set of 2 Round Casseroles",
           "qty": "2 Boxes",
           "mrp": "₹725",
+          "brand": "NAYASA"
+        },
+        {
+          "code": "31180",
+          "name": "NAYASA Microwave Safe Set of 3 Square Casseroles",
+          "qty": "2 Boxes",
+          "mrp": "₹800",
           "brand": "NAYASA"
         }
       ]
@@ -399,23 +399,9 @@
         },
         {
           "code": "",
-          "name": "Lady Handle Comb",
-          "qty": "1 Box · 10 pcs",
-          "mrp": "₹84/piece",
-          "brand": ""
-        },
-        {
-          "code": "",
           "name": "7 1/2\" Fancy Gold Seal Comb",
           "qty": "1 Box · 10 pcs",
           "mrp": "₹66/piece",
-          "brand": ""
-        },
-        {
-          "code": "",
-          "name": "Tail Comb",
-          "qty": "1 Box · 20 pcs",
-          "mrp": "₹27/piece",
           "brand": ""
         },
         {
@@ -441,9 +427,23 @@
         },
         {
           "code": "",
+          "name": "Lady Handle Comb",
+          "qty": "1 Box · 10 pcs",
+          "mrp": "₹84/piece",
+          "brand": ""
+        },
+        {
+          "code": "",
           "name": "Styller Comb",
           "qty": "1 Box · 20 pcs",
           "mrp": "₹40/piece",
+          "brand": ""
+        },
+        {
+          "code": "",
+          "name": "Tail Comb",
+          "qty": "1 Box · 20 pcs",
+          "mrp": "₹27/piece",
           "brand": ""
         }
       ]
@@ -453,10 +453,24 @@
       "items": [
         {
           "code": "",
-          "name": "RK Plastoware 222 Steel Cup With Lid - 6pcs/Box 350ml",
-          "qty": "2 Boxes · 6 pcs/box",
-          "mrp": "₹126/pc, ₹756/Box",
-          "brand": "RK Plastoware"
+          "name": "Apex Shake Mug 2 pc Set",
+          "qty": "1 Box",
+          "mrp": "₹180",
+          "brand": "Apex"
+        },
+        {
+          "code": "38164",
+          "name": "Barista Stainless Steel Double Wall Cup Set - 6 pcs",
+          "qty": "4 Boxes",
+          "mrp": "₹450",
+          "brand": "Barista"
+        },
+        {
+          "code": "C0517",
+          "name": "Celebration Mug",
+          "qty": "10 Boxes · 1 unit/box",
+          "mrp": "₹125",
+          "brand": ""
         },
         {
           "code": "",
@@ -487,18 +501,74 @@
           "brand": "Cello"
         },
         {
-          "code": "131155",
-          "name": "Treo Ceramicware Kidz - O - Pia 3pcs Breakfast Set",
-          "qty": "1 Box",
-          "mrp": "₹575",
-          "brand": "Treo"
+          "code": "",
+          "name": "Hansa Fine Porcelain Saucer 14cm",
+          "qty": "2 Boxes · 6 pcs/box",
+          "mrp": "₹85/piece",
+          "brand": "Hansa"
         },
         {
-          "code": "38164",
-          "name": "Barista Stainless Steel Double Wall Cup Set - 6 pcs",
-          "qty": "4 Boxes",
-          "mrp": "₹450",
-          "brand": "Barista"
+          "code": "",
+          "name": "Mazda Stainless Steel Tea & Coffee Mugs Classic Jumbo 6pcs",
+          "qty": "Boxes · 6 pcs/box",
+          "mrp": "₹1489/Box · ₹250/piece",
+          "brand": "Mazda"
+        },
+        {
+          "code": "",
+          "name": "Mazda Stainless Steel Tea & Coffee Mugs Classic Large 6pcs",
+          "qty": "Boxes · 6 pcs/box",
+          "mrp": "₹1391/Box · ₹245/piece",
+          "brand": "Mazda"
+        },
+        {
+          "code": "",
+          "name": "Mazda Stainless Steel Tea & Coffee Mugs Cuttee Jumbo 6pcs",
+          "qty": "Boxes · 6 pcs/box",
+          "mrp": "₹1693/Box · ₹295/piece",
+          "brand": "Mazda"
+        },
+        {
+          "code": "",
+          "name": "Mazda Stainless Steel Tea & Coffee Mugs Cuttee Large 6pcs",
+          "qty": "Boxes · 6 pcs/box",
+          "mrp": "₹1391/Box · ₹245/piece",
+          "brand": "Mazda"
+        },
+        {
+          "code": "",
+          "name": "Mazda Stainless Steel Tea & Coffee Mugs Opium Medium 6pcs",
+          "qty": "Boxes · 6 pcs/box",
+          "mrp": "₹1246/Box · ₹210/piece",
+          "brand": "Mazda"
+        },
+        {
+          "code": "",
+          "name": "RK Plastoware 222 Steel Cup With Lid - 6pcs/Box 350ml",
+          "qty": "2 Boxes · 6 pcs/box",
+          "mrp": "₹126/pc, ₹756/Box",
+          "brand": "RK Plastoware"
+        },
+        {
+          "code": "582037",
+          "name": "Super Mom Breaktime Mug 300 ml",
+          "qty": "1 Box · 1 unit/box",
+          "mrp": "₹275",
+          "brand": "Super Mom"
+        },
+        {
+          "code": "572907",
+          "name": "Super Mom Milk Mug 300 ml",
+          "qty": "3 Boxes · 2 pcs/box",
+          "mrp": "₹375",
+          "brand": "Super Mom"
+        },
+        {
+          "code": "237710",
+          "name": "Treo by Milton Marble 240 Ceramic Mug Set 6pcs",
+          "qty": "3 Boxes",
+          "mrp": "₹1095",
+          "brand": "Treo by Milton"
         },
         {
           "code": "234528",
@@ -508,11 +578,11 @@
           "brand": "Treo by Milton"
         },
         {
-          "code": "237710",
-          "name": "Treo by Milton Marble 240 Ceramic Mug Set 6pcs",
-          "qty": "3 Boxes",
-          "mrp": "₹1095",
-          "brand": "Treo by Milton"
+          "code": "131155",
+          "name": "Treo Ceramicware Kidz - O - Pia 3pcs Breakfast Set",
+          "qty": "1 Box",
+          "mrp": "₹575",
+          "brand": "Treo"
         }
       ]
     },
@@ -541,11 +611,11 @@
           "brand": ""
         },
         {
-          "code": "50962",
-          "name": "Metallino Deep Kadai 1.7 Ltr, without Lid",
-          "qty": "4 Boxes",
-          "mrp": "₹720",
-          "brand": "Metallino"
+          "code": "32885",
+          "name": "Metalino Deep Kadai 2.5L",
+          "qty": "",
+          "mrp": "₹710",
+          "brand": "Metalino"
         },
         {
           "code": "50963",
@@ -555,45 +625,17 @@
           "brand": "Metalino"
         },
         {
-          "code": "32885",
-          "name": "Metalino Deep Kadai 2.5L",
-          "qty": "",
-          "mrp": "₹710",
-          "brand": "Metalino"
+          "code": "50962",
+          "name": "Metallino Deep Kadai 1.7 Ltr, without Lid",
+          "qty": "4 Boxes",
+          "mrp": "₹720",
+          "brand": "Metallino"
         }
       ]
     },
     {
       "name": "Food Wraps & Storage",
       "items": [
-        {
-          "code": "C0649",
-          "name": "Double Zipper Bag",
-          "qty": "19 Boxes",
-          "mrp": "₹175",
-          "brand": ""
-        },
-        {
-          "code": "390808",
-          "name": "Vedica Wrap - Pure Food Grade Aluminum Foil",
-          "qty": "8 Boxes",
-          "mrp": "₹900",
-          "brand": "Vedica"
-        },
-        {
-          "code": "815102",
-          "name": "WOH Wrap O Hot Aluminum Foil 18 M",
-          "qty": "9 Boxes",
-          "mrp": "₹249",
-          "brand": "WOH"
-        },
-        {
-          "code": "815102",
-          "name": "WOH Wrap O Hot Aluminum Foil 9 M",
-          "qty": "6 Boxes",
-          "mrp": "₹175",
-          "brand": "WOH"
-        },
         {
           "code": "864282",
           "name": "Claret Food Wrapping Paper",
@@ -602,18 +644,18 @@
           "brand": "Claret"
         },
         {
+          "code": "C0649",
+          "name": "Double Zipper Bag",
+          "qty": "19 Boxes",
+          "mrp": "₹175",
+          "brand": ""
+        },
+        {
           "code": "604185",
           "name": "Ezee Microwaveable Foil - 30 mtrs",
           "qty": "4 Boxes",
           "mrp": "₹180",
           "brand": "Ezee"
-        },
-        {
-          "code": "",
-          "name": "naturalwrap Aluminum Foil - 18 mtrs",
-          "qty": "2 Boxes",
-          "mrp": "₹180",
-          "brand": "naturalwrap"
         },
         {
           "code": "",
@@ -635,6 +677,34 @@
           "qty": "3 Boxes",
           "mrp": "₹240",
           "brand": "Jiebang"
+        },
+        {
+          "code": "",
+          "name": "naturalwrap Aluminum Foil - 18 mtrs",
+          "qty": "2 Boxes",
+          "mrp": "₹180",
+          "brand": "naturalwrap"
+        },
+        {
+          "code": "390808",
+          "name": "Vedica Wrap - Pure Food Grade Aluminum Foil",
+          "qty": "8 Boxes",
+          "mrp": "₹900",
+          "brand": "Vedica"
+        },
+        {
+          "code": "815102",
+          "name": "WOH Wrap O Hot Aluminum Foil 18 M",
+          "qty": "9 Boxes",
+          "mrp": "₹249",
+          "brand": "WOH"
+        },
+        {
+          "code": "815102",
+          "name": "WOH Wrap O Hot Aluminum Foil 9 M",
+          "qty": "6 Boxes",
+          "mrp": "₹175",
+          "brand": "WOH"
         }
       ]
     },
@@ -642,17 +712,17 @@
       "name": "Garbage Bags",
       "items": [
         {
-          "code": "298008",
-          "name": "Shalimar Premium 30 garbage bags small",
-          "qty": "8 Boxes",
-          "mrp": "₹66",
-          "brand": "Shalimar"
+          "code": "615344",
+          "name": "GolKoin Non-Chlorinated Garbage Bags",
+          "qty": "9 Boxes · 10 Bags/Box",
+          "mrp": "₹165",
+          "brand": "GolKoin"
         },
         {
-          "code": "298015",
-          "name": "Shalimar Premium 30 garbage bags medium",
+          "code": "298039",
+          "name": "Shalimar Premium 15 garbage bags extra large",
           "qty": "8 Boxes",
-          "mrp": "₹86",
+          "mrp": "₹165",
           "brand": "Shalimar"
         },
         {
@@ -663,18 +733,30 @@
           "brand": "Shalimar"
         },
         {
-          "code": "298039",
-          "name": "Shalimar Premium 15 garbage bags extra large",
+          "code": "298015",
+          "name": "Shalimar Premium 30 garbage bags medium",
           "qty": "8 Boxes",
-          "mrp": "₹165",
+          "mrp": "₹86",
           "brand": "Shalimar"
         },
         {
-          "code": "615344",
-          "name": "GolKoin Non-Chlorinated Garbage Bags",
-          "qty": "9 Boxes · 10 Bags/Box",
-          "mrp": "₹165",
-          "brand": "GolKoin"
+          "code": "298008",
+          "name": "Shalimar Premium 30 garbage bags small",
+          "qty": "8 Boxes",
+          "mrp": "₹66",
+          "brand": "Shalimar"
+        }
+      ]
+    },
+    {
+      "name": "Gas Stove Accessories",
+      "items": [
+        {
+          "code": "C0219",
+          "name": "Stag Plus LPG PAN Support Stand",
+          "qty": "2 Boxes",
+          "mrp": "₹300",
+          "brand": "Stag Plus"
         }
       ]
     },
@@ -682,11 +764,39 @@
       "name": "Gaskets",
       "items": [
         {
+          "code": "C0210",
+          "name": "1.5 LTR",
+          "qty": "23 pcs",
+          "mrp": "₹40",
+          "brand": "Rajkamal"
+        },
+        {
+          "code": "C0212",
+          "name": "4-8 LTR",
+          "qty": "16 pcs",
+          "mrp": "₹42",
+          "brand": "Rajkamal"
+        },
+        {
+          "code": "",
+          "name": "Prestige Cast Iron 305583, SKU 30558",
+          "qty": "20 pcs",
+          "mrp": "₹780",
+          "brand": "Prestige"
+        },
+        {
           "code": "489269",
           "name": "Prestige Nakshatra Senior Gasket",
           "qty": "2 pcs",
           "mrp": "₹65",
           "brand": "Prestige"
+        },
+        {
+          "code": "C0211",
+          "name": "Rajkamal Cooker Gasket (2/3 LTR)",
+          "qty": "23 pcs",
+          "mrp": "₹40",
+          "brand": "Rajkamal"
         },
         {
           "code": "C0214",
@@ -701,34 +811,6 @@
           "qty": "5 pieces",
           "mrp": "₹85",
           "brand": "Stag Plus"
-        },
-        {
-          "code": "C0211",
-          "name": "Rajkamal Cooker Gasket (2/3 LTR)",
-          "qty": "23 pcs",
-          "mrp": "₹40",
-          "brand": "Rajkamal"
-        },
-        {
-          "code": "C0212",
-          "name": "4-8 LTR",
-          "qty": "16 pcs",
-          "mrp": "₹42",
-          "brand": "Rajkamal"
-        },
-        {
-          "code": "C0210",
-          "name": "1.5 LTR",
-          "qty": "23 pcs",
-          "mrp": "₹40",
-          "brand": "Rajkamal"
-        },
-        {
-          "code": "",
-          "name": "Prestige Cast Iron 305583, SKU 30558",
-          "qty": "20 pcs",
-          "mrp": "₹780",
-          "brand": "Prestige"
         }
       ]
     },
@@ -736,10 +818,45 @@
       "name": "Glass Sets",
       "items": [
         {
+          "code": "35426",
+          "name": "Bravo Juice Set 5 Pcs Set",
+          "qty": "6 Boxes",
+          "mrp": "₹140",
+          "brand": "Bravo"
+        },
+        {
           "code": "",
-          "name": "Hapion Glass Set",
-          "qty": "6 pcs",
-          "mrp": "₹225",
+          "name": "Delisoga Deli Glassware 6pcs 175 ML",
+          "qty": "3 Boxes",
+          "mrp": "₹550",
+          "brand": "Delisoga"
+        },
+        {
+          "code": "4394",
+          "name": "Delisoga Deli Glassware 6pcs 180 ml",
+          "qty": "1 Box",
+          "mrp": "₹550",
+          "brand": "Delisoga"
+        },
+        {
+          "code": "C0526",
+          "name": "Delisoga Deli Glassware 6pcs 190ml",
+          "qty": "2 Boxes",
+          "mrp": "₹850",
+          "brand": "Delisoga"
+        },
+        {
+          "code": "C0538",
+          "name": "Delisoga Deli Glassware 6pcs 340ml",
+          "qty": "2 Boxes",
+          "mrp": "₹675",
+          "brand": "Delisoga"
+        },
+        {
+          "code": "",
+          "name": "Gentry Cup",
+          "qty": "2 Boxes",
+          "mrp": "₹250",
           "brand": ""
         },
         {
@@ -750,38 +867,10 @@
           "brand": ""
         },
         {
-          "code": "35426",
-          "name": "Bravo Juice Set 5 Pcs Set",
-          "qty": "6 Boxes",
-          "mrp": "₹140",
-          "brand": "Bravo"
-        },
-        {
-          "code": "0232",
-          "name": "Super Mom Faluda Glass 300 ML. 6pcs Set",
-          "qty": "4 Units",
-          "mrp": "₹420",
-          "brand": "Super Mom"
-        },
-        {
-          "code": "572976",
-          "name": "Super Mom Casa glass - 6pcs set",
-          "qty": "1 Box",
-          "mrp": "₹299",
-          "brand": "Super Mom"
-        },
-        {
-          "code": "C0527",
-          "name": "Qing Ping Guo Deli Glass Ice Cream Cup 6pcs",
-          "qty": "1 Box",
-          "mrp": "₹1250",
-          "brand": "Qing Ping Guo"
-        },
-        {
           "code": "",
-          "name": "Gentry Cup",
-          "qty": "2 Boxes",
-          "mrp": "₹250",
+          "name": "Hapion Glass Set",
+          "qty": "6 pcs",
+          "mrp": "₹225",
           "brand": ""
         },
         {
@@ -792,6 +881,13 @@
           "brand": ""
         },
         {
+          "code": "519015",
+          "name": "La Opalia Borosilicate Casserole with Lid 500 ml",
+          "qty": "3 Boxes",
+          "mrp": "₹895",
+          "brand": "La Opala"
+        },
+        {
           "code": "512016",
           "name": "La Opalia Borosilicate Clip N Store with Snap Lid 210 ml",
           "qty": "2 Boxes",
@@ -799,10 +895,10 @@
           "brand": "La Opala"
         },
         {
-          "code": "519015",
-          "name": "La Opalia Borosilicate Casserole with Lid 500 ml",
-          "qty": "3 Boxes",
-          "mrp": "₹895",
+          "code": "517011",
+          "name": "La Opalia Borosilicate Mini with Snap Lid 150 ml",
+          "qty": "1 Box",
+          "mrp": "₹275",
           "brand": "La Opala"
         },
         {
@@ -813,11 +909,102 @@
           "brand": "La Opala"
         },
         {
-          "code": "517011",
-          "name": "La Opalia Borosilicate Mini with Snap Lid 150 ml",
+          "code": "",
+          "name": "Luminarc MartiguesbHb Tumbler 1 Set 6 pcs",
+          "qty": "2 Boxes",
+          "mrp": "₹655",
+          "brand": "Luminarc"
+        },
+        {
+          "code": "B01210",
+          "name": "Ocean Fin Line Hi Ball 280 ml 6pcs",
+          "qty": "2 Boxes",
+          "mrp": "₹750",
+          "brand": "Ocean"
+        },
+        {
+          "code": "56814",
+          "name": "Ocean Fin Line Juice 175 ml 6pcs",
+          "qty": "5 Boxes",
+          "mrp": "₹650",
+          "brand": "Ocean"
+        },
+        {
+          "code": "31225",
+          "name": "Ocean Glass Hansa 300 ml 6pcs",
+          "qty": "2 Boxes",
+          "mrp": "₹425",
+          "brand": "Ocean"
+        },
+        {
+          "code": "396264",
+          "name": "Qing Ping Guo Deli Glass 3 pcs",
           "qty": "1 Box",
-          "mrp": "₹275",
-          "brand": "La Opala"
+          "mrp": "₹895",
+          "brand": "Qing Ping Guo"
+        },
+        {
+          "code": "C0529",
+          "name": "Qing Ping Guo Deli Glass Glass Press Tumbler 6pcs",
+          "qty": "3 Boxes",
+          "mrp": "₹650",
+          "brand": "Qing Ping Guo"
+        },
+        {
+          "code": "C0527",
+          "name": "Qing Ping Guo Deli Glass Ice Cream Cup 6pcs",
+          "qty": "1 Box",
+          "mrp": "₹1250",
+          "brand": "Qing Ping Guo"
+        },
+        {
+          "code": "C0537",
+          "name": "Qing Ping Guo Deli Glass Sunrise Mug 6pcs",
+          "qty": "2 Boxes",
+          "mrp": "₹650",
+          "brand": "Qing Ping Guo"
+        },
+        {
+          "code": "33659",
+          "name": "Qing Ping Guo Deli Glassware 6pcs 130ml",
+          "qty": "1 Box",
+          "mrp": "₹485",
+          "brand": "Qing Ping Guo"
+        },
+        {
+          "code": "",
+          "name": "Roxx Pro Ring Tumbler 6pcs",
+          "qty": "1 Box",
+          "mrp": "₹300",
+          "brand": "Roxx"
+        },
+        {
+          "code": "572976",
+          "name": "Super Mom Casa glass - 6pcs set",
+          "qty": "1 Box",
+          "mrp": "₹299",
+          "brand": "Super Mom"
+        },
+        {
+          "code": "0232",
+          "name": "Super Mom Faluda Glass 300 ML. 6pcs Set",
+          "qty": "4 Units",
+          "mrp": "₹420",
+          "brand": "Super Mom"
+        },
+        {
+          "code": "4795",
+          "name": "Yera Beer Mug Set 6 pcs",
+          "qty": "1 Box",
+          "mrp": "₹450",
+          "brand": "Yera"
+        },
+        {
+          "code": "51911",
+          "name": "Yera Glass Set 6 pcs",
+          "qty": "1 Box",
+          "mrp": "₹300",
+          "brand": "Yera"
         }
       ]
     },
@@ -825,32 +1012,11 @@
       "name": "Idly Cookers & Accessories",
       "items": [
         {
-          "code": "",
-          "name": "Smart Kitchen Idly Vessel - 6 plates",
-          "qty": "1 Box",
-          "mrp": "₹850",
-          "brand": "Smart Kitchen"
-        },
-        {
-          "code": "740037",
-          "name": "Murugan Idly Cooker - 4 Plates",
-          "qty": "1 Box",
-          "mrp": "₹1100",
-          "brand": "Murugan"
-        },
-        {
           "code": "A362",
           "name": "Candy Tree Cup Holder 6 Position",
           "qty": "1 Box",
           "mrp": "₹575",
           "brand": "Candy Tree"
-        },
-        {
-          "code": "740037",
-          "name": "Murugan Idly Cooker - 6 Plates",
-          "qty": "1 Box",
-          "mrp": "₹1300",
-          "brand": "Murugan"
         },
         {
           "code": "A364",
@@ -867,6 +1033,27 @@
           "brand": ""
         },
         {
+          "code": "740037",
+          "name": "Murugan Idly Cooker - 4 Plates",
+          "qty": "1 Box",
+          "mrp": "₹1100",
+          "brand": "Murugan"
+        },
+        {
+          "code": "740037",
+          "name": "Murugan Idly Cooker - 6 Plates",
+          "qty": "1 Box",
+          "mrp": "₹1300",
+          "brand": "Murugan"
+        },
+        {
+          "code": "",
+          "name": "Smart Kitchen Idly Vessel - 6 plates",
+          "qty": "1 Box",
+          "mrp": "₹850",
+          "brand": "Smart Kitchen"
+        },
+        {
           "code": "1419",
           "name": "Steam Lite Food Grade Aluminum Idli Stand",
           "qty": "3 Boxes",
@@ -879,45 +1066,10 @@
       "name": "Jar Sets",
       "items": [
         {
-          "code": "",
-          "name": "S/N Jar Set Dry",
-          "qty": "1 Box",
-          "mrp": "₹485",
-          "brand": ""
-        },
-        {
-          "code": "",
-          "name": "S/N Jar Set Wet",
-          "qty": "1 Box",
-          "mrp": "₹585",
-          "brand": ""
-        },
-        {
-          "code": "C0207",
-          "name": "STAG PLUS Platinum Chutney Attachment - Silver",
-          "qty": "2 Boxes",
-          "mrp": "₹275",
-          "brand": "STAG PLUS"
-        },
-        {
           "code": "39954",
           "name": "Chutney Attachment - Mixi Jar",
           "qty": "3 Units",
           "mrp": "₹325",
-          "brand": ""
-        },
-        {
-          "code": "",
-          "name": "Shah Mixi Jar",
-          "qty": "3 Units",
-          "mrp": "₹550",
-          "brand": ""
-        },
-        {
-          "code": "54418",
-          "name": "Roshani Stainless Steel Chutney Attachment",
-          "qty": "2 Units",
-          "mrp": "₹545",
           "brand": ""
         },
         {
@@ -933,19 +1085,47 @@
           "qty": "1 Unit",
           "mrp": "₹850",
           "brand": "Preethi"
+        },
+        {
+          "code": "54418",
+          "name": "Roshani Stainless Steel Chutney Attachment",
+          "qty": "2 Units",
+          "mrp": "₹545",
+          "brand": ""
+        },
+        {
+          "code": "",
+          "name": "S/N Jar Set Dry",
+          "qty": "1 Box",
+          "mrp": "₹485",
+          "brand": ""
+        },
+        {
+          "code": "",
+          "name": "S/N Jar Set Wet",
+          "qty": "1 Box",
+          "mrp": "₹585",
+          "brand": ""
+        },
+        {
+          "code": "",
+          "name": "Shah Mixi Jar",
+          "qty": "3 Units",
+          "mrp": "₹550",
+          "brand": ""
+        },
+        {
+          "code": "C0207",
+          "name": "STAG PLUS Platinum Chutney Attachment - Silver",
+          "qty": "2 Boxes",
+          "mrp": "₹275",
+          "brand": "STAG PLUS"
         }
       ]
     },
     {
       "name": "Juicer Jar",
       "items": [
-        {
-          "code": "",
-          "name": "STAG Plus Juicer Jar",
-          "qty": "1 Unit",
-          "mrp": "₹449",
-          "brand": "STAG Plus"
-        },
         {
           "code": "5353",
           "name": "Regular Juicer Jar",
@@ -959,6 +1139,13 @@
           "qty": "6 Boxes",
           "mrp": "₹342",
           "brand": "Shreepal"
+        },
+        {
+          "code": "",
+          "name": "STAG Plus Juicer Jar",
+          "qty": "1 Unit",
+          "mrp": "₹449",
+          "brand": "STAG Plus"
         }
       ]
     },
@@ -966,11 +1153,25 @@
       "name": "Lighting & Torches",
       "items": [
         {
-          "code": "017860",
-          "name": "Eveready Lighting 1890 Lumens",
-          "qty": "5 Boxes",
-          "mrp": "₹325",
-          "brand": "Eveready"
+          "code": "6766",
+          "name": "Akari Plus AK-1660",
+          "qty": "1 Unit",
+          "mrp": "₹295",
+          "brand": "Akari Plus"
+        },
+        {
+          "code": "6765",
+          "name": "Akari Plus AK-505S",
+          "qty": "1 Unit",
+          "mrp": "₹850",
+          "brand": "Akari Plus"
+        },
+        {
+          "code": "00697",
+          "name": "DP LED Light Rechargeable Head Torch DP-744C",
+          "qty": "",
+          "mrp": "₹450",
+          "brand": "DP"
         },
         {
           "code": "00697",
@@ -987,31 +1188,108 @@
           "brand": "DP"
         },
         {
-          "code": "00697",
-          "name": "DP LED Light Rechargeable Head Torch DP-744C",
-          "qty": "",
-          "mrp": "₹450",
-          "brand": "DP"
-        },
-        {
-          "code": "6765",
-          "name": "Akari Plus AK-505S",
-          "qty": "1 Unit",
-          "mrp": "₹850",
-          "brand": "Akari Plus"
-        },
-        {
-          "code": "6766",
-          "name": "Akari Plus AK-1660",
-          "qty": "1 Unit",
-          "mrp": "₹295",
-          "brand": "Akari Plus"
+          "code": "017860",
+          "name": "Eveready Lighting 1890 Lumens",
+          "qty": "5 Boxes",
+          "mrp": "₹325",
+          "brand": "Eveready"
         }
       ]
     },
     {
       "name": "Lunch Boxes & Carriers",
       "items": [
+        {
+          "code": "54248",
+          "name": "AE Sweet & Salty Lunch Pack Big",
+          "qty": "Boxes",
+          "mrp": "₹250",
+          "brand": "AE"
+        },
+        {
+          "code": "8537",
+          "name": "Borneo Japan Lunch Box",
+          "qty": "1 Box",
+          "mrp": "₹750",
+          "brand": "Borneo Japan"
+        },
+        {
+          "code": "",
+          "name": "Borneo Japan Lunch Box Boutique Products - 630 ml",
+          "qty": "1 Box",
+          "mrp": "₹585",
+          "brand": "Borneo Japan"
+        },
+        {
+          "code": "17845",
+          "name": "Heat Preservation Lunch Box",
+          "qty": "1 Box",
+          "mrp": "₹550",
+          "brand": ""
+        },
+        {
+          "code": "S6520",
+          "name": "Insulated Lunch Pack",
+          "qty": "13 Boxes",
+          "mrp": "₹224",
+          "brand": "Patel Plastoware"
+        },
+        {
+          "code": "040433",
+          "name": "Insulated Tiffin (B)",
+          "qty": "1 pc",
+          "mrp": "₹1740",
+          "brand": "Milton"
+        },
+        {
+          "code": "040457",
+          "name": "Insulated Tiffin (S)",
+          "qty": "1 pc",
+          "mrp": "₹1195",
+          "brand": "Milton"
+        },
+        {
+          "code": "",
+          "name": "Lunch Box Boutique Products 630ml",
+          "qty": "",
+          "mrp": "",
+          "brand": ""
+        },
+        {
+          "code": "",
+          "name": "Lunch Box Boutique Products 630ml",
+          "qty": "",
+          "mrp": "",
+          "brand": ""
+        },
+        {
+          "code": "",
+          "name": "Lunchmate Eagle Insulated Lunch Carrier",
+          "qty": "",
+          "mrp": "",
+          "brand": ""
+        },
+        {
+          "code": "701398",
+          "name": "Lunchmate Insulated Tiffin Container",
+          "qty": "2 Boxes",
+          "mrp": "₹404",
+          "brand": "Lunchmate"
+        },
+        {
+          "code": "",
+          "name": "Milton Intelligent homeware Insulated Tiffin",
+          "qty": "4 Boxes",
+          "mrp": "₹735",
+          "brand": "Milton"
+        },
+        {
+          "code": "",
+          "name": "Milton Legend 2 Thermo Container",
+          "qty": "",
+          "mrp": "",
+          "brand": ""
+        },
         {
           "code": "",
           "name": "PATEL Big Star Insulated Lunch Pack",
@@ -1020,18 +1298,18 @@
           "brand": ""
         },
         {
-          "code": "",
-          "name": "PATEL KitKat Insulated Lunch Pack",
-          "qty": "",
-          "mrp": "",
-          "brand": ""
+          "code": "9620",
+          "name": "Patel Big Star Insulated Lunch Pack Big",
+          "qty": "2 Boxes",
+          "mrp": "₹240",
+          "brand": "Patel Plastoware"
         },
         {
           "code": "",
-          "name": "PATEL KitKat Insulated Lunch Pack",
-          "qty": "",
-          "mrp": "",
-          "brand": ""
+          "name": "Patel Big Star Insulated Lunch Pack Medium",
+          "qty": "7 Boxes",
+          "mrp": "₹200",
+          "brand": "Patel Plastoware"
         },
         {
           "code": "",
@@ -1042,14 +1320,49 @@
         },
         {
           "code": "",
-          "name": "Lunch Box Boutique Products 630ml",
+          "name": "PATEL Big Star Lunch Pack",
           "qty": "",
           "mrp": "",
           "brand": ""
         },
         {
           "code": "",
-          "name": "Lunch Box Boutique Products 630ml",
+          "name": "PATEL KitKat Insulated Lunch Pack",
+          "qty": "",
+          "mrp": "",
+          "brand": ""
+        },
+        {
+          "code": "",
+          "name": "PATEL KitKat Insulated Lunch Pack",
+          "qty": "",
+          "mrp": "",
+          "brand": ""
+        },
+        {
+          "code": "42806",
+          "name": "Patel Plastoware Apple Big Insulated Lunch Pack",
+          "qty": "1 Box",
+          "mrp": "₹303",
+          "brand": "Patel Plastoware"
+        },
+        {
+          "code": "",
+          "name": "Patel Plastoware Zig Zag Insulated Lunch Carrier",
+          "qty": "1 Box",
+          "mrp": "₹360",
+          "brand": "Patel Plastoware"
+        },
+        {
+          "code": "",
+          "name": "SC Borneo Food Container",
+          "qty": "",
+          "mrp": "",
+          "brand": ""
+        },
+        {
+          "code": "",
+          "name": "SC Borneo Food Container",
           "qty": "",
           "mrp": "",
           "brand": ""
@@ -1063,17 +1376,10 @@
         },
         {
           "code": "",
-          "name": "Lunchmate Eagle Insulated Lunch Carrier",
-          "qty": "",
-          "mrp": "",
-          "brand": ""
-        },
-        {
-          "code": "",
-          "name": "Zig Zag 1 Handle with Belt Insulated Lunch Carrier",
-          "qty": "",
-          "mrp": "",
-          "brand": ""
+          "name": "Sci Borneo Japan",
+          "qty": "1 Box",
+          "mrp": "₹550",
+          "brand": "Sci"
         },
         {
           "code": "",
@@ -1084,129 +1390,10 @@
         },
         {
           "code": "",
-          "name": "Milton Legend 2 Thermo Container",
+          "name": "Zig Zag 1 Handle with Belt Insulated Lunch Carrier",
           "qty": "",
           "mrp": "",
           "brand": ""
-        },
-        {
-          "code": "",
-          "name": "SC Borneo Food Container",
-          "qty": "",
-          "mrp": "",
-          "brand": ""
-        },
-        {
-          "code": "",
-          "name": "SC Borneo Food Container",
-          "qty": "",
-          "mrp": "",
-          "brand": ""
-        },
-        {
-          "code": "",
-          "name": "PATEL Big Star Lunch Pack",
-          "qty": "",
-          "mrp": "",
-          "brand": ""
-        },
-        {
-          "code": "17845",
-          "name": "Heat Preservation Lunch Box",
-          "qty": "1 Box",
-          "mrp": "₹550",
-          "brand": ""
-        },
-        {
-          "code": "9620",
-          "name": "Patel Big Star Insulated Lunch Pack Big",
-          "qty": "2 Boxes",
-          "mrp": "₹240",
-          "brand": "Patel Plastoware"
-        },
-        {
-          "code": "54248",
-          "name": "AE Sweet & Salty Lunch Pack Big",
-          "qty": "Boxes",
-          "mrp": "₹250",
-          "brand": "AE"
-        },
-        {
-          "code": "",
-          "name": "Patel Plastoware Zig Zag Insulated Lunch Carrier",
-          "qty": "1 Box",
-          "mrp": "₹360",
-          "brand": "Patel Plastoware"
-        },
-        {
-          "code": "42806",
-          "name": "Patel Plastoware Apple Big Insulated Lunch Pack",
-          "qty": "1 Box",
-          "mrp": "₹303",
-          "brand": "Patel Plastoware"
-        },
-        {
-          "code": "",
-          "name": "Milton Intelligent homeware Insulated Tiffin",
-          "qty": "4 Boxes",
-          "mrp": "₹735",
-          "brand": "Milton"
-        },
-        {
-          "code": "",
-          "name": "Sci Borneo Japan",
-          "qty": "1 Box",
-          "mrp": "₹550",
-          "brand": "Sci"
-        },
-        {
-          "code": "",
-          "name": "Borneo Japan Lunch Box Boutique Products - 630 ml",
-          "qty": "1 Box",
-          "mrp": "₹585",
-          "brand": "Borneo Japan"
-        },
-        {
-          "code": "8537",
-          "name": "Borneo Japan Lunch Box",
-          "qty": "1 Box",
-          "mrp": "₹750",
-          "brand": "Borneo Japan"
-        },
-        {
-          "code": "",
-          "name": "Patel Big Star Insulated Lunch Pack Medium",
-          "qty": "7 Boxes",
-          "mrp": "₹200",
-          "brand": "Patel Plastoware"
-        },
-        {
-          "code": "701398",
-          "name": "Lunchmate Insulated Tiffin Container",
-          "qty": "2 Boxes",
-          "mrp": "₹404",
-          "brand": "Lunchmate"
-        },
-        {
-          "code": "S6520",
-          "name": "Insulated Lunch Pack",
-          "qty": "13 Boxes",
-          "mrp": "₹224",
-          "brand": "Patel Plastoware"
-        },
-        {
-          "code": "040457",
-          "name": "Insulated Tiffin (S)",
-          "qty": "1 pc",
-          "mrp": "₹1195",
-          "brand": "Milton"
-        },
-        {
-          "code": "040433",
-          "name": "Insulated Tiffin (B)",
-          "qty": "1 pc",
-          "mrp": "₹1740",
-          "brand": "Milton"
         }
       ]
     },
@@ -1226,13 +1413,6 @@
       "name": "Milk Boilers",
       "items": [
         {
-          "code": "030204",
-          "name": "Murugan Milk Boiler",
-          "qty": "3 pcs",
-          "mrp": "₹450",
-          "brand": "Murugan"
-        },
-        {
           "code": "",
           "name": "Bhumi Stainless Steel Oil Pourer 1 Ltr",
           "qty": "1 Box",
@@ -1247,10 +1427,17 @@
           "brand": "Bhumi"
         },
         {
-          "code": "35126",
-          "name": "Moksha Glass Oil Dispenser 750 ml",
+          "code": "",
+          "name": "Mazda Dream Oil Pourer 500 ml",
+          "qty": "1 Box",
+          "mrp": "₹605",
+          "brand": "Mazda"
+        },
+        {
+          "code": "4984",
+          "name": "Moksha Glass Oil Dispenser 1 Ltr",
           "qty": "2 Boxes",
-          "mrp": "₹320",
+          "mrp": "₹350",
           "brand": "Moksha"
         },
         {
@@ -1268,11 +1455,18 @@
           "brand": "Moksha"
         },
         {
-          "code": "4984",
-          "name": "Moksha Glass Oil Dispenser 1 Ltr",
+          "code": "35126",
+          "name": "Moksha Glass Oil Dispenser 750 ml",
           "qty": "2 Boxes",
-          "mrp": "₹350",
+          "mrp": "₹320",
           "brand": "Moksha"
+        },
+        {
+          "code": "030204",
+          "name": "Murugan Milk Boiler",
+          "qty": "3 pcs",
+          "mrp": "₹450",
+          "brand": "Murugan"
         },
         {
           "code": "",
@@ -1280,19 +1474,26 @@
           "qty": "2 Boxes",
           "mrp": "₹190",
           "brand": "Origin"
-        },
-        {
-          "code": "",
-          "name": "Mazda Dream Oil Pourer 500 ml",
-          "qty": "1 Box",
-          "mrp": "₹605",
-          "brand": "Mazda"
         }
       ]
     },
     {
       "name": "Non-Stick Pans",
       "items": [
+        {
+          "code": "STP15",
+          "name": "Hawkins Tadka Pan (Spice Heating Pan)",
+          "qty": "2 Boxes",
+          "mrp": "₹500",
+          "brand": "Hawkins"
+        },
+        {
+          "code": "35379",
+          "name": "Multi-Pot, w/o Lid",
+          "qty": "1 pc",
+          "mrp": "₹835",
+          "brand": "Metallino"
+        },
         {
           "code": "MHA-37C37",
           "name": "New S/S Side Jar",
@@ -1306,13 +1507,6 @@
           "qty": "1 pc",
           "mrp": "₹1090",
           "brand": "Futura"
-        },
-        {
-          "code": "47142",
-          "name": "Non-Stick, w/o S.S. Lid",
-          "qty": "",
-          "mrp": "₹0",
-          "brand": "Patel"
         },
         {
           "code": "2874576",
@@ -1329,31 +1523,17 @@
           "brand": "Patel"
         },
         {
-          "code": "35379",
-          "name": "Multi-Pot, w/o Lid",
-          "qty": "1 pc",
-          "mrp": "₹835",
-          "brand": "Metallino"
-        },
-        {
-          "code": "STP15",
-          "name": "Hawkins Tadka Pan (Spice Heating Pan)",
-          "qty": "2 Boxes",
-          "mrp": "₹500",
-          "brand": "Hawkins"
+          "code": "47142",
+          "name": "Non-Stick, w/o S.S. Lid",
+          "qty": "",
+          "mrp": "₹0",
+          "brand": "Patel"
         }
       ]
     },
     {
       "name": "Other Kitchenware",
       "items": [
-        {
-          "code": "021355",
-          "name": "Eveready DL90",
-          "qty": "3 pcs",
-          "mrp": "₹220",
-          "brand": "Eveready"
-        },
         {
           "code": "011615",
           "name": "Eveready DL65",
@@ -1362,11 +1542,11 @@
           "brand": "Eveready"
         },
         {
-          "code": "286287",
-          "name": "Vansmart TL-03 (C023)",
-          "qty": "1 pc",
-          "mrp": "₹299",
-          "brand": "Vansmart"
+          "code": "021355",
+          "name": "Eveready DL90",
+          "qty": "3 pcs",
+          "mrp": "₹220",
+          "brand": "Eveready"
         },
         {
           "code": "695853",
@@ -1374,6 +1554,13 @@
           "qty": "1 Box",
           "mrp": "₹600",
           "brand": ""
+        },
+        {
+          "code": "286287",
+          "name": "Vansmart TL-03 (C023)",
+          "qty": "1 pc",
+          "mrp": "₹299",
+          "brand": "Vansmart"
         }
       ]
     },
@@ -1407,18 +1594,11 @@
           "brand": ""
         },
         {
-          "code": "019371",
-          "name": "Hitz Glue Pad, Pat",
-          "qty": "6 pcs",
-          "mrp": "₹120",
-          "brand": ""
-        },
-        {
-          "code": "019388",
-          "name": "Hitz Rat Glue Pad, Small",
-          "qty": "10 pcs",
-          "mrp": "₹80",
-          "brand": ""
+          "code": "900221",
+          "name": "Arbuda Rat Glue Board, Small",
+          "qty": "3 pcs",
+          "mrp": "₹65",
+          "brand": "Arbuda"
         },
         {
           "code": "",
@@ -1428,18 +1608,11 @@
           "brand": ""
         },
         {
-          "code": "900221",
-          "name": "Arbuda Rat Glue Board, Small",
+          "code": "012430",
+          "name": "Eveready",
           "qty": "3 pcs",
-          "mrp": "₹65",
-          "brand": "Arbuda"
-        },
-        {
-          "code": "7719",
-          "name": "Vansmart Torchlight",
-          "qty": "4 pcs",
-          "mrp": "₹485",
-          "brand": "Vansmart"
+          "mrp": "₹445",
+          "brand": "Eveready"
         },
         {
           "code": "011318",
@@ -1456,11 +1629,25 @@
           "brand": "Eveready"
         },
         {
-          "code": "012430",
-          "name": "Eveready",
-          "qty": "3 pcs",
-          "mrp": "₹445",
-          "brand": "Eveready"
+          "code": "019371",
+          "name": "Hitz Glue Pad, Pat",
+          "qty": "6 pcs",
+          "mrp": "₹120",
+          "brand": ""
+        },
+        {
+          "code": "019388",
+          "name": "Hitz Rat Glue Pad, Small",
+          "qty": "10 pcs",
+          "mrp": "₹80",
+          "brand": ""
+        },
+        {
+          "code": "7719",
+          "name": "Vansmart Torchlight",
+          "qty": "4 pcs",
+          "mrp": "₹485",
+          "brand": "Vansmart"
         }
       ]
     },
@@ -1468,11 +1655,11 @@
       "name": "Puttu Maker",
       "items": [
         {
-          "code": "SSPK",
-          "name": "Sheetal Puttu Kudam",
-          "qty": "4 Boxes",
-          "mrp": "₹499",
-          "brand": "Sheetal"
+          "code": "",
+          "name": "Four Brothers Puttu Maker Stainless Steel",
+          "qty": "5 Boxes",
+          "mrp": "₹330",
+          "brand": "Four Brothers"
         },
         {
           "code": "",
@@ -1482,24 +1669,17 @@
           "brand": "Mithra"
         },
         {
-          "code": "",
-          "name": "Four Brothers Puttu Maker Stainless Steel",
-          "qty": "5 Boxes",
-          "mrp": "₹330",
-          "brand": "Four Brothers"
+          "code": "SSPK",
+          "name": "Sheetal Puttu Kudam",
+          "qty": "4 Boxes",
+          "mrp": "₹499",
+          "brand": "Sheetal"
         }
       ]
     },
     {
       "name": "Salt & Pepper Shakers",
       "items": [
-        {
-          "code": "",
-          "name": "Shubham Plast Salt & Pepper Dispenser",
-          "qty": "1 Box",
-          "mrp": "₹360",
-          "brand": "Shubham Plast"
-        },
         {
           "code": "",
           "name": "Plasto World Slide Salt & Pepper Dispenser 12 pcs",
@@ -1509,14 +1689,21 @@
         },
         {
           "code": "",
-          "name": "Sunlife Industries Tadka Salt & Pepper Shaker 12pcs",
+          "name": "Shubham Plast Salt & Pepper Dispenser",
+          "qty": "1 Box",
+          "mrp": "₹360",
+          "brand": "Shubham Plast"
+        },
+        {
+          "code": "",
+          "name": "Sunlife Industries Chatka Salt & Pepper Shaker 12pcs",
           "qty": "1 Box",
           "mrp": "₹360",
           "brand": "Sunlife Industries"
         },
         {
           "code": "",
-          "name": "Sunlife Industries Chatka Salt & Pepper Shaker 12pcs",
+          "name": "Sunlife Industries Tadka Salt & Pepper Shaker 12pcs",
           "qty": "1 Box",
           "mrp": "₹360",
           "brand": "Sunlife Industries"
@@ -1530,6 +1717,13 @@
     {
       "name": "Tea Coasters",
       "items": [
+        {
+          "code": "",
+          "name": "Magnum Tea Coaster",
+          "qty": "11 boxes",
+          "mrp": "₹167",
+          "brand": ""
+        },
         {
           "code": "0228",
           "name": "NATURE TEA COASTER",
@@ -1549,13 +1743,6 @@
           "name": "Rolex Tea Coasters",
           "qty": "4 pcs",
           "mrp": "₹150",
-          "brand": ""
-        },
-        {
-          "code": "",
-          "name": "Magnum Tea Coaster",
-          "qty": "11 boxes",
-          "mrp": "₹167",
           "brand": ""
         },
         {

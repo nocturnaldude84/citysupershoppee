@@ -9,6 +9,69 @@
           "qty": "2 Boxes · 6 pcs/box",
           "mrp": "₹85/piece",
           "brand": "Hansa"
+        },
+        {
+          "code": "572907",
+          "name": "Super Mom Milk Mug 300 ml",
+          "qty": "3 Boxes · 2 pcs/box",
+          "mrp": "₹375",
+          "brand": "Super Mom"
+        },
+        {
+          "code": "582037",
+          "name": "Super Mom Breaktime Mug 300 ml",
+          "qty": "1 Box · 1 unit/box",
+          "mrp": "₹275",
+          "brand": "Super Mom"
+        },
+        {
+          "code": "C0517",
+          "name": "Celebration Mug",
+          "qty": "10 Boxes · 1 unit/box",
+          "mrp": "₹125",
+          "brand": ""
+        },
+        {
+          "code": "",
+          "name": "Apex Shake Mug 2 pc Set",
+          "qty": "1 Box",
+          "mrp": "₹180",
+          "brand": "Apex"
+        },
+        {
+          "code": "",
+          "name": "Mazda Stainless Steel Tea & Coffee Mugs Classic Jumbo 6pcs",
+          "qty": "Boxes · 6 pcs/box",
+          "mrp": "₹1489/Box · ₹250/piece",
+          "brand": "Mazda"
+        },
+        {
+          "code": "",
+          "name": "Mazda Stainless Steel Tea & Coffee Mugs Classic Large 6pcs",
+          "qty": "Boxes · 6 pcs/box",
+          "mrp": "₹1391/Box · ₹245/piece",
+          "brand": "Mazda"
+        },
+        {
+          "code": "",
+          "name": "Mazda Stainless Steel Tea & Coffee Mugs Cuttee Jumbo 6pcs",
+          "qty": "Boxes · 6 pcs/box",
+          "mrp": "₹1693/Box · ₹295/piece",
+          "brand": "Mazda"
+        },
+        {
+          "code": "",
+          "name": "Mazda Stainless Steel Tea & Coffee Mugs Cuttee Large 6pcs",
+          "qty": "Boxes · 6 pcs/box",
+          "mrp": "₹1391/Box · ₹245/piece",
+          "brand": "Mazda"
+        },
+        {
+          "code": "",
+          "name": "Mazda Stainless Steel Tea & Coffee Mugs Opium Medium 6pcs",
+          "qty": "Boxes · 6 pcs/box",
+          "mrp": "₹1246/Box · ₹210/piece",
+          "brand": "Mazda"
         }
       ]
     },
@@ -126,6 +189,32 @@
           "qty": "1 Box",
           "mrp": "₹895",
           "brand": "Qing Ping Guo"
+        }
+      ]
+    },
+    {
+      "name": "Gas Stove Accessories",
+      "items": [
+        {
+          "code": "C0219",
+          "name": "Stag Plus LPG PAN Support Stand",
+          "qty": "2 Boxes",
+          "mrp": "₹300",
+          "brand": "Stag Plus"
+        },
+        {
+          "code": "C0220",
+          "name": "Stag Plus LPG PAN Support Stand",
+          "qty": "2 Boxes",
+          "mrp": "₹220",
+          "brand": "Stag Plus"
+        },
+        {
+          "code": "C0222",
+          "name": "Stag Plus LPG PAN Support Stand",
+          "qty": "2 Boxes",
+          "mrp": "₹220",
+          "brand": "Stag Plus"
         }
       ]
     }

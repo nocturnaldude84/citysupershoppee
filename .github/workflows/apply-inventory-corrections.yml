@@ -1,5 +1,8 @@
 name: Apply Inventory Corrections
 on:
+  push:
+    paths:
+      - '.github/workflows/apply-inventory-corrections.yml'
   workflow_dispatch:
 permissions:
   contents: write
@@ -21,49 +24,36 @@ jobs:
               for item in cat.get('items', []):
                   name = item.get('name', '')
 
-                  # User-confirmed corrections
                   if item.get('code') == '83657' or name == 'Ogil 6/ware Set':
                       item.update(code='33657', name='Deli Glassware Set', qty='3 Boxes', mrp='₹530')
-
                   if 'Lamerma' in name:
                       item['name'] = name.replace('Lamerma', 'La Melma')
                   if item.get('brand') == 'Lamerma':
                       item['brand'] = 'La Melma'
-
                   if 'Vaccum Lid' in name:
                       item['name'] = name.replace('Vaccum Lid', 'Vacuum Lid')
-
                   if 'MartiguesbHb' in name:
                       item['name'] = name.replace('MartiguesbHb', 'Martigues Hb')
-
                   if item.get('code') == '17845' or name.startswith('Heat Preservation Lunch Box'):
                       item['qty'] = '1 Box'
                   if name.startswith('Patel Plastoware Zig Zag Insulated Lunch Carrier'):
                       item['qty'] = '1 Box'
                   if name.startswith('Patel Plastoware Apple Big Insulated Lunch Pack'):
                       item['qty'] = '1 Box'
-
                   if name.startswith('Sci Borneo Japan'):
                       item['brand'] = 'Sci'
                       item['qty'] = '1 Box'
-
                   if name == 'Cup Holder Pleasure' or item.get('code') == '692556':
                       item['code'] = 'A382'
                       item['name'] = 'Cup Holder Pleasure'
-
                   if name.startswith('Mazda Dream Oil Pourer'):
                       item['brand'] = 'Mazda'
-
                   if name.startswith('Moksha Glass Oil Dispenser 250 ml'):
                       item['code'] = '12066'
                   elif name.startswith('Moksha Glass Oil Dispenser 500 ml'):
                       item['code'] = '35225'
                   elif name.startswith('Moksha Glass Oil Dispenser 1 Ltr'):
                       item['code'] = '4984'
-
-          # Ensure the confirmed Qing Ping Guo Deli Glass entry is named from the package.
-          for cat in data.get('categories', []):
-              for item in cat.get('items', []):
                   if item.get('code') == 'C0529' and 'Deli Glass' in item.get('name',''):
                       item['name'] = 'Qing Ping Guo Deli Glass Press Tumbler 6pcs'
                       item['brand'] = 'Qing Ping Guo'

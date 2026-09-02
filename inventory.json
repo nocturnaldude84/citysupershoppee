@@ -423,6 +423,46 @@
       ]
     },
     {
+      "name": "Cups & Saucers",
+      "items": [
+        {
+          "code": "",
+          "name": "RK Plastoware 222 Steel Cup With Lid - 6pcs/Box 350ml",
+          "qty": "2 Boxes · 6 pcs/box",
+          "mrp": "₹126/pc, ₹756/Box",
+          "brand": "RK Plastoware"
+        },
+        {
+          "code": "",
+          "name": "Cello Designer Crockery Cup and Saucer - 12pcs (6 Cups 6 Saucers) Blossom",
+          "qty": "Boxes",
+          "mrp": "₹799",
+          "brand": "Cello"
+        },
+        {
+          "code": "",
+          "name": "Cello Designer Crockery Cup and Saucer - 12pcs (6 Cups 6 Saucers) Livid Lilac",
+          "qty": "Boxes",
+          "mrp": "₹799",
+          "brand": "Cello"
+        },
+        {
+          "code": "",
+          "name": "Cello Designer Crockery Cup and Saucer - 12pcs (6 Cups 6 Saucers) Magical Star",
+          "qty": "Boxes",
+          "mrp": "₹799",
+          "brand": "Cello"
+        },
+        {
+          "code": "",
+          "name": "Cello Designer Crockery Cup and Saucer - 8pcs (4 Cups 4 Saucers) Hanging Garden",
+          "qty": "Boxes",
+          "mrp": "₹595",
+          "brand": "Cello"
+        }
+      ]
+    },
+    {
       "name": "Deep Kadai",
       "items": [
         {
@@ -1320,6 +1360,29 @@
       ]
     },
     {
+      "name": "Puttu Maker",
+      "items": [
+        {
+          "code": "SSPK",
+          "name": "Sheetal Puttu Kudam",
+          "qty": "4 Boxes",
+          "mrp": "₹499",
+          "brand": "Sheetal"
+        },
+        {
+          "code": "",
+          "name": "Mithra Puttu Maker",
+          "qty": "",
+          "mrp": "",
+          "brand": "Mithra"
+        }
+      ]
+    },
+    {
+      "name": "Storage Containers",
+      "items": []
+    },
+    {
       "name": "Tea Coasters",
       "items": [
         {
@@ -1356,58 +1419,6 @@
           "qty": "11 boxes",
           "mrp": "₹149",
           "brand": "Sunlife"
-        }
-      ]
-    },
-    {
-      "name": "Cups & Saucers",
-      "items": [
-        {
-          "code": "",
-          "name": "RK Plastoware 222 Steel Cup With Lid - 6pcs/Box 350ml",
-          "qty": "2 Boxes · 6 pcs/box",
-          "mrp": "₹126/pc, ₹756/Box",
-          "brand": "RK Plastoware"
-        },
-        {
-          "code": "",
-          "name": "Cello Designer Crockery Cup and Saucer - 12pcs (6 Cups 6 Saucers) Blossom",
-          "qty": "Boxes",
-          "mrp": "₹799",
-          "brand": "Cello"
-        },
-        {
-          "code": "",
-          "name": "Cello Designer Crockery Cup and Saucer - 12pcs (6 Cups 6 Saucers) Livid Lilac",
-          "qty": "Boxes",
-          "mrp": "₹799",
-          "brand": "Cello"
-        },
-        {
-          "code": "",
-          "name": "Cello Designer Crockery Cup and Saucer - 12pcs (6 Cups 6 Saucers) Magical Star",
-          "qty": "Boxes",
-          "mrp": "₹799",
-          "brand": "Cello"
-        },
-        {
-          "code": "",
-          "name": "Cello Designer Crockery Cup and Saucer - 8pcs (4 Cups 4 Saucers) Hanging Garden",
-          "qty": "Boxes",
-          "mrp": "₹595",
-          "brand": "Cello"
-        }
-      ]
-    },
-    {
-      "name": "Storage Containers",
-      "items": [
-        {
-          "code": "SSPK",
-          "name": "Sheetal Putti Kudam",
-          "qty": "4 Boxes",
-          "mrp": "₹499",
-          "brand": "Sheetal"
         }
       ]
     }

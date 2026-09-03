@@ -3,259 +3,66 @@
     {
       "name": "Vegetable Cutters",
       "items": [
-        {
-          "code": "",
-          "name": "Head kvarters Vegetable with French Fry Cutting",
-          "qty": "1 Box",
-          "mrp": "₹945",
-          "brand": ""
-        },
-        {
-          "code": "39526",
-          "name": "Miracle Potato and Vegetable Chipser with Container",
-          "qty": "1 Box",
-          "mrp": "₹799",
-          "brand": "Miracle"
-        }
+        {"code":"","name":"Head kvarters Vegetable with French Fry Cutting","qty":"1 Box","mrp":"₹945","brand":""},
+        {"code":"39526","name":"Miracle Potato and Vegetable Chipser with Container","qty":"1 Box","mrp":"₹799","brand":"Miracle"}
       ]
     },
     {
       "name": "Cloth Clips",
       "items": [
-        {
-          "code": "10854",
-          "name": "Jatin Stainless Steel Cloth Clip 6 Dozen",
-          "qty": "1 Box",
-          "mrp": "₹900 · ₹150/6 pcs",
-          "brand": "Jatin"
-        }
+        {"code":"10854","name":"Jatin Stainless Steel Cloth Clip 6 Dozen","qty":"1 Box","mrp":"₹900 · ₹150/6 pcs","brand":"Jatin"}
       ]
     },
     {
       "name": "Lighting & Torches",
       "items": [
-        {
-          "code": "011318",
-          "name": "Eveready Digi LED - DL64 Brass Torch",
-          "qty": "3 Boxes",
-          "mrp": "₹315",
-          "brand": "Eveready"
-        },
-        {
-          "code": "011318",
-          "name": "Eveready Digi LED - DL63 Brass Torch",
-          "qty": "1 Box",
-          "mrp": "₹430",
-          "brand": "Eveready"
-        },
-        {
-          "code": "011615",
-          "name": "Eveready Digi LED - DL65 Brass Torch",
-          "qty": "1 Box",
-          "mrp": "₹550",
-          "brand": "Eveready"
-        },
-        {
-          "code": "013398",
-          "name": "Eveready Shine 0.75W Torch - DL06",
-          "qty": "1 Box",
-          "mrp": "₹165",
-          "brand": "Eveready"
-        },
-        {
-          "code": "017303",
-          "name": "Eveready DL47 0.75W Torch",
-          "qty": "3 Boxes",
-          "mrp": "₹145",
-          "brand": "Eveready"
-        },
-        {
-          "code": "021355",
-          "name": "Eveready DL90 1W Rechargeable Torch",
-          "qty": "3 Boxes",
-          "mrp": "₹220",
-          "brand": "Eveready"
-        }
+        {"code":"011318","name":"Eveready Digi LED - DL64 Brass Torch","qty":"3 Boxes","mrp":"₹315","brand":"Eveready"},
+        {"code":"011318","name":"Eveready Digi LED - DL63 Brass Torch","qty":"1 Box","mrp":"₹430","brand":"Eveready"},
+        {"code":"011615","name":"Eveready Digi LED - DL65 Brass Torch","qty":"1 Box","mrp":"₹550","brand":"Eveready"},
+        {"code":"013398","name":"Eveready Shine 0.75W Torch - DL06","qty":"1 Box","mrp":"₹165","brand":"Eveready"},
+        {"code":"017303","name":"Eveready DL47 0.75W Torch","qty":"3 Boxes","mrp":"₹145","brand":"Eveready"},
+        {"code":"021355","name":"Eveready DL90 1W Rechargeable Torch","qty":"3 Boxes","mrp":"₹220","brand":"Eveready"}
       ]
     },
     {
       "name": "Notebooks",
       "items": [
-        {
-          "code": "NBX25B",
-          "name": "Classmate Pulse Single Line Exercise Notebook",
-          "qty": "26 Notebooks",
-          "mrp": "₹80/piece",
-          "brand": "Classmate"
-        },
-        {
-          "code": "KA172S2",
-          "name": "Vision King Size Ruling Type 2-4-00 Notebook",
-          "qty": "25 Notebooks",
-          "mrp": "₹63/piece",
-          "brand": "Vision"
-        },
-        {
-          "code": "KA172S2",
-          "name": "Vision King Size Ruling Type 2 Notebook",
-          "qty": "13 Notebooks",
-          "mrp": "₹60/piece",
-          "brand": "Vision"
-        },
-        {
-          "code": "02000224",
-          "name": "Classmate Square 0.5\" Exercise Book",
-          "qty": "12 Notebooks",
-          "mrp": "₹48/piece",
-          "brand": "Classmate"
-        },
-        {
-          "code": "02000597",
-          "name": "Classmate Exercise Book Maths Ruled",
-          "qty": "7 Notebooks",
-          "mrp": "₹48/piece",
-          "brand": "Classmate"
-        },
-        {
-          "code": "02001675",
-          "name": "Classmate Exercise Book Four Line-Interleaf",
-          "qty": "63 Notebooks",
-          "mrp": "₹48/piece",
-          "brand": "Classmate"
-        },
-        {
-          "code": "02000835",
-          "name": "Classmate Exercise Book Maths Ruled",
-          "qty": "3 Notebooks",
-          "mrp": "₹30/piece",
-          "brand": "Classmate"
-        },
-        {
-          "code": "NA172C2",
-          "name": "Vision Two Ruling Notebooks",
-          "qty": "10 Notebooks",
-          "mrp": "₹37/piece",
-          "brand": "Vision"
-        },
-        {
-          "code": "C01052",
-          "name": "Lacco Wiro Notebooks B/5 (1 Sub) Size",
-          "qty": "2 Notebooks",
-          "mrp": "₹160",
-          "brand": "Lacco"
-        },
-        {
-          "code": "C01043",
-          "name": "Lacco Wiro Notebooks A/5 (5 Sub) Size",
-          "qty": "3 Notebooks",
-          "mrp": "₹210",
-          "brand": "Lacco"
-        },
-        {
-          "code": "NBX25E",
-          "name": "Classmate Pulse Single Line Exercise Notebook (Big)",
-          "qty": "43 Notebooks",
-          "mrp": "₹100/piece",
-          "brand": "Classmate"
-        },
-        {
-          "code": "C01048",
-          "name": "Lacco Queen Size Notebooks",
-          "qty": "12 Notebooks",
-          "mrp": "₹200/piece",
-          "brand": "Lacco"
-        },
-        {
-          "code": "C01051",
-          "name": "Lacco B5 Notebooks",
-          "qty": "5 Notebooks",
-          "mrp": "₹230/piece",
-          "brand": "Lacco"
-        },
-        {
-          "code": "NBX25C",
-          "name": "Classmate Physics Practical Exercise Book Single Line/Blank",
-          "qty": "6 Notebooks",
-          "mrp": "₹510/piece",
-          "brand": "Classmate"
-        },
-        {
-          "code": "NBX25D",
-          "name": "Classmate Chemistry Practical Exercise Book Single Line/Blank",
-          "qty": "6 Notebooks",
-          "mrp": "₹510/piece",
-          "brand": "Classmate"
-        },
-        {
-          "code": "C01054",
-          "name": "Parimala Elegant Notebook No. 03",
-          "qty": "3 Notebooks",
-          "mrp": "₹180/piece",
-          "brand": "Parimala"
-        },
-        {
-          "code": "C01050",
-          "name": "Parimala Elegant Notebook No. 02",
-          "qty": "8 Notebooks",
-          "mrp": "₹170/piece",
-          "brand": "Parimala"
-        },
-        {
-          "code": "NBX24I",
-          "name": "Classmate Exercise Book 31cm x 20 cm",
-          "qty": "14 Notebooks",
-          "mrp": "₹170/piece",
-          "brand": "Classmate"
-        },
-        {
-          "code": "NBX24K",
-          "name": "Classmate Exercise Book 30cm x 21cm",
-          "qty": "6 Notebooks",
-          "mrp": "₹200/piece",
-          "brand": "Classmate"
-        },
-        {
-          "code": "02001249",
-          "name": "Classmate Exercise Book 31.4cm x 19.4cm",
-          "qty": "2 Notebooks",
-          "mrp": "₹165/piece",
-          "brand": "Classmate"
-        },
-        {
-          "code": "FAZ96F1",
-          "name": "Vision Full scape Long Book Notebooks",
-          "qty": "7 Notebooks",
-          "mrp": "₹60/piece",
-          "brand": "Vision"
-        },
-        {
-          "code": "C0806",
-          "name": "Avengers Notebooks",
-          "qty": "5 Notebooks",
-          "mrp": "₹140/piece",
-          "brand": ""
-        },
-        {
-          "code": "C0806",
-          "name": "Cartoon Notebooks",
-          "qty": "10 Notebooks",
-          "mrp": "₹140/piece",
-          "brand": ""
-        },
-        {
-          "code": "",
-          "name": "A1 Quality Slip Pad No. 3",
-          "qty": "7 Writing Pads",
-          "mrp": "₹20/piece",
-          "brand": "A1"
-        },
-        {
-          "code": "",
-          "name": "Lacco Writing Pad No. 3",
-          "qty": "3 Writing Pads",
-          "mrp": "₹20/piece",
-          "brand": "Lacco"
-        }
+        {"code":"NBX25B","name":"Classmate Pulse Single Line Exercise Notebook","qty":"26 Notebooks","mrp":"₹80/piece","brand":"Classmate"},
+        {"code":"KA172S2","name":"Vision King Size Ruling Type 2-4-00 Notebook","qty":"25 Notebooks","mrp":"₹63/piece","brand":"Vision"},
+        {"code":"KA172S2","name":"Vision King Size Ruling Type 2 Notebook","qty":"13 Notebooks","mrp":"₹60/piece","brand":"Vision"},
+        {"code":"02000224","name":"Classmate Square 0.5\" Exercise Book","qty":"12 Notebooks","mrp":"₹48/piece","brand":"Classmate"},
+        {"code":"02000597","name":"Classmate Exercise Book Maths Ruled","qty":"7 Notebooks","mrp":"₹48/piece","brand":"Classmate"},
+        {"code":"02001675","name":"Classmate Exercise Book Four Line-Interleaf","qty":"63 Notebooks","mrp":"₹48/piece","brand":"Classmate"},
+        {"code":"02000835","name":"Classmate Exercise Book Maths Ruled","qty":"3 Notebooks","mrp":"₹30/piece","brand":"Classmate"},
+        {"code":"NA172C2","name":"Vision Two Ruling Notebooks","qty":"10 Notebooks","mrp":"₹37/piece","brand":"Vision"},
+        {"code":"C01052","name":"Lacco Wiro Notebooks B/5 (1 Sub) Size","qty":"2 Notebooks","mrp":"₹160","brand":"Lacco"},
+        {"code":"C01043","name":"Lacco Wiro Notebooks A/5 (5 Sub) Size","qty":"3 Notebooks","mrp":"₹210","brand":"Lacco"},
+        {"code":"NBX25E","name":"Classmate Pulse Single Line Exercise Notebook (Big)","qty":"43 Notebooks","mrp":"₹100/piece","brand":"Classmate"},
+        {"code":"C01048","name":"Lacco Queen Size Notebooks","qty":"12 Notebooks","mrp":"₹200/piece","brand":"Lacco"},
+        {"code":"C01051","name":"Lacco B5 Notebooks","qty":"5 Notebooks","mrp":"₹230/piece","brand":"Lacco"},
+        {"code":"NBX25C","name":"Classmate Physics Practical Exercise Book Single Line/Blank","qty":"6 Notebooks","mrp":"₹510/piece","brand":"Classmate"},
+        {"code":"NBX25D","name":"Classmate Chemistry Practical Exercise Book Single Line/Blank","qty":"6 Notebooks","mrp":"₹510/piece","brand":"Classmate"},
+        {"code":"C01054","name":"Parimala Elegant Notebook No. 03","qty":"3 Notebooks","mrp":"₹180/piece","brand":"Parimala"},
+        {"code":"C01050","name":"Parimala Elegant Notebook No. 02","qty":"8 Notebooks","mrp":"₹170/piece","brand":"Parimala"},
+        {"code":"NBX24I","name":"Classmate Exercise Book 31cm x 20 cm","qty":"14 Notebooks","mrp":"₹170/piece","brand":"Classmate"},
+        {"code":"NBX24K","name":"Classmate Exercise Book 30cm x 21cm","qty":"6 Notebooks","mrp":"₹200/piece","brand":"Classmate"},
+        {"code":"02001249","name":"Classmate Exercise Book 31.4cm x 19.4cm","qty":"2 Notebooks","mrp":"₹165/piece","brand":"Classmate"},
+        {"code":"FAZ96F1","name":"Vision Full scape Long Book Notebooks","qty":"7 Notebooks","mrp":"₹60/piece","brand":"Vision"},
+        {"code":"C0806","name":"Avengers Notebooks","qty":"5 Notebooks","mrp":"₹140/piece","brand":""},
+        {"code":"C0806","name":"Cartoon Notebooks","qty":"10 Notebooks","mrp":"₹140/piece","brand":""},
+        {"code":"","name":"A1 Quality Slip Pad No. 3","qty":"7 Writing Pads","mrp":"₹20/piece","brand":"A1"},
+        {"code":"","name":"Lacco Writing Pad No. 3","qty":"3 Writing Pads","mrp":"₹20/piece","brand":"Lacco"},
+        {"code":"02000202","name":"Classmate Exercise Book 27x16 cm","qty":"25 Notebooks","mrp":"₹25/piece","brand":"Classmate"},
+        {"code":"NBX24L","name":"Classmate Single Line Exercise Notebook 72 pages","qty":"60 Notebooks · 5 Boxes · 12 Notebooks/box","mrp":"₹25/piece","brand":"Classmate"},
+        {"code":"NBX24E","name":"Classmate Single Line Interleaf Notebooks","qty":"12 Notebooks","mrp":"₹60/piece","brand":"Classmate"}
+      ]
+    },
+    {
+      "name": "Birthday Candles",
+      "items": [
+        {"code":"16358","name":"Birthday Candles","qty":"163 pcs","mrp":"₹20/piece","brand":""},
+        {"code":"","name":"Twisted Birthday Candles","qty":"22 pcs","mrp":"₹30/piece","brand":""},
+        {"code":"C0532","name":"Number Candles","qty":"50 pcs","mrp":"₹30/piece","brand":""}
       ]
     }
   ]

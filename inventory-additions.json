@@ -62,7 +62,34 @@
       "items": [
         {"code":"16358","name":"Birthday Candles","qty":"163 pcs","mrp":"₹20/piece","brand":""},
         {"code":"","name":"Twisted Birthday Candles","qty":"22 pcs","mrp":"₹30/piece","brand":""},
-        {"code":"C0532","name":"Number Candles","qty":"50 pcs","mrp":"₹30/piece","brand":""}
+        {"code":"C0532","name":"Number Candles","qty":"50 pcs","mrp":"₹30/piece","brand":""},
+        {"code":"0407","name":"Birthday Candles","qty":"42 pcs","mrp":"₹38/piece","brand":""}
+      ]
+    },
+    {
+      "name": "Candles",
+      "items": [
+        {"code":"31140","name":"Candles","qty":"10 pcs","mrp":"₹75/piece","brand":""}
+      ]
+    },
+    {
+      "name": "Office & Stationery",
+      "items": [
+        {"code":"","name":"Lacco Binder Clips 25mm","qty":"144 pcs","mrp":"₹60/piece","brand":"Lacco"}
+      ]
+    },
+    {
+      "name": "Mathematical Drawing Instruments",
+      "items": [
+        {"code":"4899226","name":"Camlin Scholar Mathematical Drawing Instruments","qty":"10 Boxes","mrp":"₹150/box","brand":"Camlin"},
+        {"code":"80320","name":"DOMS Geo Tron Plus Mathematical Drawing Instruments","qty":"10 Boxes","mrp":"₹160/box","brand":"DOMS"},
+        {"code":"80202","name":"DOMS ISRO Mathematical Drawing Instruments","qty":"1 Box","mrp":"₹250","brand":"DOMS"}
+      ]
+    },
+    {
+      "name": "Dissection Instruments",
+      "items": [
+        {"code":"5099422","name":"Camlin Scholar Dissection Instruments Box Stainless Steel 19 Units","qty":"4 Boxes","mrp":"₹350","brand":"Camlin"}
       ]
     },
     {

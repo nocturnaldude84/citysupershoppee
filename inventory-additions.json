@@ -81,7 +81,9 @@
         {"code":"3450","name":"DOMS Extra Long Wax Crayons 25 Shades","qty":"8 Boxes","mrp":"₹70/box","brand":"DOMS"},
         {"code":"7429","name":"DOMS Aqua Colour Cakes 36 Shades","qty":"5 Boxes","mrp":"₹160/box","brand":"DOMS"},
         {"code":"80366","name":"DOMS Refillable Aqua Colour Cakes 18 Shades","qty":"1 Box","mrp":"₹150","brand":"DOMS"},
-        {"code":"7128","name":"DOMS Aqua Colour Cakes 12 Shades","qty":"7 Boxes","mrp":"₹100/box","brand":"DOMS"}
+        {"code":"7128","name":"DOMS Aqua Colour Cakes 12 Shades","qty":"7 Boxes","mrp":"₹100/box","brand":"DOMS"},
+        {"code":"7514","name":"DOMS Arts Strokes Complete Kit","qty":"14 Kits","mrp":"₹149/kit","brand":"DOMS"},
+        {"code":"7254","name":"DOMS Arts Painting Complete Kit","qty":"3 Kits","mrp":"₹199/kit","brand":"DOMS"}
       ]
     }
   ]

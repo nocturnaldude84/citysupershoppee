@@ -77,6 +77,60 @@
           "brand": "Eveready"
         }
       ]
+    },
+    {
+      "name": "Notebooks",
+      "items": [
+        {
+          "code": "NBX25B",
+          "name": "Classmate Pulse Single Line Exercise Notebook",
+          "qty": "26 Notebooks",
+          "mrp": "₹80/piece",
+          "brand": "Classmate"
+        },
+        {
+          "code": "KA172S2",
+          "name": "Vision King Size Ruling Type 2-4-00 Notebook",
+          "qty": "25 Notebooks",
+          "mrp": "₹63/piece",
+          "brand": "Vision"
+        },
+        {
+          "code": "KA172S2",
+          "name": "Vision King Size Ruling Type 2 Notebook",
+          "qty": "13 Notebooks",
+          "mrp": "₹60/piece",
+          "brand": "Vision"
+        },
+        {
+          "code": "02000224",
+          "name": "Classmate Square 0.5\" Exercise Book",
+          "qty": "12 Notebooks",
+          "mrp": "₹48/piece",
+          "brand": "Classmate"
+        },
+        {
+          "code": "02000597",
+          "name": "Classmate Exercise Book Maths Ruled",
+          "qty": "7 Notebooks",
+          "mrp": "₹48/piece",
+          "brand": "Classmate"
+        },
+        {
+          "code": "02001675",
+          "name": "Classmate Exercise Book Four Line-Interleaf",
+          "qty": "63 Notebooks",
+          "mrp": "₹48/piece",
+          "brand": "Classmate"
+        },
+        {
+          "code": "02000835",
+          "name": "Classmate Exercise Book Maths Ruled",
+          "qty": "3 Notebooks",
+          "mrp": "₹30/piece",
+          "brand": "Classmate"
+        }
+      ]
     }
   ]
 }

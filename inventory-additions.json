@@ -129,6 +129,104 @@
           "qty": "3 Notebooks",
           "mrp": "₹30/piece",
           "brand": "Classmate"
+        },
+        {
+          "code": "NA172C2",
+          "name": "Vision Two Ruling Notebooks",
+          "qty": "10 Notebooks",
+          "mrp": "₹37/piece",
+          "brand": "Vision"
+        },
+        {
+          "code": "C01052",
+          "name": "Lacco Wiro Notebooks B/5 (1 Sub) Size",
+          "qty": "2 Notebooks",
+          "mrp": "₹160",
+          "brand": "Lacco"
+        },
+        {
+          "code": "C01043",
+          "name": "Lacco Wiro Notebooks A/5 (5 Sub) Size",
+          "qty": "3 Notebooks",
+          "mrp": "₹210",
+          "brand": "Lacco"
+        },
+        {
+          "code": "NBX25E",
+          "name": "Classmate Pulse Single Line Exercise Notebook (Big)",
+          "qty": "43 Notebooks",
+          "mrp": "₹100/piece",
+          "brand": "Classmate"
+        },
+        {
+          "code": "C01048",
+          "name": "Lacco Queen Size Notebooks",
+          "qty": "12 Notebooks",
+          "mrp": "₹200/piece",
+          "brand": "Lacco"
+        },
+        {
+          "code": "C01051",
+          "name": "Lacco B5 Notebooks",
+          "qty": "5 Notebooks",
+          "mrp": "₹230/piece",
+          "brand": "Lacco"
+        },
+        {
+          "code": "NBX25C",
+          "name": "Classmate Physics Practical Exercise Book Single Line/Blank",
+          "qty": "6 Notebooks",
+          "mrp": "₹510/piece",
+          "brand": "Classmate"
+        },
+        {
+          "code": "NBX25D",
+          "name": "Classmate Chemistry Practical Exercise Book Single Line/Blank",
+          "qty": "6 Notebooks",
+          "mrp": "₹510/piece",
+          "brand": "Classmate"
+        },
+        {
+          "code": "C01054",
+          "name": "Parimala Elegant Notebook No. 03",
+          "qty": "3 Notebooks",
+          "mrp": "₹180/piece",
+          "brand": "Parimala"
+        },
+        {
+          "code": "C01050",
+          "name": "Parimala Elegant Notebook No. 02",
+          "qty": "8 Notebooks",
+          "mrp": "₹170/piece",
+          "brand": "Parimala"
+        },
+        {
+          "code": "NBX24I",
+          "name": "Classmate Exercise Book 31cm x 20 cm",
+          "qty": "14 Notebooks",
+          "mrp": "₹170/piece",
+          "brand": "Classmate"
+        },
+        {
+          "code": "NBX24K",
+          "name": "Classmate Exercise Book 30cm x 21cm",
+          "qty": "6 Notebooks",
+          "mrp": "₹200/piece",
+          "brand": "Classmate"
+        },
+        {
+          "code": "02001249",
+          "name": "Classmate Exercise Book 31.4cm x 19.4cm",
+          "qty": "2 Notebooks",
+          "mrp": "₹165/piece",
+          "brand": "Classmate"
+        },
+        {
+          "code": "FAZ96F1",
+          "name": "Vision Full scape Long Book Notebooks",
+          "qty": "7 Notebooks",
+          "mrp": "₹60/piece",
+          "brand": "Vision"
         }
       ]
     }

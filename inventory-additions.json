@@ -227,6 +227,34 @@
           "qty": "7 Notebooks",
           "mrp": "₹60/piece",
           "brand": "Vision"
+        },
+        {
+          "code": "C0806",
+          "name": "Avengers Notebooks",
+          "qty": "5 Notebooks",
+          "mrp": "₹140/piece",
+          "brand": ""
+        },
+        {
+          "code": "C0806",
+          "name": "Cartoon Notebooks",
+          "qty": "10 Notebooks",
+          "mrp": "₹140/piece",
+          "brand": ""
+        },
+        {
+          "code": "",
+          "name": "A1 Quality Slip Pad No. 3",
+          "qty": "7 Writing Pads",
+          "mrp": "₹20/piece",
+          "brand": "A1"
+        },
+        {
+          "code": "",
+          "name": "Lacco Writing Pad No. 3",
+          "qty": "3 Writing Pads",
+          "mrp": "₹20/piece",
+          "brand": "Lacco"
         }
       ]
     }

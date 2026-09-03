@@ -64,6 +64,25 @@
         {"code":"","name":"Twisted Birthday Candles","qty":"22 pcs","mrp":"₹30/piece","brand":""},
         {"code":"C0532","name":"Number Candles","qty":"50 pcs","mrp":"₹30/piece","brand":""}
       ]
+    },
+    {
+      "name": "Art & Craft Supplies",
+      "items": [
+        {"code":"2206532","name":"Camel Acrylic Colours 24 Shades 10ml","qty":"10 Boxes","mrp":"₹400/box","brand":"Camel"},
+        {"code":"D2509","name":"Camel Oil Pastels 25 Shades","qty":"7 Boxes","mrp":"₹100/box","brand":"Camel"},
+        {"code":"D2510","name":"Camel Oil Pastels 12 Shades","qty":"25 Boxes","mrp":"₹40/box","brand":"Camel"},
+        {"code":"D2025","name":"Camel Water Colour Tubes 12 Shades","qty":"9 Boxes","mrp":"₹100/box","brand":"Camel"},
+        {"code":"A2025","name":"Camel Water Colour Tubes 14 Shades","qty":"10 Boxes","mrp":"₹125/box","brand":"Camel"},
+        {"code":"D2025","name":"Camel Water Colour Tubes 6 Shades","qty":"13 Boxes","mrp":"₹50/box","brand":"Camel"},
+        {"code":"8800","name":"DOMS Wax Crayons 10 Shades","qty":"9 Boxes","mrp":"₹10/box","brand":"DOMS"},
+        {"code":"H2517B","name":"Camel Wax Crayons XL 13 Shades","qty":"11 Boxes","mrp":"₹35/box","brand":"Camel"},
+        {"code":"80235","name":"DOMS Oil Pastels 25 Shades","qty":"9 Boxes","mrp":"₹100/box","brand":"DOMS"},
+        {"code":"80771","name":"DOMS Water Colour Tubes 12 Shades 5ml","qty":"10 Boxes","mrp":"₹100/box","brand":"DOMS"},
+        {"code":"3450","name":"DOMS Extra Long Wax Crayons 25 Shades","qty":"8 Boxes","mrp":"₹70/box","brand":"DOMS"},
+        {"code":"7429","name":"DOMS Aqua Colour Cakes 36 Shades","qty":"5 Boxes","mrp":"₹160/box","brand":"DOMS"},
+        {"code":"80366","name":"DOMS Refillable Aqua Colour Cakes 18 Shades","qty":"1 Box","mrp":"₹150","brand":"DOMS"},
+        {"code":"7128","name":"DOMS Aqua Colour Cakes 12 Shades","qty":"7 Boxes","mrp":"₹100/box","brand":"DOMS"}
+      ]
     }
   ]
 }

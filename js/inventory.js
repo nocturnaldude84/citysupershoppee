@@ -29,37 +29,53 @@ function mergeCategories(base = [], additions = []) {
     }
   });
 
-  // These Eveready torch entries were previously sitting in unrelated categories.
-  // Keep the source JSON untouched for now, but render the corrected inventory only
-  // under Lighting & Torches.
-  const oldEvereadyEntries = new Set([
-    'Eveready DL65',
-    'Eveready Digit LED',
-    'Eveready Shine',
-    'Eveready DL90'
-  ]);
-
   const renamedItems = {
     'Akari Plus AK-1660': 'Akari Plus LED Rechargeable Emergency Light AK-1660',
     'Akari Plus AK-505S': 'Akari Plus LED Light AK-505S'
   };
 
-  return merged.map(category => {
-    if (category.name.toLowerCase() === 'lighting & torches') {
-      return {
-        ...category,
-        items: (category.items || []).map(item => ({
-          ...item,
-          name: renamedItems[item.name] || item.name
-        }))
-      };
-    }
+  const relocations = [
+    { match: item => item.code === '018220', target: 'Air Fresheners' },
+    { match: item => item.code === '018244', target: 'Air Fresheners' },
+    { match: item => item.code === '900221', target: 'Pest Control' },
+    { match: item => item.name === 'Domo Rat Glue Pad, Big', target: 'Pest Control' },
+    { match: item => item.code === '019371', target: 'Pest Control' },
+    { match: item => item.code === '019388', target: 'Pest Control' },
+    { match: item => item.code === '7719', target: 'Lighting & Torches' }
+  ];
 
-    return {
-      ...category,
-      items: (category.items || []).filter(item => !oldEvereadyEntries.has(item.name))
-    };
+  const moved = {};
+  merged.forEach(category => {
+    const retained = [];
+    (category.items || []).forEach(item => {
+      if (item.code === '012430') return;
+      const rule = relocations.find(entry => entry.match(item));
+      if (rule) {
+        if (!moved[rule.target]) moved[rule.target] = [];
+        moved[rule.target].push(item);
+      } else {
+        retained.push(item);
+      }
+    });
+    category.items = retained;
   });
+
+  Object.entries(moved).forEach(([target, items]) => {
+    let category = merged.find(item => item.name.toLowerCase() === target.toLowerCase());
+    if (!category) {
+      category = { name: target, items: [] };
+      merged.push(category);
+    }
+    category.items.push(...items);
+  });
+
+  return merged.map(category => ({
+    ...category,
+    items: (category.items || []).map(item => ({
+      ...item,
+      name: renamedItems[item.name] || item.name
+    }))
+  }));
 }
 
 function render() {

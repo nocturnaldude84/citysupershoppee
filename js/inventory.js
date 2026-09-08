@@ -78,6 +78,20 @@ function mergeCategories(base = [], additions = []) {
   }));
 }
 
+function applyCorrections(corrections = []) {
+  corrections.forEach(correction => {
+    for (const category of categories) {
+      const item = (category.items || []).find(entry =>
+        entry.code === correction.code && entry.name === correction.name
+      );
+      if (item) {
+        Object.assign(item, correction);
+        break;
+      }
+    }
+  });
+}
+
 function render() {
   const query = searchEl.value.trim().toLowerCase();
   let visibleCategories = 0;
@@ -150,20 +164,27 @@ function setAll(expanded) {
 
 async function loadInventory() {
   try {
-    const [inventoryResponse, additionsResponse] = await Promise.all([
+    const [inventoryResponse, additionsResponse, updatesResponse] = await Promise.all([
       fetch('inventory.json', { cache: 'no-store' }),
-      fetch('inventory-additions.json', { cache: 'no-store' })
+      fetch('inventory-additions.json', { cache: 'no-store' }),
+      fetch('inventory-updates.json', { cache: 'no-store' })
     ]);
 
     if (!inventoryResponse.ok) throw new Error(`inventory.json HTTP ${inventoryResponse.status}`);
     if (!additionsResponse.ok) throw new Error(`inventory-additions.json HTTP ${additionsResponse.status}`);
+    if (!updatesResponse.ok) throw new Error(`inventory-updates.json HTTP ${updatesResponse.status}`);
 
-    const [inventoryData, additionsData] = await Promise.all([
+    const [inventoryData, additionsData, updatesData] = await Promise.all([
       inventoryResponse.json(),
-      additionsResponse.json()
+      additionsResponse.json(),
+      updatesResponse.json()
     ]);
 
-    categories = mergeCategories(inventoryData.categories || [], additionsData.categories || []);
+    categories = mergeCategories(
+      inventoryData.categories || [],
+      [...(additionsData.categories || []), ...(updatesData.categories || [])]
+    );
+    applyCorrections(updatesData.corrections || []);
     render();
   } catch (error) {
     console.error('Unable to load inventory:', error);

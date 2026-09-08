@@ -66,6 +66,40 @@
         {"code":"53863","name":"SOOGO Color Bottles","qty":"3 Boxes","mrp":"₹325/box","brand":"SOOGO"},
         {"code":"52441","name":"SOOGO Color Bottles","qty":"2 Boxes","mrp":"₹289/box","brand":"SOOGO"}
       ]
+    },
+    {
+      "name": "Kitchen Tools",
+      "items": [
+        {"code":"52105","name":"Cheng Ding Cucumber Spiral Slicer","qty":"6 Boxes","mrp":"₹125","brand":"Cheng Ding"},
+        {"code":"42006","name":"KITCHEN & home Garlic Chopper","qty":"8 Boxes","mrp":"₹285","brand":"KITCHEN & home"}
+      ]
+    },
+    {
+      "name": "Cricket & Tennis",
+      "items": [
+        {"code":"12001","name":"Cosco Cricket Tennis Balls","qty":"3 Boxes · 6 pcs/box","mrp":"₹86/unit · ₹516/box","brand":"Cosco"},
+        {"code":"","name":"Vicky Cricket Tennis Balls","qty":"1 Box · 6 pcs/box","mrp":"₹99/unit","brand":"Vicky"},
+        {"code":"11023","name":"SF Stanford Cricket Balls True Test White Model","qty":"1 Box · 6 pcs/box","mrp":"₹525/unit","brand":"SF"},
+        {"code":"C01112","name":"SSC Konex Table Tennis Balls","qty":"6 Boxes · 12 balls/box","mrp":"₹40/unit","brand":"SSC"}
+      ]
+    },
+    {
+      "name": "Roller Skates",
+      "items": [
+        {"code":"9506","name":"Jonex Baby Roller Skates","qty":"1 Box","mrp":"₹785","brand":"Jonex"}
+      ]
+    },
+    {
+      "name": "Football",
+      "items": [
+        {"code":"80080RD","name":"NIVIA Air Strike Stitched Football Size 5 22cm","qty":"1 Box","mrp":"₹615/unit","brand":"NIVIA"},
+        {"code":"14006","name":"Cosco Milano Football Size 5 22cm","qty":"2 Boxes","mrp":"₹1000/unit","brand":"Cosco"},
+        {"code":"2730","name":"Khanna Super Synthetic Football Size 5","qty":"2 Boxes","mrp":"₹792/unit","brand":"Khanna"},
+        {"code":"691645","name":"Genus Football Size 2","qty":"1 Unit","mrp":"₹700/unit","brand":"Genus"},
+        {"code":"691645","name":"Genus Football Size 1","qty":"1 Unit","mrp":"₹650/unit","brand":"Genus"},
+        {"code":"17962","name":"Astro Football Size 2","qty":"3 Units","mrp":"₹700/unit","brand":"Astro"},
+        {"code":"24185","name":"Astro Football Size 3","qty":"2 Units","mrp":"₹750/unit","brand":"Astro"}
+      ]
     }
   ],
   "corrections": [

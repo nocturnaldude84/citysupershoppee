@@ -33,6 +33,39 @@
         {"code":"24116","name":"Coffee Cup Stainless Steel","qty":"2 Boxes","mrp":"₹330","brand":""},
         {"code":"","name":"Silvana Espresso Coffee Maker","qty":"1 Box","mrp":"₹420","brand":"Silvana"}
       ]
+    },
+    {
+      "name": "Salt & Pepper Shakers",
+      "items": [
+        {"code":"","name":"Tadka Salt and Pepper Shaker","qty":"1 Box · 12 pcs/box","mrp":"₹360/box","brand":""}
+      ]
+    },
+    {
+      "name": "Cloth Clips",
+      "items": [
+        {"code":"","name":"Lacco Super Multipurpose Clip","qty":"4 Boxes · 20 pcs/box","mrp":"₹260/box","brand":"Lacco"}
+      ]
+    },
+    {
+      "name": "Glassware",
+      "items": [
+        {"code":"50631","name":"DELISOGA Deli Glassware 500 ml","qty":"1 Box · 1 pc/box","mrp":"₹380","brand":"DELISOGA"},
+        {"code":"17494","name":"DELISOGA Deli Glassware 1.2 Ltr","qty":"2 Boxes · 1 pc/box","mrp":"₹450","brand":"DELISOGA"},
+        {"code":"7298","name":"DELISOGA Deli Glassware 750 ml","qty":"2 Boxes · 1 pc/box","mrp":"₹350","brand":"DELISOGA"}
+      ]
+    },
+    {
+      "name": "Whistles",
+      "items": [
+        {"code":"C01213","name":"BPInds Whistle PEAL with Cork Pea","qty":"6 Boxes · 12 pcs/box","mrp":"₹324/box","brand":"BPInds"}
+      ]
+    },
+    {
+      "name": "Bottles",
+      "items": [
+        {"code":"53863","name":"SOOGO Color Bottles","qty":"3 Boxes","mrp":"₹325/box","brand":"SOOGO"},
+        {"code":"52441","name":"SOOGO Color Bottles","qty":"2 Boxes","mrp":"₹289/box","brand":"SOOGO"}
+      ]
     }
   ],
   "corrections": [

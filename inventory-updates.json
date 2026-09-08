@@ -43,7 +43,11 @@
     {
       "name": "Cloth Clips",
       "items": [
-        {"code":"","name":"Lacco Super Multipurpose Clip","qty":"4 Boxes · 20 pcs/box","mrp":"₹260/box","brand":"Lacco"}
+        {"code":"","name":"Lacco Super Multipurpose Clip","qty":"4 Boxes · 20 pcs/box","mrp":"₹260/box","brand":"Lacco"},
+        {"code":"C0853","name":"Misty Clothing Pegs Multipurpose Clips","qty":"3 Packs","mrp":"₹100/pack","brand":"Misty"},
+        {"code":"299048","name":"Kyrons Cloth Clips","qty":"1 Pack · 12 units/pack","mrp":"₹69/pack","brand":"Kyrons"},
+        {"code":"500012","name":"Sinco Cloth Clips","qty":"6 Packs · 12 units/pack","mrp":"₹70/pack","brand":"Sinco"},
+        {"code":"","name":"Home Style Super Deluxe Cloth Clips","qty":"2 Packs · 1w units/pack","mrp":"₹40/pack","brand":"Home Style"}
       ]
     },
     {

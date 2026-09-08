@@ -1,0 +1,42 @@
+{
+  "categories": [
+    {
+      "name": "Blenders & Juicers",
+      "items": [
+        {"code":"910103","name":"Bright Power Free Blender","qty":"10 Boxes","mrp":"₹249","brand":"Bright"},
+        {"code":"225396","name":"Sigma Hand Blender (2019)","qty":"3 Boxes","mrp":"₹275","brand":"Sigma"},
+        {"code":"225396","name":"Sigma Hand Blender (2022)","qty":"3 Boxes","mrp":"₹299","brand":"Sigma"},
+        {"code":"910233","name":"Bright Lemon Squeezer with Opener","qty":"4 Boxes","mrp":"₹149","brand":"Bright"},
+        {"code":"32247","name":"Param Aluminum Juicer","qty":"1 Box","mrp":"₹880","brand":"Param"},
+        {"code":"4740","name":"Bright Fruit Juicer","qty":"1 Box","mrp":"₹750","brand":"Bright"},
+        {"code":"HL1600","name":"Philips Hand Blender 650W","qty":"1 Box","mrp":"₹2495","brand":"Philips"}
+      ]
+    },
+    {
+      "name": "Bowls & Serving Sets",
+      "items": [
+        {"code":"37169","name":"Ocean Maison Pitcher 1 Ltr","qty":"3 Boxes","mrp":"₹560","brand":"Ocean"},
+        {"code":"YZ-668","name":"YZ Glassware","qty":"2 Boxes","mrp":"₹380","brand":""}
+      ]
+    },
+    {
+      "name": "Soap Cases",
+      "items": [
+        {"code":"U1031","name":"Osla One Designer Soap Case","qty":"1 Box · 12 pcs/box","mrp":"₹432/box · ₹40/pc","brand":"Osla One"},
+        {"code":"","name":"Richie Rich Checkers Soap Case","qty":"1 Box · 12 pcs/box","mrp":"₹600/box · ₹50/pc","brand":"Richie Rich"}
+      ]
+    },
+    {
+      "name": "Coffee Makers & Cups",
+      "items": [
+        {"code":"22280","name":"Coffee Cup Stainless Steel","qty":"2 Boxes","mrp":"₹295","brand":""},
+        {"code":"24116","name":"Coffee Cup Stainless Steel","qty":"2 Boxes","mrp":"₹330","brand":""},
+        {"code":"","name":"Silvana Espresso Coffee Maker","qty":"1 Box","mrp":"₹420","brand":"Silvana"}
+      ]
+    }
+  ],
+  "corrections": [
+    {"code":"19927","name":"Coffee Cup Stainless Steel 3 pcs Set","qty":"2 Boxes"},
+    {"code":"53329","name":"Italexpress Coffee Maker 12 cups","qty":"2 Boxes"}
+  ]
+}

@@ -104,6 +104,12 @@
         {"code":"17962","name":"Astro Football Size 2","qty":"3 Units","mrp":"₹700/unit","brand":"Astro"},
         {"code":"24185","name":"Astro Football Size 3","qty":"2 Units","mrp":"₹750/unit","brand":"Astro"}
       ]
+    },
+    {
+      "name": "Party Supplies",
+      "items": [
+        {"code":"01127","name":"Happy Birthday Kit (Banner, Props, Cake Topper, Posters)","qty":"1 Unit","mrp":"₹345/unit","brand":""}
+      ]
     }
   ],
   "corrections": [

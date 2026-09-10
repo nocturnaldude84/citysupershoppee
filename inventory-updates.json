@@ -101,7 +101,22 @@
       {"code":"020134","name":"M-Seal Epoxy Compound","qty":"40 Units","mrp":"₹15/unit","brand":"M-Seal"},
       {"code":"LI6428","name":"Flex Kwik Instant Adhesive","qty":"6 Units","mrp":"₹60/unit","brand":"Flex Kwik"},
       {"code":"8080757","name":"camlin Glue Stick","qty":"17 Units","mrp":"₹25/unit","brand":"camlin"},
-      {"code":"","name":"Dendrite Adhesive Super Joiner 50ml","qty":"7 Units","mrp":"₹45/unit","brand":"Dendrite"}
+      {"code":"","name":"Dendrite Adhesive Super Joiner 50ml","qty":"7 Units","mrp":"₹45/unit","brand":"Dendrite"},
+      {"code":"0508","name":"Premier Synthetic Glue Fragranced 50ml","qty":"8 Units","mrp":"₹15/unit","brand":"Premier"}
+    ]},
+    {"name":"Art & Craft Supplies","items":[
+      {"code":"044575","name":"camel Water Colour Cakes 12 Shades Box","qty":"8 Units","mrp":"₹60/unit","brand":"camel"},
+      {"code":"019559","name":"camel Water Colour Cakes 12 Shades Packets","qty":"8 Units","mrp":"₹35/unit","brand":"camel"}
+    ]},
+    {"name":"Office & Stationery","items":[
+      {"code":"900300","name":"Select Stamp Pad Violet Large","qty":"20 Units","mrp":"₹60/unit","brand":"Select"},
+      {"code":"90073","name":"Select Stamp Pad Violet Medium","qty":"21 Units","mrp":"₹45/unit","brand":"Select"},
+      {"code":"C01163","name":"Select Stamp Pad Red Large","qty":"9 Units","mrp":"₹45/unit","brand":"Select"},
+      {"code":"900317","name":"Select Stamp Pad Black Large","qty":"7 Units","mrp":"₹60/unit","brand":"Select"},
+      {"code":"C01166","name":"Premier Damper","qty":"10 Units","mrp":"₹50/unit","brand":"Premier"},
+      {"code":"C01167","name":"Premier Crystal Damper","qty":"9 Units","mrp":"₹50/unit","brand":"Premier"},
+      {"code":"C01168","name":"Premier Classic Damper","qty":"15 Units","mrp":"₹55/unit","brand":"Premier"},
+      {"code":"C01169","name":"Mangal Easy Count Damper","qty":"11 Units","mrp":"₹30/unit","brand":"Mangal"}
     ]}
   ],
   "corrections":[

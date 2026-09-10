@@ -1,0 +1,17 @@
+{
+  "categories": [
+    {
+      "name": "Kitchen Scissors",
+      "items": [
+        {"code":"","name":"GURU Sharpcut series All Purpose Scissors 140mm","qty":"10 Units","mrp":"₹55/unit","brand":"GURU"},
+        {"code":"","name":"GURU Sharpcut series All Purpose Scissors 160mm","qty":"10 Units","mrp":"₹60/unit","brand":"GURU"},
+        {"code":"","name":"LACCO Diamond Scissors 120mm","qty":"6 Units","mrp":"₹42/unit","brand":"LACCO"},
+        {"code":"","name":"LACCO Diamond Scissors 125mm","qty":"8 Units","mrp":"₹120/unit","brand":"LACCO"},
+        {"code":"","name":"LACCO Diamond Scissors 205mm","qty":"11 Units","mrp":"₹96/unit","brand":"LACCO"},
+        {"code":"","name":"LACCO Diamond Scissors 180mm","qty":"7 Units","mrp":"₹81/unit","brand":"LACCO"},
+        {"code":"","name":"LACCO Diamond Scissors 108mm","qty":"1 Unit","mrp":"₹39/unit","brand":"LACCO"},
+        {"code":"","name":"LACCO Diamond Scissors 160mm","qty":"1 Unit","mrp":"₹52/unit","brand":"LACCO"}
+      ]
+    }
+  ]
+}

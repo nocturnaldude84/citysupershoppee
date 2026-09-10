@@ -9,8 +9,8 @@ const emptyEl = document.getElementById('empty');
 let categories = [];
 
 function escapeHtml(value = '') {
-  return String(value).replace(/[&<>'"]/g, char => ({
-    '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;'
+  return String(value).replace(/[&<>'\"]/g, char => ({
+    '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '\"': '&quot;'
   }[char]));
 }
 
@@ -175,25 +175,28 @@ function setAll(expanded) {
 
 async function loadInventory() {
   try {
-    const [inventoryResponse, additionsResponse, updatesResponse] = await Promise.all([
+    const [inventoryResponse, additionsResponse, updatesResponse, scissorsResponse] = await Promise.all([
       fetch('inventory.json', { cache: 'no-store' }),
       fetch('inventory-additions.json', { cache: 'no-store' }),
-      fetch('inventory-updates.json', { cache: 'no-store' })
+      fetch('inventory-updates.json', { cache: 'no-store' }),
+      fetch('inventory-scissors.json', { cache: 'no-store' })
     ]);
 
     if (!inventoryResponse.ok) throw new Error(`inventory.json HTTP ${inventoryResponse.status}`);
     if (!additionsResponse.ok) throw new Error(`inventory-additions.json HTTP ${additionsResponse.status}`);
     if (!updatesResponse.ok) throw new Error(`inventory-updates.json HTTP ${updatesResponse.status}`);
+    if (!scissorsResponse.ok) throw new Error(`inventory-scissors.json HTTP ${scissorsResponse.status}`);
 
-    const [inventoryData, additionsData, updatesData] = await Promise.all([
+    const [inventoryData, additionsData, updatesData, scissorsData] = await Promise.all([
       inventoryResponse.json(),
       additionsResponse.json(),
-      updatesResponse.json()
+      updatesResponse.json(),
+      scissorsResponse.json()
     ]);
 
     categories = mergeCategories(
       inventoryData.categories || [],
-      [...(additionsData.categories || []), ...(updatesData.categories || [])]
+      [...(additionsData.categories || []), ...(updatesData.categories || []), ...(scissorsData.categories || [])]
     );
     applyCorrections(updatesData.corrections || []);
     render();

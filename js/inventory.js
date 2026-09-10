@@ -81,13 +81,24 @@ function mergeCategories(base = [], additions = []) {
 function applyCorrections(corrections = []) {
   corrections.forEach(correction => {
     for (const category of categories) {
-      const item = (category.items || []).find(entry =>
-        entry.code === correction.code && entry.name === correction.name
-      );
-      if (item) {
-        Object.assign(item, correction);
-        break;
+      let item = null;
+
+      if (Object.prototype.hasOwnProperty.call(correction, 'oldCode')) {
+        item = (category.items || []).find(entry =>
+          entry.code === correction.oldCode && entry.name === correction.name
+        );
+
+        if (item && Object.prototype.hasOwnProperty.call(correction, 'newCode')) {
+          item.code = correction.newCode;
+        }
+      } else {
+        item = (category.items || []).find(entry =>
+          entry.code === correction.code && entry.name === correction.name
+        );
+        if (item) Object.assign(item, correction);
       }
+
+      if (item) break;
     }
   });
 }

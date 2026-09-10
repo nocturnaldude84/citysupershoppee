@@ -34,7 +34,9 @@
       {"code":"C0853","name":"Misty Clothing Pegs Multipurpose Clips","qty":"3 Packs","mrp":"₹100/pack","brand":"Misty"},
       {"code":"299048","name":"Kyrons Cloth Clips","qty":"1 Pack · 12 units/pack","mrp":"₹69/pack","brand":"Kyrons"},
       {"code":"500012","name":"Sinco Cloth Clips","qty":"6 Packs · 12 units/pack","mrp":"₹70/pack","brand":"Sinco"},
-      {"code":"","name":"Home Style Super Deluxe Cloth Clips","qty":"2 Packs · 1w units/pack","mrp":"₹40/pack","brand":"Home Style"}
+      {"code":"","name":"Home Style Super Deluxe Cloth Clips","qty":"2 Packs · 1w units/pack","mrp":"₹40/pack","brand":"Home Style"},
+      {"code":"C0448","name":"Steel Round Cloth Clips 50mm 6pcs Pack","qty":"7 Packs","mrp":"₹108/pack","brand":""},
+      {"code":"C0447","name":"Steel Round Cloth Clips 63mm 6pcs Pack","qty":"8 Packs","mrp":"₹144/pack","brand":""}
     ]},
     {"name":"Glassware","items":[
       {"code":"50631","name":"DELISOGA Deli Glassware 500 ml","qty":"1 Box · 1 pc/box","mrp":"₹380","brand":"DELISOGA"},
@@ -67,7 +69,8 @@
       {"code":"12001","name":"Cosco Cricket Tennis Balls","qty":"3 Boxes · 6 pcs/box","mrp":"₹86/unit · ₹516/box","brand":"Cosco"},
       {"code":"","name":"Vicky Cricket Tennis Balls","qty":"1 Box · 6 pcs/box","mrp":"₹99/unit","brand":"Vicky"},
       {"code":"11023","name":"SF Stanford Cricket Balls True Test White Model","qty":"1 Box · 6 pcs/box","mrp":"₹525/unit","brand":"SF"},
-      {"code":"C01112","name":"SSC Konex Table Tennis Balls","qty":"6 Boxes · 12 balls/box","mrp":"₹40/unit","brand":"SSC"}
+      {"code":"C01112","name":"SSC Konex Table Tennis Balls","qty":"6 Boxes · 12 balls/box","mrp":"₹40/unit","brand":"SSC"},
+      {"code":"3069","name":"NIVIA Sumo Paper Clips","qty":"16 Packs","mrp":"₹120/pack","brand":"NIVIA"}
     ]},
     {"name":"Roller Skates","items":[
       {"code":"9506","name":"Jonex Baby Roller Skates","qty":"1 Box","mrp":"₹785","brand":"Jonex"}
@@ -116,7 +119,13 @@
       {"code":"C01166","name":"Premier Damper","qty":"10 Units","mrp":"₹50/unit","brand":"Premier"},
       {"code":"C01167","name":"Premier Crystal Damper","qty":"9 Units","mrp":"₹50/unit","brand":"Premier"},
       {"code":"C01168","name":"Premier Classic Damper","qty":"15 Units","mrp":"₹55/unit","brand":"Premier"},
-      {"code":"C01169","name":"Mangal Easy Count Damper","qty":"11 Units","mrp":"₹30/unit","brand":"Mangal"}
+      {"code":"C01169","name":"Mangal Easy Count Damper","qty":"11 Units","mrp":"₹30/unit","brand":"Mangal"},
+      {"code":"4179","name":"Zee Pen Stand","qty":"5 Boxes","mrp":"₹150/unit","brand":"Zee"},
+      {"code":"3069","name":"NIVIA Sumo Paper Clips","qty":"16 Packs","mrp":"₹120/pack","brand":"NIVIA"}
+    ]},
+    {"name":"Idli Makers","items":[
+      {"code":"32519","name":"Trust Microwave Idli Maker","qty":"3 Boxes","mrp":"₹390/unit","brand":"Trust"},
+      {"code":"32522","name":"Trust Mega Idli Maker","qty":"3 Boxes","mrp":"₹625/unit","brand":"Trust"}
     ]}
   ],
   "corrections":[

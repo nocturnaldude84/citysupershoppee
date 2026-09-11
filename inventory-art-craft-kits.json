@@ -1,0 +1,23 @@
+{
+  "categories": [
+    {
+      "name": "Art & Craft Supplies",
+      "items": [
+        {
+          "code": "9900149",
+          "name": "Camel Drawing Kit",
+          "qty": "2 Kits",
+          "mrp": "₹149/kit",
+          "brand": "Camel"
+        },
+        {
+          "code": "80063",
+          "name": "DOMS Fun Fiesta Kit",
+          "qty": "2 Kits",
+          "mrp": "₹100/kit",
+          "brand": "DOMS"
+        }
+      ]
+    }
+  ]
+}

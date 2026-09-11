@@ -175,13 +175,14 @@ function setAll(expanded) {
 
 async function loadInventory() {
   try {
-    const [inventoryResponse, additionsResponse, updatesResponse, scissorsResponse, latestResponse, artCraftResponse] = await Promise.all([
+    const [inventoryResponse, additionsResponse, updatesResponse, scissorsResponse, latestResponse, artCraftResponse, artCraftKitsResponse] = await Promise.all([
       fetch('inventory.json', { cache: 'no-store' }),
       fetch('inventory-additions.json', { cache: 'no-store' }),
       fetch('inventory-updates.json', { cache: 'no-store' }),
       fetch('inventory-scissors.json', { cache: 'no-store' }),
       fetch('inventory-2026-09-11.json', { cache: 'no-store' }),
-      fetch('inventory-art-craft-additions.json', { cache: 'no-store' })
+      fetch('inventory-art-craft-additions.json', { cache: 'no-store' }),
+      fetch('inventory-art-craft-kits.json', { cache: 'no-store' })
     ]);
 
     if (!inventoryResponse.ok) throw new Error(`inventory.json HTTP ${inventoryResponse.status}`);
@@ -190,14 +191,16 @@ async function loadInventory() {
     if (!scissorsResponse.ok) throw new Error(`inventory-scissors.json HTTP ${scissorsResponse.status}`);
     if (!latestResponse.ok) throw new Error(`inventory-2026-09-11.json HTTP ${latestResponse.status}`);
     if (!artCraftResponse.ok) throw new Error(`inventory-art-craft-additions.json HTTP ${artCraftResponse.status}`);
+    if (!artCraftKitsResponse.ok) throw new Error(`inventory-art-craft-kits.json HTTP ${artCraftKitsResponse.status}`);
 
-    const [inventoryData, additionsData, updatesData, scissorsData, latestData, artCraftData] = await Promise.all([
+    const [inventoryData, additionsData, updatesData, scissorsData, latestData, artCraftData, artCraftKitsData] = await Promise.all([
       inventoryResponse.json(),
       additionsResponse.json(),
       updatesResponse.json(),
       scissorsResponse.json(),
       latestResponse.json(),
-      artCraftResponse.json()
+      artCraftResponse.json(),
+      artCraftKitsResponse.json()
     ]);
 
     categories = mergeCategories(
@@ -207,7 +210,8 @@ async function loadInventory() {
         ...(updatesData.categories || []),
         ...(scissorsData.categories || []),
         ...(latestData.categories || []),
-        ...(artCraftData.categories || [])
+        ...(artCraftData.categories || []),
+        ...(artCraftKitsData.categories || [])
       ]
     );
     applyCorrections(updatesData.corrections || []);

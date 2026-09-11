@@ -1,0 +1,131 @@
+{
+  "categories": [
+    {
+      "name": "Kitchen Scissors",
+      "items": [
+        {
+          "code": "A8630",
+          "name": "JI Stainless Steel Scissors",
+          "qty": "10 Units",
+          "mrp": "₹295/unit",
+          "brand": "JI"
+        }
+      ]
+    },
+    {
+      "name": "Bowls & Serving Sets",
+      "items": [
+        {
+          "code": "",
+          "name": "Cello Opalware Divine Mug Small 6pcs Box",
+          "qty": "2 Boxes",
+          "mrp": "₹435/box",
+          "brand": "Cello"
+        },
+        {
+          "code": "",
+          "name": "Cello Opalware Ricca Mug Medium 6pcs Box",
+          "qty": "2 Boxes",
+          "mrp": "₹535/box",
+          "brand": "Cello"
+        }
+      ]
+    },
+    {
+      "name": "Padlocks",
+      "items": [
+        {
+          "code": "",
+          "name": "Alba Five Levers Padlock 40",
+          "qty": "36 Units",
+          "mrp": "₹110/unit",
+          "brand": "Alba"
+        },
+        {
+          "code": "",
+          "name": "Alba Eight Levers Padlock 65",
+          "qty": "17 Units",
+          "mrp": "₹190/unit",
+          "brand": "Alba"
+        },
+        {
+          "code": "C01192",
+          "name": "Alba 6 Levers Long Shackle Padlock 50mm",
+          "qty": "11 Units",
+          "mrp": "₹185/unit",
+          "brand": "Alba"
+        },
+        {
+          "code": "C0616",
+          "name": "MEIBAO Heavy Duty Lock 50mm",
+          "qty": "3 Units",
+          "mrp": "₹275/unit",
+          "brand": "MEIBAO"
+        },
+        {
+          "code": "7169",
+          "name": "NAV-TAL 7 Levers Padlock",
+          "qty": "4 Units",
+          "mrp": "₹860/unit",
+          "brand": "NAV-TAL"
+        },
+        {
+          "code": "8870",
+          "name": "NAV-TAL 6 Levers Padlock",
+          "qty": "7 Units",
+          "mrp": "₹560/unit",
+          "brand": "NAV-TAL"
+        },
+        {
+          "code": "440609",
+          "name": "GLOBUS Hardened Brass Padlock 5 Levers 50mm",
+          "qty": "4 Units",
+          "mrp": "₹650/unit",
+          "brand": "GLOBUS"
+        },
+        {
+          "code": "508023",
+          "name": "GLOBUS Hardened Brass Padlock 6 Levers 60mm",
+          "qty": "6 Units",
+          "mrp": "₹950/unit",
+          "brand": "GLOBUS"
+        },
+        {
+          "code": "508016",
+          "name": "GLOBUS Hardened Brass Padlock 6 Levers 50mm",
+          "qty": "12 Units",
+          "mrp": "₹690/unit",
+          "brand": "GLOBUS"
+        },
+        {
+          "code": "",
+          "name": "MEIBAO Copper Lock 20mm",
+          "qty": "99 Units",
+          "mrp": "₹45/unit",
+          "brand": "MEIBAO"
+        },
+        {
+          "code": "",
+          "name": "MEIBAO Copper Lock 25mm",
+          "qty": "87 Units",
+          "mrp": "₹55/unit",
+          "brand": "MEIBAO"
+        },
+        {
+          "code": "C01183",
+          "name": "MEIBAO Copper Lock 32mm",
+          "qty": "87 Units",
+          "mrp": "₹60/unit",
+          "brand": "MEIBAO"
+        },
+        {
+          "code": "",
+          "name": "Link Round-65 Brass Padlock",
+          "qty": "2 Units",
+          "mrp": "₹481/unit",
+          "brand": "Link"
+        }
+      ]
+    }
+  ]
+}

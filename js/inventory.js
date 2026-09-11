@@ -175,28 +175,36 @@ function setAll(expanded) {
 
 async function loadInventory() {
   try {
-    const [inventoryResponse, additionsResponse, updatesResponse, scissorsResponse] = await Promise.all([
+    const [inventoryResponse, additionsResponse, updatesResponse, scissorsResponse, latestResponse] = await Promise.all([
       fetch('inventory.json', { cache: 'no-store' }),
       fetch('inventory-additions.json', { cache: 'no-store' }),
       fetch('inventory-updates.json', { cache: 'no-store' }),
-      fetch('inventory-scissors.json', { cache: 'no-store' })
+      fetch('inventory-scissors.json', { cache: 'no-store' }),
+      fetch('inventory-2026-09-11.json', { cache: 'no-store' })
     ]);
 
     if (!inventoryResponse.ok) throw new Error(`inventory.json HTTP ${inventoryResponse.status}`);
     if (!additionsResponse.ok) throw new Error(`inventory-additions.json HTTP ${additionsResponse.status}`);
     if (!updatesResponse.ok) throw new Error(`inventory-updates.json HTTP ${updatesResponse.status}`);
     if (!scissorsResponse.ok) throw new Error(`inventory-scissors.json HTTP ${scissorsResponse.status}`);
+    if (!latestResponse.ok) throw new Error(`inventory-2026-09-11.json HTTP ${latestResponse.status}`);
 
-    const [inventoryData, additionsData, updatesData, scissorsData] = await Promise.all([
+    const [inventoryData, additionsData, updatesData, scissorsData, latestData] = await Promise.all([
       inventoryResponse.json(),
       additionsResponse.json(),
       updatesResponse.json(),
-      scissorsResponse.json()
+      scissorsResponse.json(),
+      latestResponse.json()
     ]);
 
     categories = mergeCategories(
       inventoryData.categories || [],
-      [...(additionsData.categories || []), ...(updatesData.categories || []), ...(scissorsData.categories || [])]
+      [
+        ...(additionsData.categories || []),
+        ...(updatesData.categories || []),
+        ...(scissorsData.categories || []),
+        ...(latestData.categories || [])
+      ]
     );
     applyCorrections(updatesData.corrections || []);
     render();
